@@ -1,0 +1,141 @@
+# ============================================================================
+# ООО «Лесные дали» — локальный DWH-стек
+# Сервисы: postgres-dwh, postgres-airflow, airflow (init/scheduler/webserver),
+#          dbt, pgadmin
+# Запуск: docker compose up -d
+# ============================================================================
+
+x-airflow-common: &airflow-common
+  image: apache/airflow:2.10.3-python3.11
+  environment:
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres-airflow:5432/airflow
+    AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+    AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "true"
+    AIRFLOW__API__AUTH_BACKENDS: "airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session"
+    # подключение к DWH доступно из DAG'ов как Airflow Connection 'pg_dwh'
+    AIRFLOW_CONN_PG_DWH: postgresql://dbt_runner:dbt_runner_change_me@postgres-dwh:5432/ldali_dwh
+    _PIP_ADDITIONAL_REQUIREMENTS: "dbt-postgres==1.8.2 gspread==6.1.4 requests==2.32.3 pandas==2.2.3"
+  volumes:
+    - ./airflow/dags:/opt/airflow/dags
+    - ./airflow/logs:/opt/airflow/logs
+    - ./airflow/plugins:/opt/airflow/plugins
+    - ./dbt:/opt/dbt
+  depends_on:
+    postgres-airflow:
+      condition: service_healthy
+    postgres-dwh:
+      condition: service_healthy
+  user: "${AIRFLOW_UID:-50000}:0"
+
+services:
+
+  # ----- PostgreSQL: хранилище DWH ------------------------------------------
+  postgres-dwh:
+    image: postgres:16
+    container_name: ldali-postgres-dwh
+    environment:
+      POSTGRES_DB: ldali_dwh
+      POSTGRES_USER: ldali_admin
+      POSTGRES_PASSWORD: ldali_admin_change_me
+      TZ: Europe/Moscow
+    volumes:
+      - postgres-dwh-data:/var/lib/postgresql/data
+      - ./init-db:/docker-entrypoint-initdb.d:ro
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ldali_admin -d ldali_dwh"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ----- PostgreSQL: метаданные Airflow -------------------------------------
+  postgres-airflow:
+    image: postgres:16
+    container_name: ldali-postgres-airflow
+    environment:
+      POSTGRES_DB: airflow
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+    volumes:
+      - postgres-airflow-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U airflow"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ----- pgAdmin: GUI для DWH -----------------------------------------------
+  pgadmin:
+    image: dpage/pgadmin4:8
+    container_name: ldali-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@ldali.local
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_CONFIG_SERVER_MODE: "False"
+      PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: "False"
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+      - ./pgadmin/servers.json:/pgadmin4/servers.json:ro
+    ports:
+      - "5050:80"
+    depends_on:
+      postgres-dwh:
+        condition: service_healthy
+
+  # ----- Airflow: разовая инициализация БД ----------------------------------
+  airflow-init:
+    <<: *airflow-common
+    container_name: ldali-airflow-init
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        airflow db migrate
+        airflow users create --username admin --password admin \
+          --firstname Admin --lastname User --role Admin --email admin@ldali.local || true
+
+  # ----- Airflow: scheduler -------------------------------------------------
+  airflow-scheduler:
+    <<: *airflow-common
+    container_name: ldali-airflow-scheduler
+    command: scheduler
+    restart: unless-stopped
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+
+  # ----- Airflow: webserver UI ----------------------------------------------
+  airflow-webserver:
+    <<: *airflow-common
+    container_name: ldali-airflow-web
+    command: webserver
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+
+  # ----- dbt: контейнер для ручных запусков (`docker compose run dbt ...`) -
+  dbt:
+    image: ghcr.io/dbt-labs/dbt-postgres:1.8.2
+    container_name: ldali-dbt
+    profiles: ["dbt"]                     # не стартует автоматически с up
+    working_dir: /usr/app/ldali
+    environment:
+      DBT_PROFILES_DIR: /usr/app
+    volumes:
+      - ./dbt:/usr/app
+    depends_on:
+      postgres-dwh:
+        condition: service_healthy
+    entrypoint: ["dbt"]
+    command: ["--version"]
+
+volumes:
+  postgres-dwh-data:
+  postgres-airflow-data:
+  pgadmin-data:

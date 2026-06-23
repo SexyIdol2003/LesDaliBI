@@ -1,0 +1,22 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "Лесные дали — DWH",
+      "Group": "Servers",
+      "Host": "postgres-dwh",
+      "Port": 5432,
+      "MaintenanceDB": "ldali_dwh",
+      "Username": "ldali_admin",
+      "SSLMode": "prefer"
+    },
+    "2": {
+      "Name": "Airflow metadata",
+      "Group": "Servers",
+      "Host": "postgres-airflow",
+      "Port": 5432,
+      "MaintenanceDB": "airflow",
+      "Username": "airflow",
+      "SSLMode": "prefer"
+    }
+  }
+}
