@@ -1,6 +1,6 @@
-# 🗓 Демо-сессия 13.07.2026 — Прогресс и статус
+# Демо-сессия 13.07.2026 — Прогресс и статус
 
-## ✅ ЧТО СДЕЛАНО СЕГОДНЯ
+## ЧТО СДЕЛАНО СЕГОДНЯ
 
 ### 1. Инфраструктура
 - Docker-окружение поднято и работает 4+ дней
@@ -18,7 +18,7 @@
 docker exec -it ldali-airflow-web airflow connections delete odata_1c_ld
 docker exec -it ldali-airflow-web airflow connections add odata_1c_ld \
   --conn-type http \
-  --conn-host "http://10.50.254.22/ld_erp_ibOdata/odata/standard.odata" \
+  --conn-host "http://10.50.254.22/ld_erp_ibiOdata/odata/standard.odata" \
   --conn-login "OdataBi" \
   --conn-password "xxx123"
 ```
@@ -27,7 +27,7 @@ docker exec -it ldali-airflow-web airflow connections add odata_1c_ld \
 ```bash
 docker exec -it ldali-airflow-web airflow variables set odata_1c_username "OdataBi"
 docker exec -it ldali-airflow-web airflow variables set odata_1c_password "xxx123"
-docker exec -it ldali-airflow-web airflow variables set odata_1c_base_url "http://10.50.254.22/ld_erp_ibOdata/odata/standard.odata"
+docker exec -it ldali-airflow-web airflow variables set odata_1c_base_url "http://10.50.254.22/ld_erp_ibiOdata/odata/standard.odata"
 docker exec -it ldali-airflow-web airflow variables set odata_1c_page_size "500"
 ```
 
@@ -84,7 +84,7 @@ CREATE TABLE IF NOT EXISTS mart.fact_putevoy_rabota (
 
 ---
 
-## 🔴 НА ЧЁМ ОСТАНОВИЛИСЬ
+## НА ЧЁМ ОСТАНОВИЛИСЬ
 
 **Статус на 21:44 МСК:**
 - `dag_extract_dvizhenie` и `dag_extract_putevoy_list` — **последний запуск 18:07**, неизвестно завершились ли успешно
@@ -92,7 +92,7 @@ CREATE TABLE IF NOT EXISTS mart.fact_putevoy_rabota (
 - raw-таблицы `r1c_dvizhenie_produkcii` и `r1c_putevoy_list` — **не подтверждено наличие данных**
 - mart fact-таблицы — возможно пустые если dvizhenie/putevoy не отработали
 
-## 🔧 ЧТО ДЕЛАТЬ СЛЕДУЮЩИМ ШАГОМ
+## ЧТО ДЕЛАТЬ СЛЕДУЮЩИМ ШАГОМ
 
 ### Шаг 1 — Проверить статус DAGов
 ```bash
@@ -129,7 +129,6 @@ ORDER BY schemaname, rows DESC;"
 
 ### Шаг 6 — Проверка дублей (идемпотентность)
 ```bash
-# Запустить DAG повторно, потом:
 docker exec -it ldali-postgres-dwh psql -U ldali_admin -d ldali_dwh -c "
 SELECT doc_id, pole_id, nomenklatura_id, COUNT(*)
 FROM mart.fact_vypusk_urozhaya
@@ -140,7 +139,7 @@ HAVING COUNT(*) > 1;"
 
 ---
 
-## 📸 СКРИНШОТЫ СОБРАННЫЕ СЕГОДНЯ
+## СКРИНШОТЫ СОБРАННЫЕ СЕГОДНЯ
 1. Airflow DAGs — все 4 активны, Running 4, Failed 0
 2. Connections — odata_1c_ld и postgres_dwh настроены
 3. Variables — odata_1c_base_url заполнен
@@ -150,8 +149,8 @@ HAVING COUNT(*) > 1;"
 
 ---
 
-## 🔑 УЧЁТНЫЕ ДАННЫЕ
+## УЧЁТНЫЕ ДАННЫЕ
 - Airflow UI: http://localhost:8080 | admin / admin
 - pgAdmin: http://localhost:5050 | admin@admin.com / admin
 - PostgreSQL: ldali-postgres-dwh:5432 | ldali_admin / ldali_admin_change_me
-- 1С OData: http://10.50.254.22/ld_erp_ibOdata/odata/standard.odata | OdataBi / xxx123
+- 1С OData: http://10.50.254.22/ld_erp_ibiOdata/odata/standard.odata | OdataBi / xxx123

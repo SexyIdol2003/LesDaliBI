@@ -42,7 +42,7 @@ docker exec -it ldali-airflow-web airflow connections delete odata_1c_ld
 
 docker exec -it ldali-airflow-web airflow connections add odata_1c_ld \
   --conn-type http \
-  --conn-host "http://10.50.254.22/ld_erp_ibOdata/odata/standard.odata" \
+  --conn-host "http://10.50.254.22/ld_erp_ibiOdata/odata/standard.odata" \
   --conn-login "OdataBi" \
   --conn-password "xxx123"
 ```
@@ -52,7 +52,7 @@ docker exec -it ldali-airflow-web airflow connections add odata_1c_ld \
 ```bash
 docker exec -it ldali-airflow-web airflow variables set odata_1c_username "OdataBi"
 docker exec -it ldali-airflow-web airflow variables set odata_1c_password "xxx123"
-docker exec -it ldali-airflow-web airflow variables set odata_1c_base_url "http://10.50.254.22/ld_erp_ibOdata/odata/standard.odata"
+docker exec -it ldali-airflow-web airflow variables set odata_1c_base_url "http://10.50.254.22/ld_erp_ibiOdata/odata/standard.odata"
 docker exec -it ldali-airflow-web airflow variables set odata_1c_page_size "500"
 ```
 
@@ -135,16 +135,13 @@ docker exec -it ldali-airflow-web airflow dags list
 - `dag_extract_dvizhenie` — выгрузка движений продукции из 1С
 - `dag_extract_putevoy_list` — выгрузка путевых листов из 1С
 - `dag_transform_mart` — трансформация raw → mart
-- *(дополнительные DAGи по каталогам)*
 
 ### 3.2 Ручной запуск DAGов
 
 ```bash
-# Запуск выгрузки из 1С
 docker exec -it ldali-airflow-web airflow dags trigger dag_extract_dvizhenie
 docker exec -it ldali-airflow-web airflow dags trigger dag_extract_putevoy_list
 
-# После завершения — трансформация в mart
 docker exec -it ldali-airflow-web airflow dags trigger dag_transform_mart
 ```
 
@@ -170,7 +167,7 @@ WHERE schemaname IN ('raw', 'mart') AND n_live_tup > 0
 ORDER BY schemaname, rows DESC;"
 ```
 
-Просмотр содержимого витрины dim_date:
+Просмотр витрины dim_date:
 ```bash
 docker exec -it ldali-postgres-dwh psql -U ldali_admin -d ldali_dwh -c "
 SELECT * FROM mart.dim_date LIMIT 10;"
@@ -192,7 +189,7 @@ docker exec -it ldali-airflow-web airflow dags trigger dag_extract_dvizhenie
 docker exec -it ldali-airflow-web airflow dags trigger dag_transform_mart
 ```
 
-Шаг 2 — проверить дубли в fact-таблицах:
+Шаг 2 — проверить дубли:
 ```bash
 docker exec -it ldali-postgres-dwh psql -U ldali_admin -d ldali_dwh -c "
 SELECT doc_id, pole_id, nomenklatura_id, COUNT(*)
@@ -207,11 +204,9 @@ HAVING COUNT(*) > 1;"
 
 ## 6. Инструкция по скриншотам
 
-Сделать следующие скриншоты:
-
 **Airflow UI (http://localhost:8080)**
 - Главная страница DAGs: список всех DAGов, столбцы Last Run, Schedule, Success/Failed
-- Страница конкретного DAG (dag_extract_dvizhenie или dag_transform_mart): граф задач с зелёными кружками
+- Страница DAG (dag_extract_dvizhenie или dag_transform_mart): граф задач с зелёными кружками
 - Вкладка Grid или Calendar: история успешных запусков
 - Вкладка Logs одного успешного запуска: лог с INFO строками
 - Admin → Connections: коннектор `odata_1c_ld` и `postgres_dwh`
@@ -220,7 +215,7 @@ HAVING COUNT(*) > 1;"
 **pgAdmin (http://localhost:5050)**
 - Дерево объектов: схемы raw, staging, mart, meta с раскрытыми таблицами
 - Query Tool: результат SELECT из `raw.r1c_nomenclature` с реальными данными
-- Query Tool: результат SELECT из `mart.dim_date` с реальными данными
+- Query Tool: результат SELECT из `mart.dim_date`
 - Query Tool: результат финальной проверки строк по всем схемам
 
 **Терминал**
@@ -231,25 +226,24 @@ HAVING COUNT(*) > 1;"
 
 ## 7. Инструкция по записи видео
 
-Записать одно видео продолжительностью 3-5 минут. Использовать OBS или встроенную запись экрана.
+Длительность: 3–5 минут. Использовать OBS или встроенную запись экрана.
 
-Порядок демонстрации:
 1. Открыть терминал, показать `docker ps` — все контейнеры Up
 2. Открыть Airflow UI (http://localhost:8080), показать список DAGов
-3. В терминале выполнить trigger одного DAG:
+3. В терминале выполнить trigger DAG:
    ```bash
    docker exec -it ldali-airflow-web airflow dags trigger dag_extract_dvizhenie
    ```
 4. Вернуться в Airflow UI, обновить страницу — показать что DAG запустился (Running)
-5. Дождаться завершения (или показать уже успешный запуск) — зелёный кружок
-6. Открыть pgAdmin, выполнить SELECT из raw-таблицы — показать реальные данные из 1С
-7. Выполнить trigger dag_transform_mart, потом показать mart-таблицу
+5. Показать успешный запуск — зелёный кружок
+6. Открыть pgAdmin, выполнить SELECT из raw.r1c_nomenclature — реальные данные из 1С
+7. Выполнить trigger dag_transform_mart, затем показать mart-таблицу
 
 ---
 
-## Доступы (для воспроизведения)
+## Доступы
 
 - Airflow UI: http://localhost:8080 — admin / admin
 - pgAdmin: http://localhost:5050 — admin@admin.com / admin
 - PostgreSQL: ldali-postgres-dwh:5432 — ldali_admin / ldali_admin_change_me
-- 1С OData: http://10.50.254.22/ld_erp_ibOdata/odata/standard.odata — OdataBi / xxx123
+- 1С OData: http://10.50.254.22/ld_erp_ibiOdata/odata/standard.odata — OdataBi / xxx123
