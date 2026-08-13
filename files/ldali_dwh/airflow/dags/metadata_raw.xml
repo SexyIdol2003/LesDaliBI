@@ -1,4 +1,0 @@
-<m:error xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
-	<m:code>-1</m:code>
-	<m:message>Произошла внутренняя ошибка OData сервиса. Дополнительные сведения можно найти в технологическом журнале.</m:message>
-</m:error>

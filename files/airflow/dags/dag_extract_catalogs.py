@@ -56,16 +56,45 @@ def _extract_upakovki(**context):
     context["ti"].xcom_push(key="upakovki_count", value=len(rows))
 
 def _extract_sh_tehnika(**context):
+    # ВАЖНО: реальная схема Catalog_АпкМоделиСХТехники НЕ содержит полей
+    # Производитель / КлассТехники / Мощность. Мощность двигателя хранится
+    # в поле МощностьДвигателя. Производитель/класс техники отсутствуют
+    # как отдельные простые поля в этой конфигурации.
     cfg = _get_cfg()
-    raw = _fetch_all(cfg, "Catalog_АпкМоделиСХТехники", "Ref_Key,DeletionMark,Description,Производитель,КлассТехники,Мощность")
-    rows = [(r.get("Ref_Key"), r.get("DeletionMark"), _norm_text(r.get("Description")), _norm_text(r.get("Производитель")), _norm_text(r.get("КлассТехники")), _safe_decimal(r.get("Мощность"))) for r in raw]
+    raw = _fetch_all(cfg, "Catalog_АпкМоделиСХТехники", "Ref_Key,DeletionMark,Description,МощностьДвигателя")
+    rows = [
+        (
+            r.get("Ref_Key"),
+            r.get("DeletionMark"),
+            _norm_text(r.get("Description")),
+            None,  # manufacturer — поля "Производитель" нет в этой схеме
+            None,  # equipment_class — поля "КлассТехники" нет в этой схеме
+            _safe_decimal(r.get("МощностьДвигателя")),
+        )
+        for r in raw
+    ]
     context["ti"].xcom_push(key="sh_tehnika_rows", value=rows)
     context["ti"].xcom_push(key="sh_tehnika_count", value=len(rows))
 
 def _extract_polya(**context):
+    # ВАЖНО: реальная схема Catalog_АпкПоля отличается от изначально предполагавшейся.
+    # У объекта НЕТ простых полей АпкПлощадьПоляГа / КадастровыйНомер / Хозяйство_Key.
+    # Площадь хранится в табличных частях ИсторияПоля (по годам) и КадастровыеУчастки (по участкам).
+    # Организация доступна как простое поле Организация_Key.
     cfg = _get_cfg()
-    raw = _fetch_all(cfg, "Catalog_АпкПоля", "Ref_Key,DeletionMark,Description,Parent_Key,АпкПлощадьПоляГа,КадастровыйНомер,Хозяйство_Key")
-    rows = [(r.get("Ref_Key"), r.get("DeletionMark"), _norm_text(r.get("Description")), _norm_text(r.get("Parent_Key")), _safe_decimal(r.get("АпкПлощадьПоляГа")), _norm_text(r.get("КадастровыйНомер")), _norm_text(r.get("Хозяйство_Key"))) for r in raw]
+    raw = _fetch_all(cfg, "Catalog_АпкПоля", "Ref_Key,DeletionMark,Description,Parent_Key,Организация_Key")
+    rows = [
+        (
+            r.get("Ref_Key"),
+            r.get("DeletionMark"),
+            _norm_text(r.get("Description")),
+            _norm_text(r.get("Parent_Key")),
+            None,  # area_ha — требует $expand=ИсторияПоля, вынесено в отдельную доработку
+            None,  # cadastr_num — требует $expand=КадастровыеУчастки, вынесено в отдельную доработку
+            _norm_text(r.get("Организация_Key")),  # переиспользуем колонку farm_id под организацию
+        )
+        for r in raw
+    ]
     context["ti"].xcom_push(key="polya_rows", value=rows)
     context["ti"].xcom_push(key="polya_count", value=len(rows))
 

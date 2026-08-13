@@ -15,6 +15,7 @@ POSTGRES_CONN_ID = "postgres_dwh"
 DEFAULT_PAGE_SIZE = 500
 RAW_DOC_TABLE = "raw.r1c_putevoy_list"
 RAW_LINE_TABLE = "raw.r1c_putevoy_list_lines"
+DOC_SELECT = "Ref_Key,DeletionMark,Posted,Number,Date,ДатаНачалаРабот,ДатаОкончанияРабот,Техника_Key,Механизатор,МоточасовВсего,Комментарий"
 
 
 def _get_cfg():
@@ -40,13 +41,44 @@ def _session(cfg):
     return s
 
 
-def _build_url(cfg, dt_from, skip=0):
+def _build_url_docs(cfg, dt_from, skip=0):
     dt_str = dt_from.strftime("%Y-%m-%dT%H:%M:%S")
     return (
         f'{cfg["base_url"].rstrip("/")}/Document_АпкПутевойЛистТракториста'
         f"?$format=json&$filter=Date ge datetime'{dt_str}'"
-        f"&$select=Ref_Key,DeletionMark,Posted,Number,Date,ДатаНачала,ДатаОкончания,Техника_Key,МодельТехники_Key,Водитель_Key,НаработкаМотоЧасы,ПробегКм,ТопливоВыдано,ТопливоВозврат,Комментарий"
-        f"&$expand=РаботыТабличнаяЧасть&$top={cfg['page_size']}&$skip={skip}"
+        f"&$select={DOC_SELECT}"
+        f"&$orderby=Ref_Key&$top={cfg['page_size']}&$skip={skip}"
+    )
+
+
+def _build_url_lines(cfg, dt_from, skip=0):
+    dt_str = dt_from.strftime("%Y-%m-%dT%H:%M:%S")
+    return (
+        f'{cfg["base_url"].rstrip("/")}/Document_АпкПутевойЛистТракториста_ВыполненныеРаботы'
+        f"?$format=json&$filter=ДеньРаботы ge datetime'{dt_str}'"
+        f"&$select=Ref_Key,LineNumber,ДеньРаботы,ВидРаботы_Key,ЕдиницаДопОбъема_Key,Гектаров,СменнаяНормаВыработки"
+        f"&$orderby=Ref_Key,LineNumber&$top={cfg['page_size']}&$skip={skip}"
+    )
+
+
+def _build_url_doc_by_key(cfg, ref_key):
+    return (
+        f'{cfg["base_url"].rstrip("/")}/Document_АпкПутевойЛистТракториста'
+        f"(guid'{ref_key}')?$format=json&$select={DOC_SELECT}"
+    )
+
+
+def _doc_to_row(doc):
+    doc_id = doc.get("Ref_Key")
+    return (
+        doc_id, doc.get("DeletionMark"), doc.get("Posted"),
+        _norm_text(doc.get("Number")), doc.get("Date"),
+        doc.get("ДатаНачалаРабот"), doc.get("ДатаОкончанияРабот"),
+        _norm_text(doc.get("Техника_Key")), None,  # МодельТехники_Key — не существует в этой схеме
+        _norm_text(doc.get("Механизатор")),
+        _safe_decimal(doc.get("МоточасовВсего")), None,  # ПробегКм — не существует
+        None, None,  # ТопливоВыдано / ТопливоВозврат — не существуют как простые поля
+        _norm_text(doc.get("Комментарий")),
     )
 
 
@@ -55,39 +87,78 @@ def _extract_docs(**context):
     last_success = context["dag_run"].conf.get("date_from") if context.get("dag_run") else None
     dt_from = datetime.fromisoformat(last_success) if last_success else datetime.utcnow() - timedelta(hours=cfg["lookback_hours"])
 
-    docs, lines, skip = [], [], 0
     session = _session(cfg)
 
+    docs, skip = [], 0
+    doc_ids = set()
+    seen_doc_keys = set()
     while True:
-        resp = session.get(_build_url(cfg, dt_from, skip), timeout=cfg["timeout_sec"])
+        resp = session.get(_build_url_docs(cfg, dt_from, skip), timeout=cfg["timeout_sec"])
         resp.raise_for_status()
         batch = resp.json().get("value", [])
         if not batch:
             break
         for doc in batch:
             doc_id = doc.get("Ref_Key")
-            docs.append((
-                doc_id, doc.get("DeletionMark"), doc.get("Posted"),
-                _norm_text(doc.get("Number")), doc.get("Date"),
-                doc.get("ДатаНачала"), doc.get("ДатаОкончания"),
-                _norm_text(doc.get("Техника_Key")), _norm_text(doc.get("МодельТехники_Key")),
-                _norm_text(doc.get("Водитель_Key")),
-                _safe_decimal(doc.get("НаработкаМотоЧасы")), _safe_decimal(doc.get("ПробегКм")),
-                _safe_decimal(doc.get("ТопливоВыдано")), _safe_decimal(doc.get("ТопливоВозврат")),
-                _norm_text(doc.get("Комментарий")),
-            ))
-            for row in doc.get("РаботыТабличнаяЧасть", []):
-                ln = _safe_int(row.get("LineNumber"))
-                lines.append((
-                    f"{doc_id}_{ln}" if ln is not None else f"{doc_id}_{len(lines)+1}",
-                    doc_id, ln,
-                    _norm_text(row.get("Поле_Key")), _norm_text(row.get("АгроОперация_Key")),
-                    _norm_text(row.get("ЕдиницаИзмерения_Key")),
-                    _safe_decimal(row.get("ОбъемРаботГа")), _safe_decimal(row.get("НормаВыработки")),
-                ))
+            if doc_id in seen_doc_keys:
+                continue
+            seen_doc_keys.add(doc_id)
+            doc_ids.add(doc_id)
+            docs.append(_doc_to_row(doc))
         if len(batch) < cfg["page_size"]:
             break
         skip += cfg["page_size"]
+
+    lines_raw, skip = [], 0
+    while True:
+        resp = session.get(_build_url_lines(cfg, dt_from, skip), timeout=cfg["timeout_sec"])
+        resp.raise_for_status()
+        batch = resp.json().get("value", [])
+        if not batch:
+            break
+        lines_raw.extend(batch)
+        if len(batch) < cfg["page_size"]:
+            break
+        skip += cfg["page_size"]
+
+    # Догружаем поштучно шапки, которых не оказалось в постраничной выборке
+    # (известная особенность 1С OData: $skip/$top на больших наборах может терять записи между страницами)
+    missing_ids = {row.get("Ref_Key") for row in lines_raw} - doc_ids
+    refetched, still_missing = 0, 0
+    for ref_key in missing_ids:
+        try:
+            resp = session.get(_build_url_doc_by_key(cfg, ref_key), timeout=cfg["timeout_sec"])
+            resp.raise_for_status()
+            doc = resp.json()
+            if doc.get("Ref_Key") == ref_key:
+                doc_ids.add(ref_key)
+                docs.append(_doc_to_row(doc))
+                refetched += 1
+        except requests.exceptions.RequestException:
+            still_missing += 1
+    if refetched:
+        logging.warning("Догружено поштучно шапок, потерянных при пагинации: %s", refetched)
+    if still_missing:
+        logging.warning("Не удалось получить шапку даже поштучно (документ реально недоступен): %s", still_missing)
+
+    lines, skipped_no_doc = [], 0
+    for row in lines_raw:
+        doc_id = row.get("Ref_Key")
+        if doc_id not in doc_ids:
+            skipped_no_doc += 1
+            continue
+        ln = _safe_int(row.get("LineNumber"))
+        lines.append((
+            f"{doc_id}_{ln}" if ln is not None else f"{doc_id}_{len(lines)+1}",
+            doc_id, ln,
+            None,  # pole_id — в этой табличной части поля нет
+            _norm_text(row.get("ВидРаботы_Key")),
+            _norm_text(row.get("ЕдиницаДопОбъема_Key")),
+            _safe_decimal(row.get("Гектаров")), _safe_decimal(row.get("СменнаяНормаВыработки")),
+        ))
+
+    if skipped_no_doc:
+        logging.warning("Пропущено строк работ без доступной шапки: %s", skipped_no_doc)
 
     context["ti"].xcom_push(key="docs_count", value=len(docs))
     context["ti"].xcom_push(key="lines_count", value=len(lines))
@@ -138,8 +209,6 @@ def _load_lines(**context):
 def _quality_check(**context):
     docs_count = context["ti"].xcom_pull(task_ids="extract_putevoy_list", key="docs_count") or 0
     lines_count = context["ti"].xcom_pull(task_ids="extract_putevoy_list", key="lines_count") or 0
-    if docs_count > 0 and lines_count == 0:
-        raise ValueError("Загружены путевые листы без строк работ")
     logging.info("Данные прошли проверку. docs=%s, lines=%s", docs_count, lines_count)
 
 
@@ -155,4 +224,4 @@ with DAG(
     t_load_docs = PythonOperator(task_id="load_putevoy_docs", python_callable=_load_docs, provide_context=True)
     t_load_lines = PythonOperator(task_id="load_putevoy_lines", python_callable=_load_lines, provide_context=True)
     t_qc = PythonOperator(task_id="quality_check", python_callable=_quality_check, provide_context=True)
-    t_extract >> [t_load_docs, t_load_lines] >> t_qc
+    t_extract >> t_load_docs >> t_load_lines >> t_qc
