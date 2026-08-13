@@ -11,7 +11,7 @@ from airflow.operators.python import PythonOperator
 from airflow.providers.postgres.hooks.postgres import PostgresHook
 
 DAG_ID = "dag_extract_dvizhenie"
-POSTGRES_CONN_ID = "ldali_postgres"
+POSTGRES_CONN_ID = "postgres_dwh"
 DEFAULT_PAGE_SIZE = 500
 RAW_DOC_TABLE = "raw.r1c_dvizhenie_produkcii"
 RAW_LINE_TABLE = "raw.r1c_dvizhenie_produkcii_lines"
@@ -52,8 +52,8 @@ def _build_url(cfg, dt_from, skip=0):
     return (
         f'{cfg["base_url"].rstrip("/")}/Document_ДвижениеПродукцииИМатериалов'
         f"?$format=json&$filter=Date ge datetime'{dt_str}'"
-        f"&$select=Ref_Key,DeletionMark,Posted,Number,Date,Операция,Склад_Key,Контрагент_Key,Комментарий"
-        f"&$expand=ТоварыТабличнаяЧасть&$top={cfg['page_size']}&$skip={skip}"
+        f"&$select=Ref_Key,DeletionMark,Posted,Number,Date,ХозяйственнаяОперация,Отправитель_Key,Получатель_Key,Комментарий"
+        f"&$expand=Товары&$top={cfg['page_size']}&$skip={skip}"
     )
 
 
@@ -76,10 +76,10 @@ def _extract_docs(**context):
             docs.append((
                 doc_id, doc.get("DeletionMark"), doc.get("Posted"),
                 _norm_text(doc.get("Number")), doc.get("Date"),
-                _norm_text(doc.get("Операция")), _norm_text(doc.get("Склад_Key")),
-                _norm_text(doc.get("Контрагент_Key")), _norm_text(doc.get("Комментарий")),
+                _norm_text(doc.get("ХозяйственнаяОперация")), _norm_text(doc.get("Отправитель_Key")),
+                _norm_text(doc.get("Получатель_Key")), _norm_text(doc.get("Комментарий")),
             ))
-            for row in doc.get("ТоварыТабличнаяЧасть", []):
+            for row in doc.get("Товары", []):
                 ln = _safe_int(row.get("LineNumber"))
                 lines.append((
                     f"{doc_id}_{ln}" if ln is not None else f"{doc_id}_{len(lines)+1}",

@@ -1,0 +1,201 @@
+[2026-08-04T00:27:14.402+0000] {processor.py:186} INFO - Started process (PID=3798) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T00:27:14.402+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T00:27:14.404+0000] {logging_mixin.py:190} INFO - [2026-08-04T00:27:14.404+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T00:27:14.418+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T00:27:14.442+0000] {logging_mixin.py:190} INFO - [2026-08-04T00:27:14.442+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T00:27:14.458+0000] {logging_mixin.py:190} INFO - [2026-08-04T00:27:14.458+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-03 03:30:00+00:00, run_after=2026-08-04 03:30:00+00:00
+[2026-08-04T00:27:14.472+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.075 seconds
+[2026-08-04T01:34:58.337+0000] {processor.py:186} INFO - Started process (PID=3836) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T01:34:58.338+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T01:34:58.339+0000] {logging_mixin.py:190} INFO - [2026-08-04T01:34:58.339+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T01:34:58.353+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T01:34:58.372+0000] {logging_mixin.py:190} INFO - [2026-08-04T01:34:58.372+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T01:34:58.387+0000] {logging_mixin.py:190} INFO - [2026-08-04T01:34:58.387+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-03 03:30:00+00:00, run_after=2026-08-04 03:30:00+00:00
+[2026-08-04T01:34:58.394+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.063 seconds
+[2026-08-04T02:44:27.507+0000] {processor.py:186} INFO - Started process (PID=3859) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T02:44:27.508+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T02:44:27.510+0000] {logging_mixin.py:190} INFO - [2026-08-04T02:44:27.510+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T02:44:27.529+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T02:44:27.548+0000] {logging_mixin.py:190} INFO - [2026-08-04T02:44:27.548+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T02:44:27.568+0000] {logging_mixin.py:190} INFO - [2026-08-04T02:44:27.568+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-03 03:30:00+00:00, run_after=2026-08-04 03:30:00+00:00
+[2026-08-04T02:44:27.577+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.077 seconds
+[2026-08-04T03:07:17.249+0000] {processor.py:186} INFO - Started process (PID=3894) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T03:07:17.250+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T03:07:17.251+0000] {logging_mixin.py:190} INFO - [2026-08-04T03:07:17.251+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T03:07:17.264+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T03:07:17.287+0000] {logging_mixin.py:190} INFO - [2026-08-04T03:07:17.287+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T03:07:17.308+0000] {logging_mixin.py:190} INFO - [2026-08-04T03:07:17.308+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-03 03:30:00+00:00, run_after=2026-08-04 03:30:00+00:00
+[2026-08-04T03:07:17.323+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.081 seconds
+[2026-08-04T03:41:33.419+0000] {processor.py:186} INFO - Started process (PID=3917) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T03:41:33.419+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T03:41:33.420+0000] {logging_mixin.py:190} INFO - [2026-08-04T03:41:33.420+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T03:41:33.428+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T03:41:33.444+0000] {logging_mixin.py:190} INFO - [2026-08-04T03:41:33.444+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T03:41:33.457+0000] {logging_mixin.py:190} INFO - [2026-08-04T03:41:33.456+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-03 03:30:00+00:00, run_after=2026-08-04 03:30:00+00:00
+[2026-08-04T03:41:33.462+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.048 seconds
+[2026-08-04T04:02:51.221+0000] {processor.py:186} INFO - Started process (PID=3946) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T04:02:51.222+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T04:02:51.223+0000] {logging_mixin.py:190} INFO - [2026-08-04T04:02:51.222+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T04:02:51.231+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T04:02:51.244+0000] {logging_mixin.py:190} INFO - [2026-08-04T04:02:51.244+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T04:02:51.258+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.041 seconds
+[2026-08-04T05:36:10.619+0000] {processor.py:186} INFO - Started process (PID=3975) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T05:36:10.621+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T05:36:10.624+0000] {logging_mixin.py:190} INFO - [2026-08-04T05:36:10.623+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T05:36:10.648+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T05:36:10.687+0000] {logging_mixin.py:190} INFO - [2026-08-04T05:36:10.687+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T05:36:10.730+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.120 seconds
+[2026-08-04T05:53:08.926+0000] {processor.py:186} INFO - Started process (PID=4019) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T05:53:08.927+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T05:53:08.928+0000] {logging_mixin.py:190} INFO - [2026-08-04T05:53:08.928+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T05:53:08.940+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T05:53:08.970+0000] {logging_mixin.py:190} INFO - [2026-08-04T05:53:08.970+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T05:53:08.990+0000] {logging_mixin.py:190} INFO - [2026-08-04T05:53:08.990+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T05:53:09.000+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.084 seconds
+[2026-08-04T06:55:37.991+0000] {processor.py:186} INFO - Started process (PID=4039) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T06:55:37.992+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T06:55:37.995+0000] {logging_mixin.py:190} INFO - [2026-08-04T06:55:37.993+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T06:55:38.007+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T06:55:38.033+0000] {logging_mixin.py:190} INFO - [2026-08-04T06:55:38.033+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T06:55:38.050+0000] {logging_mixin.py:190} INFO - [2026-08-04T06:55:38.050+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T06:55:38.058+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.074 seconds
+[2026-08-04T07:40:19.549+0000] {processor.py:186} INFO - Started process (PID=4071) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T07:40:19.550+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T07:40:19.551+0000] {logging_mixin.py:190} INFO - [2026-08-04T07:40:19.551+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T07:40:19.561+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T07:40:19.580+0000] {logging_mixin.py:190} INFO - [2026-08-04T07:40:19.580+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T07:40:19.590+0000] {logging_mixin.py:190} INFO - [2026-08-04T07:40:19.590+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T07:40:19.598+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.053 seconds
+[2026-08-04T08:39:29.124+0000] {processor.py:186} INFO - Started process (PID=4092) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T08:39:29.125+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T08:39:29.127+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:39:29.126+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T08:39:29.140+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T08:39:29.165+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:39:29.164+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T08:39:29.181+0000] {logging_mixin.py:190} INFO - [2026-08-04T08:39:29.180+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T08:39:29.190+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.072 seconds
+[2026-08-04T09:43:21.550+0000] {processor.py:186} INFO - Started process (PID=4117) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T09:43:21.551+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T09:43:21.552+0000] {logging_mixin.py:190} INFO - [2026-08-04T09:43:21.552+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T09:43:21.565+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T09:43:21.585+0000] {logging_mixin.py:190} INFO - [2026-08-04T09:43:21.585+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T09:43:21.600+0000] {logging_mixin.py:190} INFO - [2026-08-04T09:43:21.600+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T09:43:21.610+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.068 seconds
+[2026-08-04T10:25:06.247+0000] {processor.py:186} INFO - Started process (PID=4140) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T10:25:06.248+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T10:25:06.250+0000] {logging_mixin.py:190} INFO - [2026-08-04T10:25:06.250+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T10:25:06.265+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T10:25:06.287+0000] {logging_mixin.py:190} INFO - [2026-08-04T10:25:06.287+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T10:25:06.305+0000] {logging_mixin.py:190} INFO - [2026-08-04T10:25:06.305+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T10:25:06.313+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.071 seconds
+[2026-08-04T11:09:47.259+0000] {processor.py:186} INFO - Started process (PID=4167) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T11:09:47.261+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T11:09:47.262+0000] {logging_mixin.py:190} INFO - [2026-08-04T11:09:47.262+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T11:09:47.270+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T11:09:47.284+0000] {logging_mixin.py:190} INFO - [2026-08-04T11:09:47.284+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T11:09:47.299+0000] {logging_mixin.py:190} INFO - [2026-08-04T11:09:47.299+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T11:09:47.306+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.053 seconds
+[2026-08-04T11:42:08.009+0000] {processor.py:186} INFO - Started process (PID=4192) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T11:42:08.010+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T11:42:08.011+0000] {logging_mixin.py:190} INFO - [2026-08-04T11:42:08.011+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T11:42:08.023+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T11:42:08.040+0000] {logging_mixin.py:190} INFO - [2026-08-04T11:42:08.039+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T11:42:08.051+0000] {logging_mixin.py:190} INFO - [2026-08-04T11:42:08.051+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T11:42:08.061+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.058 seconds
+[2026-08-04T12:45:25.519+0000] {processor.py:186} INFO - Started process (PID=4212) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T12:45:25.520+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T12:45:25.521+0000] {logging_mixin.py:190} INFO - [2026-08-04T12:45:25.521+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T12:45:25.533+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T12:45:25.559+0000] {logging_mixin.py:190} INFO - [2026-08-04T12:45:25.558+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T12:45:25.574+0000] {logging_mixin.py:190} INFO - [2026-08-04T12:45:25.574+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T12:45:25.585+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.076 seconds
+[2026-08-04T13:44:02.442+0000] {processor.py:186} INFO - Started process (PID=4238) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T13:44:02.444+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T13:44:02.446+0000] {logging_mixin.py:190} INFO - [2026-08-04T13:44:02.446+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T13:44:02.459+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T13:44:02.484+0000] {logging_mixin.py:190} INFO - [2026-08-04T13:44:02.484+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T13:44:02.503+0000] {logging_mixin.py:190} INFO - [2026-08-04T13:44:02.503+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T13:44:02.518+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.081 seconds
+[2026-08-04T14:46:35.319+0000] {processor.py:186} INFO - Started process (PID=4258) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T14:46:35.320+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T14:46:35.321+0000] {logging_mixin.py:190} INFO - [2026-08-04T14:46:35.321+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T14:46:35.332+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T14:46:35.355+0000] {logging_mixin.py:190} INFO - [2026-08-04T14:46:35.355+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T14:46:35.372+0000] {logging_mixin.py:190} INFO - [2026-08-04T14:46:35.372+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T14:46:35.382+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.074 seconds
+[2026-08-04T15:46:15.221+0000] {processor.py:186} INFO - Started process (PID=4284) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T15:46:15.223+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T15:46:15.224+0000] {logging_mixin.py:190} INFO - [2026-08-04T15:46:15.224+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T15:46:15.234+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T15:46:15.259+0000] {logging_mixin.py:190} INFO - [2026-08-04T15:46:15.259+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T15:46:15.272+0000] {logging_mixin.py:190} INFO - [2026-08-04T15:46:15.272+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T15:46:15.282+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.066 seconds
+[2026-08-04T17:15:54.018+0000] {processor.py:186} INFO - Started process (PID=4307) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T17:15:54.019+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T17:15:54.020+0000] {logging_mixin.py:190} INFO - [2026-08-04T17:15:54.020+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T17:15:54.031+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T17:15:54.051+0000] {logging_mixin.py:190} INFO - [2026-08-04T17:15:54.050+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T17:15:54.070+0000] {logging_mixin.py:190} INFO - [2026-08-04T17:15:54.069+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T17:15:54.079+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.065 seconds
+[2026-08-04T18:17:01.249+0000] {processor.py:186} INFO - Started process (PID=4336) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T18:17:01.250+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T18:17:01.251+0000] {logging_mixin.py:190} INFO - [2026-08-04T18:17:01.251+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T18:17:01.262+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T18:17:01.278+0000] {logging_mixin.py:190} INFO - [2026-08-04T18:17:01.278+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T18:17:01.292+0000] {logging_mixin.py:190} INFO - [2026-08-04T18:17:01.291+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T18:17:01.301+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.057 seconds
+[2026-08-04T19:15:14.472+0000] {processor.py:186} INFO - Started process (PID=4359) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T19:15:14.472+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T19:15:14.473+0000] {logging_mixin.py:190} INFO - [2026-08-04T19:15:14.473+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T19:15:14.480+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T19:15:14.495+0000] {logging_mixin.py:190} INFO - [2026-08-04T19:15:14.495+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T19:15:14.505+0000] {logging_mixin.py:190} INFO - [2026-08-04T19:15:14.505+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T19:15:14.512+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.044 seconds
+[2026-08-04T19:51:33.267+0000] {processor.py:186} INFO - Started process (PID=4382) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T19:51:33.268+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T19:51:33.269+0000] {logging_mixin.py:190} INFO - [2026-08-04T19:51:33.269+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T19:51:33.285+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T19:51:33.304+0000] {logging_mixin.py:190} INFO - [2026-08-04T19:51:33.304+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T19:51:33.321+0000] {logging_mixin.py:190} INFO - [2026-08-04T19:51:33.320+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T19:51:33.330+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.070 seconds
+[2026-08-04T20:18:56.513+0000] {processor.py:186} INFO - Started process (PID=4405) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T20:18:56.514+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T20:18:56.514+0000] {logging_mixin.py:190} INFO - [2026-08-04T20:18:56.514+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T20:18:56.522+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T20:18:56.544+0000] {logging_mixin.py:190} INFO - [2026-08-04T20:18:56.544+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T20:18:56.554+0000] {logging_mixin.py:190} INFO - [2026-08-04T20:18:56.554+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T20:18:56.564+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.054 seconds
+[2026-08-04T21:28:36.633+0000] {processor.py:186} INFO - Started process (PID=4434) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T21:28:36.635+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T21:28:36.636+0000] {logging_mixin.py:190} INFO - [2026-08-04T21:28:36.636+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T21:28:36.648+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T21:28:36.667+0000] {logging_mixin.py:190} INFO - [2026-08-04T21:28:36.667+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T21:28:36.680+0000] {logging_mixin.py:190} INFO - [2026-08-04T21:28:36.680+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T21:28:36.687+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.066 seconds
+[2026-08-04T22:00:23.787+0000] {processor.py:186} INFO - Started process (PID=4454) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T22:00:23.788+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T22:00:23.789+0000] {logging_mixin.py:190} INFO - [2026-08-04T22:00:23.789+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T22:00:23.798+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T22:00:23.815+0000] {logging_mixin.py:190} INFO - [2026-08-04T22:00:23.815+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T22:00:23.828+0000] {logging_mixin.py:190} INFO - [2026-08-04T22:00:23.827+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T22:00:23.835+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.052 seconds
+[2026-08-04T22:19:33.757+0000] {processor.py:186} INFO - Started process (PID=4477) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T22:19:33.758+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T22:19:33.759+0000] {logging_mixin.py:190} INFO - [2026-08-04T22:19:33.759+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T22:19:33.771+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T22:19:33.788+0000] {logging_mixin.py:190} INFO - [2026-08-04T22:19:33.788+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T22:19:33.800+0000] {logging_mixin.py:190} INFO - [2026-08-04T22:19:33.800+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T22:19:33.807+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.056 seconds
+[2026-08-04T23:09:49.803+0000] {processor.py:186} INFO - Started process (PID=4497) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T23:09:49.804+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T23:09:49.805+0000] {logging_mixin.py:190} INFO - [2026-08-04T23:09:49.805+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T23:09:49.814+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T23:09:49.835+0000] {logging_mixin.py:190} INFO - [2026-08-04T23:09:49.835+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T23:09:49.847+0000] {logging_mixin.py:190} INFO - [2026-08-04T23:09:49.847+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T23:09:49.853+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.061 seconds
+[2026-08-04T23:27:09.652+0000] {processor.py:186} INFO - Started process (PID=4517) to work on /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T23:27:09.652+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_transform_mart.py for tasks to queue
+[2026-08-04T23:27:09.654+0000] {logging_mixin.py:190} INFO - [2026-08-04T23:27:09.653+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T23:27:09.665+0000] {processor.py:925} INFO - DAG(s) 'dag_transform_mart' retrieved from /opt/airflow/dags/dag_transform_mart.py
+[2026-08-04T23:27:09.681+0000] {logging_mixin.py:190} INFO - [2026-08-04T23:27:09.681+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-04T23:27:09.693+0000] {logging_mixin.py:190} INFO - [2026-08-04T23:27:09.693+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_transform_mart to 2026-08-04 03:30:00+00:00, run_after=2026-08-05 03:30:00+00:00
+[2026-08-04T23:27:09.701+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_transform_mart.py took 0.055 seconds

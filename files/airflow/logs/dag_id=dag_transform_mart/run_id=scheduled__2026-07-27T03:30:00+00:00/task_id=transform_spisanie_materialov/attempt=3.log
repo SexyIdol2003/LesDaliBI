@@ -1,0 +1,115 @@
+[2026-07-28T03:40:02.171+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-07-28T03:40:02.180+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_transform_mart.transform_spisanie_materialov scheduled__2026-07-27T03:30:00+00:00 [queued]>
+[2026-07-28T03:40:02.184+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_transform_mart.transform_spisanie_materialov scheduled__2026-07-27T03:30:00+00:00 [queued]>
+[2026-07-28T03:40:02.184+0000] {taskinstance.py:2866} INFO - Starting attempt 3 of 3
+[2026-07-28T03:40:02.190+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): transform_spisanie_materialov> on 2026-07-27 03:30:00+00:00
+[2026-07-28T03:40:02.193+0000] {standard_task_runner.py:72} INFO - Started process 81290 to run task
+[2026-07-28T03:40:02.195+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'dag_transform_mart', 'transform_spisanie_materialov', 'scheduled__2026-07-27T03:30:00+00:00', '--job-id', '1760', '--raw', '--subdir', 'DAGS_FOLDER/dag_transform_mart.py', '--cfg-path', '/tmp/tmp6q9h2sql']
+[2026-07-28T03:40:02.196+0000] {standard_task_runner.py:105} INFO - Job 1760: Subtask transform_spisanie_materialov
+[2026-07-28T03:40:02.218+0000] {task_command.py:467} INFO - Running <TaskInstance: dag_transform_mart.transform_spisanie_materialov scheduled__2026-07-27T03:30:00+00:00 [running]> on host ce016640a6d7
+[2026-07-28T03:40:02.252+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='bi' AIRFLOW_CTX_DAG_ID='dag_transform_mart' AIRFLOW_CTX_TASK_ID='transform_spisanie_materialov' AIRFLOW_CTX_EXECUTION_DATE='2026-07-27T03:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-07-27T03:30:00+00:00'
+[2026-07-28T03:40:02.253+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-07-28T03:40:02.263+0000] {base.py:84} INFO - Retrieving connection 'postgres_dwh'
+[2026-07-28T03:40:02.266+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dag_transform_mart.py", line 67, in _transform_spisanie
+    def _transform_spisanie(**context): _run_sql(SQL_FACT_SPISANIE, "fact_spisanie_materialov")
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dag_transform_mart.py", line 63, in _run_sql
+    cur.execute(sql)
+psycopg2.errors.UndefinedTable: relation "raw.r1c_dvizhenie_produkcii" does not exist
+LINE 5: FROM raw.r1c_dvizhenie_produkcii d
+             ^
+
+[2026-07-28T03:40:02.271+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=dag_transform_mart, task_id=transform_spisanie_materialov, run_id=scheduled__2026-07-27T03:30:00+00:00, execution_date=20260727T033000, start_date=20260728T034002, end_date=20260728T034002
+[2026-07-28T03:40:02.275+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-07-28T03:40:02.275+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 1760 for task transform_spisanie_materialov (relation "raw.r1c_dvizhenie_produkcii" does not exist
+LINE 5: FROM raw.r1c_dvizhenie_produkcii d
+             ^
+; 81290)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dag_transform_mart.py", line 67, in _transform_spisanie
+    def _transform_spisanie(**context): _run_sql(SQL_FACT_SPISANIE, "fact_spisanie_materialov")
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dag_transform_mart.py", line 63, in _run_sql
+    cur.execute(sql)
+psycopg2.errors.UndefinedTable: relation "raw.r1c_dvizhenie_produkcii" does not exist
+LINE 5: FROM raw.r1c_dvizhenie_produkcii d
+             ^
+
+[2026-07-28T03:40:02.293+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2026-07-28T03:40:02.300+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

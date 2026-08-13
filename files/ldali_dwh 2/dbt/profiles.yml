@@ -1,0 +1,14 @@
+ldali:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: postgres-dwh
+      port: 5432
+      user: dbt_runner
+      password: dbt_runner_change_me
+      dbname: ldali_dwh
+      schema: staging
+      threads: 4
+      keepalives_idle: 0
+      sslmode: prefer

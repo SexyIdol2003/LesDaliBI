@@ -1,0 +1,18 @@
+[2026-08-12T00:13:17.911+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-08-12T00:13:17.918+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_extract_dvizhenie.load_dvizhenie_docs scheduled__2026-08-11T22:00:00+00:00 [queued]>
+[2026-08-12T00:13:17.922+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_extract_dvizhenie.load_dvizhenie_docs scheduled__2026-08-11T22:00:00+00:00 [queued]>
+[2026-08-12T00:13:17.923+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 3
+[2026-08-12T00:13:17.927+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): load_dvizhenie_docs> on 2026-08-11 22:00:00+00:00
+[2026-08-12T00:13:17.929+0000] {standard_task_runner.py:72} INFO - Started process 2814 to run task
+[2026-08-12T00:13:17.930+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'dag_extract_dvizhenie', 'load_dvizhenie_docs', 'scheduled__2026-08-11T22:00:00+00:00', '--job-id', '2573', '--raw', '--subdir', 'DAGS_FOLDER/dag_extract_dvizhenie.py', '--cfg-path', '/tmp/tmpjhu607kb']
+[2026-08-12T00:13:17.931+0000] {standard_task_runner.py:105} INFO - Job 2573: Subtask load_dvizhenie_docs
+[2026-08-12T00:13:17.951+0000] {task_command.py:467} INFO - Running <TaskInstance: dag_extract_dvizhenie.load_dvizhenie_docs scheduled__2026-08-11T22:00:00+00:00 [running]> on host ce016640a6d7
+[2026-08-12T00:13:17.980+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='bi' AIRFLOW_CTX_DAG_ID='dag_extract_dvizhenie' AIRFLOW_CTX_TASK_ID='load_dvizhenie_docs' AIRFLOW_CTX_EXECUTION_DATE='2026-08-11T22:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-08-11T22:00:00+00:00'
+[2026-08-12T00:13:17.981+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-08-12T00:13:18.004+0000] {base.py:84} INFO - Retrieving connection 'postgres_dwh'
+[2026-08-12T00:13:18.542+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-08-12T00:13:18.546+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-08-12T00:13:18.546+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=dag_extract_dvizhenie, task_id=load_dvizhenie_docs, run_id=scheduled__2026-08-11T22:00:00+00:00, execution_date=20260811T220000, start_date=20260812T001317, end_date=20260812T001318
+[2026-08-12T00:13:18.560+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-08-12T00:13:18.569+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-08-12T00:13:18.570+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

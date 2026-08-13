@@ -1,0 +1,82 @@
+[2026-08-08T03:17:17.755+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-08-08T03:17:17.761+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_extract_dvizhenie.extract_dvizhenie scheduled__2026-08-08T00:00:00+00:00 [queued]>
+[2026-08-08T03:17:17.763+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_extract_dvizhenie.extract_dvizhenie scheduled__2026-08-08T00:00:00+00:00 [queued]>
+[2026-08-08T03:17:17.763+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 3
+[2026-08-08T03:17:17.766+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): extract_dvizhenie> on 2026-08-08 00:00:00+00:00
+[2026-08-08T03:17:17.768+0000] {standard_task_runner.py:72} INFO - Started process 7426 to run task
+[2026-08-08T03:17:17.770+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'dag_extract_dvizhenie', 'extract_dvizhenie', 'scheduled__2026-08-08T00:00:00+00:00', '--job-id', '2339', '--raw', '--subdir', 'DAGS_FOLDER/dag_extract_dvizhenie.py', '--cfg-path', '/tmp/tmpw9ps16wk']
+[2026-08-08T03:17:17.771+0000] {standard_task_runner.py:105} INFO - Job 2339: Subtask extract_dvizhenie
+[2026-08-08T03:17:17.790+0000] {task_command.py:467} INFO - Running <TaskInstance: dag_extract_dvizhenie.extract_dvizhenie scheduled__2026-08-08T00:00:00+00:00 [running]> on host ce016640a6d7
+[2026-08-08T03:17:17.817+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='bi' AIRFLOW_CTX_DAG_ID='dag_extract_dvizhenie' AIRFLOW_CTX_TASK_ID='extract_dvizhenie' AIRFLOW_CTX_EXECUTION_DATE='2026-08-08T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-08-08T00:00:00+00:00'
+[2026-08-08T03:17:17.817+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-08-08T04:06:48.026+0000] {job.py:229} INFO - Heartbeat recovered after 2950.03 seconds
+[2026-08-08T04:06:53.096+0000] {local_task_job_runner.py:346} WARNING - State of this instance has been externally set to up_for_retry. Terminating instance.
+[2026-08-08T04:06:53.097+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-08-08T04:06:53.098+0000] {process_utils.py:132} INFO - Sending 15 to group 7426. PIDs of all processes in the group: [7426]
+[2026-08-08T04:06:53.099+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 7426
+[2026-08-08T04:06:53.099+0000] {taskinstance.py:3093} ERROR - Received SIGTERM. Terminating subprocesses.
+[2026-08-08T04:06:53.109+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dag_extract_dvizhenie.py", line 69, in _extract_docs
+    resp = session.get(_build_url(cfg, dt_from, skip), timeout=cfg["timeout_sec"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connection.py", line 441, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.11/http/client.py", line 1298, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.11/http/client.py", line 1058, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.11/http/client.py", line 996, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connection.py", line 279, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3095, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2026-08-08T04:06:53.115+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_extract_dvizhenie, task_id=extract_dvizhenie, run_id=scheduled__2026-08-08T00:00:00+00:00, execution_date=20260808T000000, start_date=20260808T031717, end_date=20260808T040653
+[2026-08-08T04:06:53.120+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-08-08T04:06:53.130+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=7426, status='terminated', exitcode=2, started='03:17:16') (7426) terminated with exit code 2

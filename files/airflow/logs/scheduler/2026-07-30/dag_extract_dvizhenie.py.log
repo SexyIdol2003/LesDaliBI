@@ -1,0 +1,169 @@
+[2026-07-30T00:51:56.316+0000] {processor.py:186} INFO - Started process (PID=85125) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T00:51:56.316+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T00:51:56.318+0000] {logging_mixin.py:190} INFO - [2026-07-30T00:51:56.317+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T00:51:56.323+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T00:51:56.336+0000] {logging_mixin.py:190} INFO - [2026-07-30T00:51:56.336+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T00:51:56.350+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.038 seconds
+[2026-07-30T01:49:28.646+0000] {processor.py:186} INFO - Started process (PID=85159) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T01:49:28.647+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T01:49:28.648+0000] {logging_mixin.py:190} INFO - [2026-07-30T01:49:28.648+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T01:49:28.654+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T01:49:28.665+0000] {logging_mixin.py:190} INFO - [2026-07-30T01:49:28.665+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T01:49:28.680+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.037 seconds
+[2026-07-30T02:38:52.359+0000] {processor.py:186} INFO - Started process (PID=85179) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T02:38:52.359+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T02:38:52.360+0000] {logging_mixin.py:190} INFO - [2026-07-30T02:38:52.360+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T02:38:52.365+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T02:38:52.375+0000] {logging_mixin.py:190} INFO - [2026-07-30T02:38:52.375+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T02:38:52.386+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.030 seconds
+[2026-07-30T03:14:16.806+0000] {processor.py:186} INFO - Started process (PID=85202) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T03:14:16.809+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T03:14:16.813+0000] {logging_mixin.py:190} INFO - [2026-07-30T03:14:16.813+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T03:14:16.827+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T03:14:16.838+0000] {logging_mixin.py:190} INFO - [2026-07-30T03:14:16.838+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T03:14:16.851+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.047 seconds
+[2026-07-30T03:50:17.797+0000] {processor.py:186} INFO - Started process (PID=85222) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T03:50:17.797+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T03:50:17.798+0000] {logging_mixin.py:190} INFO - [2026-07-30T03:50:17.798+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T03:50:17.803+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T03:50:17.813+0000] {logging_mixin.py:190} INFO - [2026-07-30T03:50:17.813+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T03:50:17.825+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.031 seconds
+[2026-07-30T05:10:00.688+0000] {processor.py:186} INFO - Started process (PID=85260) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T05:10:00.689+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T05:10:00.690+0000] {logging_mixin.py:190} INFO - [2026-07-30T05:10:00.689+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T05:10:00.695+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T05:10:00.706+0000] {logging_mixin.py:190} INFO - [2026-07-30T05:10:00.706+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T05:10:00.718+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.033 seconds
+[2026-07-30T06:06:17.447+0000] {processor.py:186} INFO - Started process (PID=85304) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T06:06:17.447+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T06:06:17.448+0000] {logging_mixin.py:190} INFO - [2026-07-30T06:06:17.448+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T06:06:17.454+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T06:06:17.469+0000] {logging_mixin.py:190} INFO - [2026-07-30T06:06:17.469+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T06:06:17.481+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.037 seconds
+[2026-07-30T07:09:40.564+0000] {processor.py:186} INFO - Started process (PID=85339) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T07:09:40.564+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T07:09:40.566+0000] {logging_mixin.py:190} INFO - [2026-07-30T07:09:40.565+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T07:09:40.573+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T07:09:40.590+0000] {logging_mixin.py:190} INFO - [2026-07-30T07:09:40.590+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T07:09:40.609+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.048 seconds
+[2026-07-30T07:55:13.284+0000] {processor.py:186} INFO - Started process (PID=85363) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T07:55:13.284+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T07:55:13.285+0000] {logging_mixin.py:190} INFO - [2026-07-30T07:55:13.285+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T07:55:13.292+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T07:55:13.313+0000] {logging_mixin.py:190} INFO - [2026-07-30T07:55:13.312+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T07:55:13.330+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.050 seconds
+[2026-07-30T07:55:43.874+0000] {processor.py:186} INFO - Started process (PID=85385) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T07:55:43.875+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T07:55:43.876+0000] {logging_mixin.py:190} INFO - [2026-07-30T07:55:43.876+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T07:55:43.880+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T07:55:43.890+0000] {logging_mixin.py:190} INFO - [2026-07-30T07:55:43.890+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T07:55:43.901+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.029 seconds
+[2026-07-30T08:38:19.036+0000] {processor.py:186} INFO - Started process (PID=85405) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T08:38:19.036+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T08:38:19.037+0000] {logging_mixin.py:190} INFO - [2026-07-30T08:38:19.037+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T08:38:19.046+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T08:38:19.056+0000] {logging_mixin.py:190} INFO - [2026-07-30T08:38:19.056+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T08:38:19.070+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.037 seconds
+[2026-07-30T09:55:24.925+0000] {processor.py:186} INFO - Started process (PID=85428) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T09:55:24.925+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T09:55:24.927+0000] {logging_mixin.py:190} INFO - [2026-07-30T09:55:24.926+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T09:55:24.933+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T09:55:24.944+0000] {logging_mixin.py:190} INFO - [2026-07-30T09:55:24.944+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T09:55:24.957+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.035 seconds
+[2026-07-30T11:14:56.009+0000] {processor.py:186} INFO - Started process (PID=85448) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T11:14:56.009+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T11:14:56.010+0000] {logging_mixin.py:190} INFO - [2026-07-30T11:14:56.010+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T11:14:56.016+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T11:14:56.028+0000] {logging_mixin.py:190} INFO - [2026-07-30T11:14:56.028+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T11:14:56.042+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.036 seconds
+[2026-07-30T12:00:46.216+0000] {processor.py:186} INFO - Started process (PID=85468) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T12:00:46.216+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T12:00:46.217+0000] {logging_mixin.py:190} INFO - [2026-07-30T12:00:46.217+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T12:00:46.224+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T12:00:46.236+0000] {logging_mixin.py:190} INFO - [2026-07-30T12:00:46.236+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T12:00:46.251+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.038 seconds
+[2026-07-30T13:32:41.598+0000] {processor.py:186} INFO - Started process (PID=85488) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T13:32:41.598+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T13:32:41.599+0000] {logging_mixin.py:190} INFO - [2026-07-30T13:32:41.599+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T13:32:41.605+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T13:32:41.618+0000] {logging_mixin.py:190} INFO - [2026-07-30T13:32:41.618+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T13:32:41.632+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.038 seconds
+[2026-07-30T14:33:21.514+0000] {processor.py:186} INFO - Started process (PID=85511) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T14:33:21.515+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T14:33:21.516+0000] {logging_mixin.py:190} INFO - [2026-07-30T14:33:21.516+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T14:33:21.523+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T14:33:21.536+0000] {logging_mixin.py:190} INFO - [2026-07-30T14:33:21.536+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T14:33:21.551+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.040 seconds
+[2026-07-30T15:45:10.534+0000] {processor.py:186} INFO - Started process (PID=85534) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T15:45:10.534+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T15:45:10.535+0000] {logging_mixin.py:190} INFO - [2026-07-30T15:45:10.535+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T15:45:10.540+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T15:45:10.550+0000] {logging_mixin.py:190} INFO - [2026-07-30T15:45:10.550+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T15:45:10.567+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.037 seconds
+[2026-07-30T16:18:11.850+0000] {processor.py:186} INFO - Started process (PID=85555) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T16:18:11.851+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T16:18:11.852+0000] {logging_mixin.py:190} INFO - [2026-07-30T16:18:11.852+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T16:18:11.858+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T16:18:11.873+0000] {logging_mixin.py:190} INFO - [2026-07-30T16:18:11.873+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T16:18:11.892+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.045 seconds
+[2026-07-30T17:36:26.551+0000] {processor.py:186} INFO - Started process (PID=85586) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T17:36:26.553+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T17:36:26.554+0000] {logging_mixin.py:190} INFO - [2026-07-30T17:36:26.554+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T17:36:26.558+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T17:36:26.568+0000] {logging_mixin.py:190} INFO - [2026-07-30T17:36:26.568+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T17:36:26.579+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.030 seconds
+[2026-07-30T18:48:10.315+0000] {processor.py:186} INFO - Started process (PID=85607) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T18:48:10.316+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T18:48:10.317+0000] {logging_mixin.py:190} INFO - [2026-07-30T18:48:10.317+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T18:48:10.325+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T18:48:10.342+0000] {logging_mixin.py:190} INFO - [2026-07-30T18:48:10.342+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T18:48:10.362+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.052 seconds
+[2026-07-30T19:49:17.654+0000] {processor.py:186} INFO - Started process (PID=85633) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T19:49:17.654+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T19:49:17.655+0000] {logging_mixin.py:190} INFO - [2026-07-30T19:49:17.655+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T19:49:17.661+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T19:49:17.675+0000] {logging_mixin.py:190} INFO - [2026-07-30T19:49:17.675+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T19:49:17.780+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.129 seconds
+[2026-07-30T20:07:27.332+0000] {processor.py:186} INFO - Started process (PID=85658) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T20:07:27.332+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T20:07:27.333+0000] {logging_mixin.py:190} INFO - [2026-07-30T20:07:27.333+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T20:07:27.337+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T20:07:27.347+0000] {logging_mixin.py:190} INFO - [2026-07-30T20:07:27.347+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T20:07:27.358+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.029 seconds
+[2026-07-30T20:24:24.844+0000] {processor.py:186} INFO - Started process (PID=85681) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T20:24:24.845+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T20:24:24.846+0000] {logging_mixin.py:190} INFO - [2026-07-30T20:24:24.846+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T20:24:24.852+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T20:24:24.943+0000] {logging_mixin.py:190} INFO - [2026-07-30T20:24:24.943+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T20:24:24.962+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.120 seconds
+[2026-07-30T20:50:30.274+0000] {processor.py:186} INFO - Started process (PID=85707) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T20:50:30.274+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T20:50:30.275+0000] {logging_mixin.py:190} INFO - [2026-07-30T20:50:30.275+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T20:50:30.280+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T20:50:30.289+0000] {logging_mixin.py:190} INFO - [2026-07-30T20:50:30.289+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T20:50:30.301+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.031 seconds
+[2026-07-30T21:40:07.071+0000] {processor.py:186} INFO - Started process (PID=85727) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T21:40:07.071+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T21:40:07.072+0000] {logging_mixin.py:190} INFO - [2026-07-30T21:40:07.072+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T21:40:07.078+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T21:40:07.094+0000] {logging_mixin.py:190} INFO - [2026-07-30T21:40:07.094+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T21:40:07.103+0000] {logging_mixin.py:190} INFO - [2026-07-30T21:40:07.103+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_dvizhenie to 2026-07-30 20:00:00+00:00, run_after=2026-07-30 22:00:00+00:00
+[2026-07-30T21:40:07.109+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.041 seconds
+[2026-07-30T22:02:41.082+0000] {processor.py:186} INFO - Started process (PID=85748) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T22:02:41.083+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T22:02:41.085+0000] {logging_mixin.py:190} INFO - [2026-07-30T22:02:41.085+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T22:02:41.094+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T22:02:41.109+0000] {logging_mixin.py:190} INFO - [2026-07-30T22:02:41.109+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T22:02:41.125+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.046 seconds
+[2026-07-30T23:08:38.908+0000] {processor.py:186} INFO - Started process (PID=85773) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T23:08:38.909+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T23:08:38.910+0000] {logging_mixin.py:190} INFO - [2026-07-30T23:08:38.910+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T23:08:38.916+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T23:08:38.931+0000] {logging_mixin.py:190} INFO - [2026-07-30T23:08:38.930+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T23:08:38.944+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.038 seconds
+[2026-07-30T23:42:56.649+0000] {processor.py:186} INFO - Started process (PID=85793) to work on /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T23:42:56.649+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_dvizhenie.py for tasks to queue
+[2026-07-30T23:42:56.650+0000] {logging_mixin.py:190} INFO - [2026-07-30T23:42:56.650+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T23:42:56.655+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_dvizhenie' retrieved from /opt/airflow/dags/dag_extract_dvizhenie.py
+[2026-07-30T23:42:56.665+0000] {logging_mixin.py:190} INFO - [2026-07-30T23:42:56.665+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T23:42:56.678+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_dvizhenie.py took 0.032 seconds

@@ -1,0 +1,189 @@
+[2026-07-30T00:51:56.367+0000] {processor.py:186} INFO - Started process (PID=85130) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T00:51:56.368+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T00:51:56.369+0000] {logging_mixin.py:190} INFO - [2026-07-30T00:51:56.369+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T00:51:56.377+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T00:51:56.392+0000] {logging_mixin.py:190} INFO - [2026-07-30T00:51:56.392+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T00:51:56.403+0000] {logging_mixin.py:190} INFO - [2026-07-30T00:51:56.403+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_catalogs to 2026-07-29 01:00:00+00:00, run_after=2026-07-30 01:00:00+00:00
+[2026-07-30T00:51:56.409+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.048 seconds
+[2026-07-30T01:49:28.649+0000] {processor.py:186} INFO - Started process (PID=85162) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T01:49:28.649+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T01:49:28.650+0000] {logging_mixin.py:190} INFO - [2026-07-30T01:49:28.650+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T01:49:28.654+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T01:49:28.665+0000] {logging_mixin.py:190} INFO - [2026-07-30T01:49:28.665+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T01:49:28.680+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.034 seconds
+[2026-07-30T02:38:52.397+0000] {processor.py:186} INFO - Started process (PID=85184) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T02:38:52.398+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T02:38:52.403+0000] {logging_mixin.py:190} INFO - [2026-07-30T02:38:52.402+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T02:38:52.407+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T02:38:52.420+0000] {logging_mixin.py:190} INFO - [2026-07-30T02:38:52.420+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T02:38:52.431+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.036 seconds
+[2026-07-30T03:14:16.862+0000] {processor.py:186} INFO - Started process (PID=85207) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T03:14:16.862+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T03:14:16.863+0000] {logging_mixin.py:190} INFO - [2026-07-30T03:14:16.863+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T03:14:16.868+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T03:14:16.878+0000] {logging_mixin.py:190} INFO - [2026-07-30T03:14:16.878+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T03:14:16.891+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.031 seconds
+[2026-07-30T03:50:17.836+0000] {processor.py:186} INFO - Started process (PID=85227) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T03:50:17.837+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T03:50:17.838+0000] {logging_mixin.py:190} INFO - [2026-07-30T03:50:17.837+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T03:50:17.844+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T03:50:17.869+0000] {logging_mixin.py:190} INFO - [2026-07-30T03:50:17.869+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T03:50:17.896+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.062 seconds
+[2026-07-30T05:10:00.729+0000] {processor.py:186} INFO - Started process (PID=85265) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T05:10:00.730+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T05:10:00.731+0000] {logging_mixin.py:190} INFO - [2026-07-30T05:10:00.731+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T05:10:00.736+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T05:10:00.745+0000] {logging_mixin.py:190} INFO - [2026-07-30T05:10:00.745+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T05:10:00.756+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.029 seconds
+[2026-07-30T06:06:17.492+0000] {processor.py:186} INFO - Started process (PID=85309) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T06:06:17.493+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T06:06:17.493+0000] {logging_mixin.py:190} INFO - [2026-07-30T06:06:17.493+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T06:06:17.498+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T06:06:17.508+0000] {logging_mixin.py:190} INFO - [2026-07-30T06:06:17.507+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T06:06:17.519+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.028 seconds
+[2026-07-30T07:09:40.567+0000] {processor.py:186} INFO - Started process (PID=85342) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T07:09:40.568+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T07:09:40.569+0000] {logging_mixin.py:190} INFO - [2026-07-30T07:09:40.569+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T07:09:40.577+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T07:09:40.595+0000] {logging_mixin.py:190} INFO - [2026-07-30T07:09:40.595+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T07:09:40.613+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.049 seconds
+[2026-07-30T07:55:13.350+0000] {processor.py:186} INFO - Started process (PID=85368) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T07:55:13.351+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T07:55:13.354+0000] {logging_mixin.py:190} INFO - [2026-07-30T07:55:13.354+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T07:55:13.365+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T07:55:13.384+0000] {logging_mixin.py:190} INFO - [2026-07-30T07:55:13.384+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T07:55:13.396+0000] {logging_mixin.py:190} INFO - [2026-07-30T07:55:13.396+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_catalogs to 2026-07-30 01:00:00+00:00, run_after=2026-07-31 01:00:00+00:00
+[2026-07-30T07:55:13.403+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.058 seconds
+[2026-07-30T07:55:43.912+0000] {processor.py:186} INFO - Started process (PID=85390) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T07:55:43.912+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T07:55:43.913+0000] {logging_mixin.py:190} INFO - [2026-07-30T07:55:43.913+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T07:55:43.918+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T07:55:43.927+0000] {logging_mixin.py:190} INFO - [2026-07-30T07:55:43.927+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T07:55:43.935+0000] {logging_mixin.py:190} INFO - [2026-07-30T07:55:43.935+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_catalogs to 2026-07-30 01:00:00+00:00, run_after=2026-07-31 01:00:00+00:00
+[2026-07-30T07:55:43.939+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.030 seconds
+[2026-07-30T08:38:19.083+0000] {processor.py:186} INFO - Started process (PID=85410) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T08:38:19.083+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T08:38:19.084+0000] {logging_mixin.py:190} INFO - [2026-07-30T08:38:19.084+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T08:38:19.089+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T08:38:19.099+0000] {logging_mixin.py:190} INFO - [2026-07-30T08:38:19.099+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T08:38:19.106+0000] {logging_mixin.py:190} INFO - [2026-07-30T08:38:19.106+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_catalogs to 2026-07-30 01:00:00+00:00, run_after=2026-07-31 01:00:00+00:00
+[2026-07-30T08:38:19.110+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.030 seconds
+[2026-07-30T09:55:24.969+0000] {processor.py:186} INFO - Started process (PID=85433) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T09:55:24.970+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T09:55:24.970+0000] {logging_mixin.py:190} INFO - [2026-07-30T09:55:24.970+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T09:55:24.976+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T09:55:24.987+0000] {logging_mixin.py:190} INFO - [2026-07-30T09:55:24.987+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T09:55:24.995+0000] {logging_mixin.py:190} INFO - [2026-07-30T09:55:24.994+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_catalogs to 2026-07-30 01:00:00+00:00, run_after=2026-07-31 01:00:00+00:00
+[2026-07-30T09:55:25.000+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.033 seconds
+[2026-07-30T11:14:56.014+0000] {processor.py:186} INFO - Started process (PID=85451) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T11:14:56.015+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T11:14:56.016+0000] {logging_mixin.py:190} INFO - [2026-07-30T11:14:56.016+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T11:14:56.022+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T11:14:56.035+0000] {logging_mixin.py:190} INFO - [2026-07-30T11:14:56.035+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T11:14:56.047+0000] {logging_mixin.py:190} INFO - [2026-07-30T11:14:56.047+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_catalogs to 2026-07-30 01:00:00+00:00, run_after=2026-07-31 01:00:00+00:00
+[2026-07-30T11:14:56.052+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.042 seconds
+[2026-07-30T12:00:46.265+0000] {processor.py:186} INFO - Started process (PID=85473) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T12:00:46.266+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T12:00:46.268+0000] {logging_mixin.py:190} INFO - [2026-07-30T12:00:46.268+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T12:00:46.275+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T12:00:46.295+0000] {logging_mixin.py:190} INFO - [2026-07-30T12:00:46.295+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T12:00:46.306+0000] {logging_mixin.py:190} INFO - [2026-07-30T12:00:46.306+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_catalogs to 2026-07-30 01:00:00+00:00, run_after=2026-07-31 01:00:00+00:00
+[2026-07-30T12:00:46.334+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.073 seconds
+[2026-07-30T13:32:41.643+0000] {processor.py:186} INFO - Started process (PID=85493) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T13:32:41.644+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T13:32:41.645+0000] {logging_mixin.py:190} INFO - [2026-07-30T13:32:41.644+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T13:32:41.649+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T13:32:41.660+0000] {logging_mixin.py:190} INFO - [2026-07-30T13:32:41.660+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T13:32:41.667+0000] {logging_mixin.py:190} INFO - [2026-07-30T13:32:41.667+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_catalogs to 2026-07-30 01:00:00+00:00, run_after=2026-07-31 01:00:00+00:00
+[2026-07-30T13:32:41.672+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.031 seconds
+[2026-07-30T14:33:21.566+0000] {processor.py:186} INFO - Started process (PID=85516) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T14:33:21.567+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T14:33:21.570+0000] {logging_mixin.py:190} INFO - [2026-07-30T14:33:21.570+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T14:33:21.577+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T14:33:21.587+0000] {logging_mixin.py:190} INFO - [2026-07-30T14:33:21.587+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T14:33:21.599+0000] {logging_mixin.py:190} INFO - [2026-07-30T14:33:21.599+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_catalogs to 2026-07-30 01:00:00+00:00, run_after=2026-07-31 01:00:00+00:00
+[2026-07-30T14:33:21.604+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.041 seconds
+[2026-07-30T15:45:10.581+0000] {processor.py:186} INFO - Started process (PID=85539) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T15:45:10.581+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T15:45:10.582+0000] {logging_mixin.py:190} INFO - [2026-07-30T15:45:10.582+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T15:45:10.587+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T15:45:10.600+0000] {logging_mixin.py:190} INFO - [2026-07-30T15:45:10.600+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T15:45:10.609+0000] {logging_mixin.py:190} INFO - [2026-07-30T15:45:10.609+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_catalogs to 2026-07-30 01:00:00+00:00, run_after=2026-07-31 01:00:00+00:00
+[2026-07-30T15:45:10.619+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.041 seconds
+[2026-07-30T16:18:11.909+0000] {processor.py:186} INFO - Started process (PID=85560) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T16:18:11.910+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T16:18:11.911+0000] {logging_mixin.py:190} INFO - [2026-07-30T16:18:11.911+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T16:18:11.918+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T16:18:11.932+0000] {logging_mixin.py:190} INFO - [2026-07-30T16:18:11.931+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T16:18:11.943+0000] {logging_mixin.py:190} INFO - [2026-07-30T16:18:11.943+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_catalogs to 2026-07-30 01:00:00+00:00, run_after=2026-07-31 01:00:00+00:00
+[2026-07-30T16:18:11.950+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.044 seconds
+[2026-07-30T17:36:26.593+0000] {processor.py:186} INFO - Started process (PID=85591) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T17:36:26.593+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T17:36:26.594+0000] {logging_mixin.py:190} INFO - [2026-07-30T17:36:26.594+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T17:36:26.599+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T17:36:26.609+0000] {logging_mixin.py:190} INFO - [2026-07-30T17:36:26.609+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T17:36:26.616+0000] {logging_mixin.py:190} INFO - [2026-07-30T17:36:26.616+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_catalogs to 2026-07-30 01:00:00+00:00, run_after=2026-07-31 01:00:00+00:00
+[2026-07-30T17:36:26.737+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.147 seconds
+[2026-07-30T18:48:10.383+0000] {processor.py:186} INFO - Started process (PID=85612) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T18:48:10.385+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T18:48:10.386+0000] {logging_mixin.py:190} INFO - [2026-07-30T18:48:10.386+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T18:48:10.394+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T18:48:10.411+0000] {logging_mixin.py:190} INFO - [2026-07-30T18:48:10.411+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T18:48:10.420+0000] {logging_mixin.py:190} INFO - [2026-07-30T18:48:10.420+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_catalogs to 2026-07-30 01:00:00+00:00, run_after=2026-07-31 01:00:00+00:00
+[2026-07-30T18:48:10.426+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.048 seconds
+[2026-07-30T19:49:17.788+0000] {processor.py:186} INFO - Started process (PID=85640) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T19:49:17.788+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T19:49:17.790+0000] {logging_mixin.py:190} INFO - [2026-07-30T19:49:17.789+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T19:49:17.794+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T19:49:17.804+0000] {logging_mixin.py:190} INFO - [2026-07-30T19:49:17.804+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T19:49:17.868+0000] {logging_mixin.py:190} INFO - [2026-07-30T19:49:17.868+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_catalogs to 2026-07-30 01:00:00+00:00, run_after=2026-07-31 01:00:00+00:00
+[2026-07-30T19:49:17.873+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.088 seconds
+[2026-07-30T20:07:27.369+0000] {processor.py:186} INFO - Started process (PID=85663) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T20:07:27.369+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T20:07:27.370+0000] {logging_mixin.py:190} INFO - [2026-07-30T20:07:27.370+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T20:07:27.375+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T20:07:27.384+0000] {logging_mixin.py:190} INFO - [2026-07-30T20:07:27.384+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T20:07:27.392+0000] {logging_mixin.py:190} INFO - [2026-07-30T20:07:27.392+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_catalogs to 2026-07-30 01:00:00+00:00, run_after=2026-07-31 01:00:00+00:00
+[2026-07-30T20:07:27.452+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.086 seconds
+[2026-07-30T20:24:24.851+0000] {processor.py:186} INFO - Started process (PID=85684) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T20:24:24.852+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T20:24:24.853+0000] {logging_mixin.py:190} INFO - [2026-07-30T20:24:24.852+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T20:24:24.945+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T20:24:24.958+0000] {logging_mixin.py:190} INFO - [2026-07-30T20:24:24.958+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T20:24:24.965+0000] {logging_mixin.py:190} INFO - [2026-07-30T20:24:24.965+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_catalogs to 2026-07-30 01:00:00+00:00, run_after=2026-07-31 01:00:00+00:00
+[2026-07-30T20:24:24.970+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.122 seconds
+[2026-07-30T20:50:30.312+0000] {processor.py:186} INFO - Started process (PID=85712) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T20:50:30.312+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T20:50:30.313+0000] {logging_mixin.py:190} INFO - [2026-07-30T20:50:30.313+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T20:50:30.318+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T20:50:30.328+0000] {logging_mixin.py:190} INFO - [2026-07-30T20:50:30.328+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T20:50:30.335+0000] {logging_mixin.py:190} INFO - [2026-07-30T20:50:30.335+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_catalogs to 2026-07-30 01:00:00+00:00, run_after=2026-07-31 01:00:00+00:00
+[2026-07-30T20:50:30.340+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.031 seconds
+[2026-07-30T21:40:07.129+0000] {processor.py:186} INFO - Started process (PID=85732) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T21:40:07.129+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T21:40:07.130+0000] {logging_mixin.py:190} INFO - [2026-07-30T21:40:07.130+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T21:40:07.136+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T21:40:07.148+0000] {logging_mixin.py:190} INFO - [2026-07-30T21:40:07.148+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T21:40:07.157+0000] {logging_mixin.py:190} INFO - [2026-07-30T21:40:07.157+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_catalogs to 2026-07-30 01:00:00+00:00, run_after=2026-07-31 01:00:00+00:00
+[2026-07-30T21:40:07.162+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.041 seconds
+[2026-07-30T22:02:41.145+0000] {processor.py:186} INFO - Started process (PID=85753) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T22:02:41.145+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T22:02:41.146+0000] {logging_mixin.py:190} INFO - [2026-07-30T22:02:41.146+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T22:02:41.152+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T22:02:41.165+0000] {logging_mixin.py:190} INFO - [2026-07-30T22:02:41.165+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T22:02:41.175+0000] {logging_mixin.py:190} INFO - [2026-07-30T22:02:41.175+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_catalogs to 2026-07-30 01:00:00+00:00, run_after=2026-07-31 01:00:00+00:00
+[2026-07-30T22:02:41.185+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.044 seconds
+[2026-07-30T23:08:38.958+0000] {processor.py:186} INFO - Started process (PID=85778) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T23:08:38.959+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T23:08:38.960+0000] {logging_mixin.py:190} INFO - [2026-07-30T23:08:38.960+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T23:08:38.965+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T23:08:38.975+0000] {logging_mixin.py:190} INFO - [2026-07-30T23:08:38.975+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T23:08:38.983+0000] {logging_mixin.py:190} INFO - [2026-07-30T23:08:38.983+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_catalogs to 2026-07-30 01:00:00+00:00, run_after=2026-07-31 01:00:00+00:00
+[2026-07-30T23:08:38.988+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.034 seconds
+[2026-07-30T23:42:56.691+0000] {processor.py:186} INFO - Started process (PID=85798) to work on /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T23:42:56.692+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_catalogs.py for tasks to queue
+[2026-07-30T23:42:56.693+0000] {logging_mixin.py:190} INFO - [2026-07-30T23:42:56.692+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T23:42:56.698+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_catalogs' retrieved from /opt/airflow/dags/dag_extract_catalogs.py
+[2026-07-30T23:42:56.708+0000] {logging_mixin.py:190} INFO - [2026-07-30T23:42:56.708+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-30T23:42:56.716+0000] {logging_mixin.py:190} INFO - [2026-07-30T23:42:56.716+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_catalogs to 2026-07-30 01:00:00+00:00, run_after=2026-07-31 01:00:00+00:00
+[2026-07-30T23:42:56.720+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_catalogs.py took 0.032 seconds

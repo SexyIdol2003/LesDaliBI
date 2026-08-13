@@ -1,0 +1,193 @@
+[2026-08-05T00:15:11.085+0000] {processor.py:186} INFO - Started process (PID=4548) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T00:15:11.085+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T00:15:11.086+0000] {logging_mixin.py:190} INFO - [2026-08-05T00:15:11.086+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T00:15:11.097+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T00:15:11.113+0000] {logging_mixin.py:190} INFO - [2026-08-05T00:15:11.113+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T00:15:11.126+0000] {logging_mixin.py:190} INFO - [2026-08-05T00:15:11.126+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-04 02:00:00+00:00, run_after=2026-08-05 02:00:00+00:00
+[2026-08-05T00:15:11.135+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.054 seconds
+[2026-08-05T01:21:19.967+0000] {processor.py:186} INFO - Started process (PID=4571) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T01:21:19.969+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T01:21:19.970+0000] {logging_mixin.py:190} INFO - [2026-08-05T01:21:19.970+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T01:21:19.984+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T01:21:20.001+0000] {logging_mixin.py:190} INFO - [2026-08-05T01:21:20.001+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T01:21:20.015+0000] {logging_mixin.py:190} INFO - [2026-08-05T01:21:20.015+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-04 02:00:00+00:00, run_after=2026-08-05 02:00:00+00:00
+[2026-08-05T01:21:20.231+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.268 seconds
+[2026-08-05T03:02:31.101+0000] {processor.py:186} INFO - Started process (PID=4609) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T03:02:31.102+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T03:02:31.102+0000] {logging_mixin.py:190} INFO - [2026-08-05T03:02:31.102+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T03:02:31.115+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T03:02:31.152+0000] {logging_mixin.py:190} INFO - [2026-08-05T03:02:31.151+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T03:02:31.222+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.125 seconds
+[2026-08-05T03:15:32.990+0000] {processor.py:186} INFO - Started process (PID=4659) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T03:15:32.990+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T03:15:32.991+0000] {logging_mixin.py:190} INFO - [2026-08-05T03:15:32.991+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T03:15:33.001+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T03:15:33.017+0000] {logging_mixin.py:190} INFO - [2026-08-05T03:15:33.017+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T03:15:33.034+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.049 seconds
+[2026-08-05T04:09:18.056+0000] {processor.py:186} INFO - Started process (PID=4682) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T04:09:18.058+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T04:09:18.059+0000] {logging_mixin.py:190} INFO - [2026-08-05T04:09:18.059+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T04:09:18.067+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T04:09:18.082+0000] {logging_mixin.py:190} INFO - [2026-08-05T04:09:18.082+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T04:09:18.102+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.050 seconds
+[2026-08-05T05:51:17.690+0000] {processor.py:186} INFO - Started process (PID=4729) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T05:51:17.690+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T05:51:17.691+0000] {logging_mixin.py:190} INFO - [2026-08-05T05:51:17.691+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T05:51:17.698+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T05:51:17.713+0000] {logging_mixin.py:190} INFO - [2026-08-05T05:51:17.713+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T05:51:17.725+0000] {logging_mixin.py:190} INFO - [2026-08-05T05:51:17.725+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T05:51:17.733+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.046 seconds
+[2026-08-05T06:48:32.284+0000] {processor.py:186} INFO - Started process (PID=4764) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T06:48:32.286+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T06:48:32.287+0000] {logging_mixin.py:190} INFO - [2026-08-05T06:48:32.286+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T06:48:32.298+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T06:48:32.316+0000] {logging_mixin.py:190} INFO - [2026-08-05T06:48:32.316+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T06:48:32.337+0000] {logging_mixin.py:190} INFO - [2026-08-05T06:48:32.337+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T06:48:32.354+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.074 seconds
+[2026-08-05T07:59:36.028+0000] {processor.py:186} INFO - Started process (PID=4787) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T07:59:36.029+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T07:59:36.030+0000] {logging_mixin.py:190} INFO - [2026-08-05T07:59:36.030+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T07:59:36.042+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T07:59:36.063+0000] {logging_mixin.py:190} INFO - [2026-08-05T07:59:36.062+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T07:59:36.085+0000] {logging_mixin.py:190} INFO - [2026-08-05T07:59:36.085+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T07:59:36.093+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.069 seconds
+[2026-08-05T09:02:37.636+0000] {processor.py:186} INFO - Started process (PID=4810) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T09:02:37.636+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T09:02:37.639+0000] {logging_mixin.py:190} INFO - [2026-08-05T09:02:37.639+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T09:02:37.652+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T09:02:37.673+0000] {logging_mixin.py:190} INFO - [2026-08-05T09:02:37.672+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T09:02:37.691+0000] {logging_mixin.py:190} INFO - [2026-08-05T09:02:37.691+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T09:02:37.702+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.071 seconds
+[2026-08-05T09:13:39.902+0000] {processor.py:186} INFO - Started process (PID=4833) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T09:13:39.903+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T09:13:39.904+0000] {logging_mixin.py:190} INFO - [2026-08-05T09:13:39.904+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T09:13:39.918+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T09:13:39.936+0000] {logging_mixin.py:190} INFO - [2026-08-05T09:13:39.936+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T09:13:39.954+0000] {logging_mixin.py:190} INFO - [2026-08-05T09:13:39.954+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T09:13:39.962+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.065 seconds
+[2026-08-05T10:03:01.035+0000] {processor.py:186} INFO - Started process (PID=4862) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T10:03:01.038+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T10:03:01.039+0000] {logging_mixin.py:190} INFO - [2026-08-05T10:03:01.039+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T10:03:01.053+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T10:03:01.072+0000] {logging_mixin.py:190} INFO - [2026-08-05T10:03:01.072+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T10:03:01.085+0000] {logging_mixin.py:190} INFO - [2026-08-05T10:03:01.084+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T10:03:01.094+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.071 seconds
+[2026-08-05T10:47:07.913+0000] {processor.py:186} INFO - Started process (PID=4885) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T10:47:07.914+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T10:47:07.915+0000] {logging_mixin.py:190} INFO - [2026-08-05T10:47:07.915+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T10:47:07.932+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T10:47:07.948+0000] {logging_mixin.py:190} INFO - [2026-08-05T10:47:07.948+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T10:47:07.960+0000] {logging_mixin.py:190} INFO - [2026-08-05T10:47:07.960+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T10:47:07.970+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.063 seconds
+[2026-08-05T11:02:47.420+0000] {processor.py:186} INFO - Started process (PID=4908) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T11:02:47.420+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T11:02:47.421+0000] {logging_mixin.py:190} INFO - [2026-08-05T11:02:47.421+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T11:02:47.431+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T11:02:47.447+0000] {logging_mixin.py:190} INFO - [2026-08-05T11:02:47.447+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T11:02:47.458+0000] {logging_mixin.py:190} INFO - [2026-08-05T11:02:47.457+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T11:02:47.469+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.053 seconds
+[2026-08-05T11:15:18.981+0000] {processor.py:186} INFO - Started process (PID=4932) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T11:15:18.981+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T11:15:18.983+0000] {logging_mixin.py:190} INFO - [2026-08-05T11:15:18.982+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T11:15:18.998+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T11:15:19.021+0000] {logging_mixin.py:190} INFO - [2026-08-05T11:15:19.021+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T11:15:19.038+0000] {logging_mixin.py:190} INFO - [2026-08-05T11:15:19.038+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T11:15:19.051+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.075 seconds
+[2026-08-05T12:51:13.503+0000] {processor.py:186} INFO - Started process (PID=4957) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T12:51:13.504+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T12:51:13.505+0000] {logging_mixin.py:190} INFO - [2026-08-05T12:51:13.504+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T12:51:13.513+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T12:51:13.529+0000] {logging_mixin.py:190} INFO - [2026-08-05T12:51:13.529+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T12:51:13.545+0000] {logging_mixin.py:190} INFO - [2026-08-05T12:51:13.545+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T12:51:13.554+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.055 seconds
+[2026-08-05T14:05:59.410+0000] {processor.py:186} INFO - Started process (PID=4977) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T14:05:59.411+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T14:05:59.412+0000] {logging_mixin.py:190} INFO - [2026-08-05T14:05:59.412+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T14:05:59.421+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T14:05:59.436+0000] {logging_mixin.py:190} INFO - [2026-08-05T14:05:59.436+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T14:05:59.447+0000] {logging_mixin.py:190} INFO - [2026-08-05T14:05:59.447+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T14:05:59.456+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.049 seconds
+[2026-08-05T15:16:08.226+0000] {processor.py:186} INFO - Started process (PID=5000) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T15:16:08.227+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T15:16:08.228+0000] {logging_mixin.py:190} INFO - [2026-08-05T15:16:08.228+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T15:16:08.238+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T15:16:08.256+0000] {logging_mixin.py:190} INFO - [2026-08-05T15:16:08.256+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T15:16:08.269+0000] {logging_mixin.py:190} INFO - [2026-08-05T15:16:08.269+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T15:16:08.281+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.058 seconds
+[2026-08-05T15:35:30.421+0000] {processor.py:186} INFO - Started process (PID=5029) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T15:35:30.422+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T15:35:30.423+0000] {logging_mixin.py:190} INFO - [2026-08-05T15:35:30.423+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T15:35:30.435+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T15:35:30.454+0000] {logging_mixin.py:190} INFO - [2026-08-05T15:35:30.453+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T15:35:30.465+0000] {logging_mixin.py:190} INFO - [2026-08-05T15:35:30.465+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T15:35:30.475+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.058 seconds
+[2026-08-05T15:52:38.646+0000] {processor.py:186} INFO - Started process (PID=5052) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T15:52:38.648+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T15:52:38.649+0000] {logging_mixin.py:190} INFO - [2026-08-05T15:52:38.649+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T15:52:38.659+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T15:52:38.672+0000] {logging_mixin.py:190} INFO - [2026-08-05T15:52:38.672+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T15:52:38.683+0000] {logging_mixin.py:190} INFO - [2026-08-05T15:52:38.682+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T15:52:38.690+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.048 seconds
+[2026-08-05T16:35:42.469+0000] {processor.py:186} INFO - Started process (PID=5072) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T16:35:42.469+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T16:35:42.470+0000] {logging_mixin.py:190} INFO - [2026-08-05T16:35:42.470+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T16:35:42.483+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T16:35:42.504+0000] {logging_mixin.py:190} INFO - [2026-08-05T16:35:42.503+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T16:35:42.519+0000] {logging_mixin.py:190} INFO - [2026-08-05T16:35:42.519+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T16:35:42.531+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.068 seconds
+[2026-08-05T17:21:18.500+0000] {processor.py:186} INFO - Started process (PID=5095) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T17:21:18.503+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T17:21:18.504+0000] {logging_mixin.py:190} INFO - [2026-08-05T17:21:18.503+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T17:21:18.521+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T17:21:18.540+0000] {logging_mixin.py:190} INFO - [2026-08-05T17:21:18.540+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T17:21:18.554+0000] {logging_mixin.py:190} INFO - [2026-08-05T17:21:18.554+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T17:21:18.561+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.066 seconds
+[2026-08-05T18:22:21.135+0000] {processor.py:186} INFO - Started process (PID=5118) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T18:22:21.136+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T18:22:21.137+0000] {logging_mixin.py:190} INFO - [2026-08-05T18:22:21.137+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T18:22:21.148+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T18:22:21.168+0000] {logging_mixin.py:190} INFO - [2026-08-05T18:22:21.168+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T18:22:21.182+0000] {logging_mixin.py:190} INFO - [2026-08-05T18:22:21.182+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T18:22:21.191+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.060 seconds
+[2026-08-05T18:39:42.173+0000] {processor.py:186} INFO - Started process (PID=5144) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T18:39:42.173+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T18:39:42.174+0000] {logging_mixin.py:190} INFO - [2026-08-05T18:39:42.174+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T18:39:42.180+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T18:39:42.195+0000] {logging_mixin.py:190} INFO - [2026-08-05T18:39:42.195+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T18:39:42.205+0000] {logging_mixin.py:190} INFO - [2026-08-05T18:39:42.205+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T18:39:42.213+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.044 seconds
+[2026-08-05T19:56:11.673+0000] {processor.py:186} INFO - Started process (PID=5170) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T19:56:11.674+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T19:56:11.674+0000] {logging_mixin.py:190} INFO - [2026-08-05T19:56:11.674+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T19:56:11.681+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T19:56:11.696+0000] {logging_mixin.py:190} INFO - [2026-08-05T19:56:11.696+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T19:56:11.708+0000] {logging_mixin.py:190} INFO - [2026-08-05T19:56:11.708+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T19:56:11.714+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.044 seconds
+[2026-08-05T20:24:19.305+0000] {processor.py:186} INFO - Started process (PID=5193) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T20:24:19.306+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T20:24:19.307+0000] {logging_mixin.py:190} INFO - [2026-08-05T20:24:19.307+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T20:24:19.313+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T20:24:19.323+0000] {logging_mixin.py:190} INFO - [2026-08-05T20:24:19.322+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T20:24:19.330+0000] {logging_mixin.py:190} INFO - [2026-08-05T20:24:19.330+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T20:24:19.335+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.035 seconds
+[2026-08-05T21:12:10.856+0000] {processor.py:186} INFO - Started process (PID=5216) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T21:12:10.856+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T21:12:10.858+0000] {logging_mixin.py:190} INFO - [2026-08-05T21:12:10.858+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T21:12:10.869+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T21:12:10.892+0000] {logging_mixin.py:190} INFO - [2026-08-05T21:12:10.892+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T21:12:10.904+0000] {logging_mixin.py:190} INFO - [2026-08-05T21:12:10.904+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T21:12:10.911+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.060 seconds
+[2026-08-05T22:20:54.742+0000] {processor.py:186} INFO - Started process (PID=5236) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T22:20:54.743+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T22:20:54.744+0000] {logging_mixin.py:190} INFO - [2026-08-05T22:20:54.744+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T22:20:54.753+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T22:20:54.769+0000] {logging_mixin.py:190} INFO - [2026-08-05T22:20:54.769+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T22:20:54.781+0000] {logging_mixin.py:190} INFO - [2026-08-05T22:20:54.781+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T22:20:54.789+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.050 seconds
+[2026-08-05T23:31:36.423+0000] {processor.py:186} INFO - Started process (PID=5262) to work on /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T23:31:36.424+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_extract_putevoy_list.py for tasks to queue
+[2026-08-05T23:31:36.424+0000] {logging_mixin.py:190} INFO - [2026-08-05T23:31:36.424+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T23:31:36.431+0000] {processor.py:925} INFO - DAG(s) 'dag_extract_putevoy_list' retrieved from /opt/airflow/dags/dag_extract_putevoy_list.py
+[2026-08-05T23:31:36.447+0000] {logging_mixin.py:190} INFO - [2026-08-05T23:31:36.447+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-08-05T23:31:36.458+0000] {logging_mixin.py:190} INFO - [2026-08-05T23:31:36.458+0000] {dag.py:4180} INFO - Setting next_dagrun for dag_extract_putevoy_list to 2026-08-05 02:00:00+00:00, run_after=2026-08-06 02:00:00+00:00
+[2026-08-05T23:31:36.465+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_extract_putevoy_list.py took 0.046 seconds
