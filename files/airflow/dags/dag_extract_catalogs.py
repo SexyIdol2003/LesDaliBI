@@ -121,11 +121,51 @@ def _load_polya(**context):
     conn = pg.get_conn(); cur = conn.cursor(); cur.executemany(sql, rows); conn.commit(); cur.close(); conn.close()
 
 
+def _extract_crops(**context):
+    cfg = _get_cfg()
+    raw = _fetch_all(cfg, "Catalog_АпкКультуры", "Ref_Key,DeletionMark,Description,Parent_Key,IsFolder,КультураПоКлассификатору")
+    rows = [
+        (r.get("Ref_Key"), r.get("DeletionMark"), _norm_text(r.get("Description")),
+         _norm_text(r.get("Parent_Key")), _norm_text(r.get("КультураПоКлассификатору")))
+        for r in raw if not r.get("IsFolder")
+    ]
+    context["ti"].xcom_push(key="crops_rows", value=rows)
+    context["ti"].xcom_push(key="crops_count", value=len(rows))
+
+def _extract_fuel_cards(**context):
+    cfg = _get_cfg()
+    raw = _fetch_all(cfg, "Catalog_АпкТопливныеКарты", "Ref_Key,DeletionMark,Code,Description,Держатель_Key")
+    rows = [
+        (r.get("Ref_Key"), r.get("DeletionMark"), _norm_text(r.get("Code")),
+         _norm_text(r.get("Description")), _norm_text(r.get("Держатель_Key")))
+        for r in raw
+    ]
+    context["ti"].xcom_push(key="fuel_cards_rows", value=rows)
+    context["ti"].xcom_push(key="fuel_cards_count", value=len(rows))
+
+
+def _load_crops(**context):
+    pg = PostgresHook(postgres_conn_id=POSTGRES_CONN_ID)
+    rows = context["ti"].xcom_pull(task_ids="extract_crops", key="crops_rows") or []
+    if not rows: logging.info("No crops rows"); return
+    sql = "INSERT INTO raw.r1c_crops (_id,_deletionmark,description,parent_id,crop_kind) VALUES (%s,%s,%s,%s,%s) ON CONFLICT (_id) DO UPDATE SET _deletionmark=EXCLUDED._deletionmark,description=EXCLUDED.description,parent_id=EXCLUDED.parent_id,crop_kind=EXCLUDED.crop_kind,_loaded_at=now()"
+    conn = pg.get_conn(); cur = conn.cursor(); cur.executemany(sql, rows); conn.commit(); cur.close(); conn.close()
+
+def _load_fuel_cards(**context):
+    pg = PostgresHook(postgres_conn_id=POSTGRES_CONN_ID)
+    rows = context["ti"].xcom_pull(task_ids="extract_fuel_cards", key="fuel_cards_rows") or []
+    if not rows: logging.info("No fuel_cards rows"); return
+    sql = "INSERT INTO raw.r1c_fuel_cards (_id,_deletionmark,description,card_number,owner_id) VALUES (%s,%s,%s,%s,%s) ON CONFLICT (_id) DO UPDATE SET _deletionmark=EXCLUDED._deletionmark,description=EXCLUDED.description,card_number=EXCLUDED.card_number,owner_id=EXCLUDED.owner_id,_loaded_at=now()"
+    conn = pg.get_conn(); cur = conn.cursor(); cur.executemany(sql, rows); conn.commit(); cur.close(); conn.close()
+
+
 def _quality_check(**context):
     counts = {
         "upakovki": context["ti"].xcom_pull(task_ids="extract_upakovki", key="upakovki_count") or 0,
         "sh_tehnika": context["ti"].xcom_pull(task_ids="extract_sh_tehnika", key="sh_tehnika_count") or 0,
         "polya": context["ti"].xcom_pull(task_ids="extract_polya", key="polya_count") or 0,
+        "crops": context["ti"].xcom_pull(task_ids="extract_crops", key="crops_count") or 0,
+        "fuel_cards": context["ti"].xcom_pull(task_ids="extract_fuel_cards", key="fuel_cards_count") or 0,
     }
     for name, count in counts.items():
         if count == 0: logging.warning("Справочник %s вернул 0 строк", name)
@@ -143,10 +183,16 @@ with DAG(
     t_ex_up = PythonOperator(task_id="extract_upakovki", python_callable=_extract_upakovki, provide_context=True)
     t_ex_sh = PythonOperator(task_id="extract_sh_tehnika", python_callable=_extract_sh_tehnika, provide_context=True)
     t_ex_po = PythonOperator(task_id="extract_polya", python_callable=_extract_polya, provide_context=True)
+    t_ex_cr = PythonOperator(task_id="extract_crops", python_callable=_extract_crops, provide_context=True)
+    t_ex_fc = PythonOperator(task_id="extract_fuel_cards", python_callable=_extract_fuel_cards, provide_context=True)
     t_ld_up = PythonOperator(task_id="load_upakovki", python_callable=_load_upakovki, provide_context=True)
     t_ld_sh = PythonOperator(task_id="load_sh_tehnika", python_callable=_load_sh_tehnika, provide_context=True)
     t_ld_po = PythonOperator(task_id="load_polya", python_callable=_load_polya, provide_context=True)
+    t_ld_cr = PythonOperator(task_id="load_crops", python_callable=_load_crops, provide_context=True)
+    t_ld_fc = PythonOperator(task_id="load_fuel_cards", python_callable=_load_fuel_cards, provide_context=True)
     t_qc = PythonOperator(task_id="quality_check", python_callable=_quality_check, provide_context=True)
     t_ex_up >> t_ld_up >> t_qc
     t_ex_sh >> t_ld_sh >> t_qc
     t_ex_po >> t_ld_po >> t_qc
+    t_ex_cr >> t_ld_cr >> t_qc
+    t_ex_fc >> t_ld_fc >> t_qc
