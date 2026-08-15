@@ -5,3 +5,10 @@
 
 *.bak
 *.bak[0-9]*
+
+# Local DAG backups
+*.backup_*
+
+# Python cache
+__pycache__/
+*.py[cod]

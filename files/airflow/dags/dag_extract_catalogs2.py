@@ -36,7 +36,7 @@ def _fetch_all(cfg, entity, select):
     session = _session(cfg)
     rows, skip = [], 0
     while True:
-        url = f'{cfg["base_url"].rstrip("/")}/{entity}?$format=json&$select={select}&$top={cfg["page_size"]}&$skip={skip}'
+        url = f'{cfg["base_url"].rstrip("/")}/{entity}?$format=json&$select={select}&$orderby=Ref_Key&$top={cfg["page_size"]}&$skip={skip}'
         resp = session.get(url, timeout=cfg["timeout_sec"])
         resp.raise_for_status()
         batch = resp.json().get("value", [])

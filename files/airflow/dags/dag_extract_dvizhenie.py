@@ -52,7 +52,7 @@ def _build_url(cfg, dt_from, skip=0):
     return (
         f'{cfg["base_url"].rstrip("/")}/Document_ДвижениеПродукцииИМатериалов'
         f"?$format=json&$filter=Date ge datetime'{dt_str}'"
-        f"&$select=Ref_Key,DeletionMark,Posted,Number,Date,ХозяйственнаяОперация,Отправитель,Получатель,Комментарий,Товары"
+        f"&$select=Ref_Key,DeletionMark,Posted,Number,Date,ХозяйственнаяОперация,Отправитель,Получатель,АпкОбъектЗатрат_Key,АпкВидРаботы_Key,Комментарий,Товары"
         f"&$top={cfg['page_size']}&$skip={skip}"
     )
 
@@ -76,8 +76,12 @@ def _extract_docs(**context):
             docs.append((
                 doc_id, doc.get("DeletionMark"), doc.get("Posted"),
                 _norm_text(doc.get("Number")), doc.get("Date"),
-                _norm_text(doc.get("ХозяйственнаяОперация")), _norm_text(doc.get("Отправитель")),
-                _norm_text(doc.get("Получатель")), _norm_text(doc.get("Комментарий")),
+                _norm_text(doc.get("ХозяйственнаяОперация")),
+                _norm_text(doc.get("Отправитель")),
+                _norm_text(doc.get("Получатель")),
+                _norm_text(doc.get("АпкОбъектЗатрат_Key")),
+                _norm_text(doc.get("АпкВидРаботы_Key")),
+                _norm_text(doc.get("Комментарий")),
             ))
             for row in doc.get("Товары", []):
                 ln = _safe_int(row.get("LineNumber"))
@@ -106,13 +110,21 @@ def _load_docs(**context):
         logging.info("No documents to load")
         return
     sql = f"""
-    INSERT INTO {RAW_DOC_TABLE} (_id,_deletionmark,_posted,doc_number,doc_date,operaciya,sklad_id,kontragent_id,kommentariy)
-    VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)
+    INSERT INTO {RAW_DOC_TABLE} (
+        _id,_deletionmark,_posted,doc_number,doc_date,operaciya,
+        sender_id,recipient_id,cost_object_id,work_type_id,kommentariy
+    )
+    VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
     ON CONFLICT (_id) DO UPDATE SET
         _deletionmark=EXCLUDED._deletionmark,_posted=EXCLUDED._posted,
         doc_number=EXCLUDED.doc_number,doc_date=EXCLUDED.doc_date,
-        operaciya=EXCLUDED.operaciya,sklad_id=EXCLUDED.sklad_id,
-        kontragent_id=EXCLUDED.kontragent_id,kommentariy=EXCLUDED.kommentariy,_loaded_at=now()
+        operaciya=EXCLUDED.operaciya,
+        sender_id=EXCLUDED.sender_id,
+        recipient_id=EXCLUDED.recipient_id,
+        cost_object_id=EXCLUDED.cost_object_id,
+        work_type_id=EXCLUDED.work_type_id,
+        kommentariy=EXCLUDED.kommentariy,
+        _loaded_at=now()
     """
     conn = pg.get_conn(); cur = conn.cursor()
     cur.executemany(sql, docs); conn.commit(); cur.close(); conn.close()
@@ -157,4 +169,4 @@ with DAG(
     t_load_docs = PythonOperator(task_id="load_dvizhenie_docs", python_callable=_load_docs, provide_context=True)
     t_load_lines = PythonOperator(task_id="load_dvizhenie_lines", python_callable=_load_lines, provide_context=True)
     t_qc = PythonOperator(task_id="quality_check", python_callable=_quality_check, provide_context=True)
-    t_extract >> [t_load_docs, t_load_lines] >> t_qc
+    t_extract >> t_load_docs >> t_load_lines >> t_qc
