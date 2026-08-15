@@ -13,12 +13,12 @@ POSTGRES_CONN_ID = "postgres_dwh"
 SQL_FACT_SPISANIE = """
 INSERT INTO mart.fact_spisanie_materialov
     (doc_id,doc_number,doc_date,pole_id,nomenklatura_id,line_number,edinica_id,kolichestvo,summa,seriya)
-SELECT d._id,d.doc_number,d.doc_date,COALESCE(l.pole_id, '00000000-0000-0000-0000-000000000000'),l.nomenklatura_id,l.line_number,l.edinica_id,l.kolichestvo,l.summa,l.seriya
+SELECT d._id,d.doc_number,d.doc_date,l.pole_id,l.nomenklatura_id,l.line_number,l.edinica_id,l.kolichestvo,l.summa,l.seriya
 FROM raw.r1c_dvizhenie_produkcii d
 JOIN raw.r1c_dvizhenie_produkcii_lines l ON l.doc_id = d._id
 WHERE d.operaciya = 'ПередачаМатериаловВПроизводство' AND d._posted = TRUE AND d._deletionmark = FALSE
 ON CONFLICT (doc_id,line_number,nomenklatura_id) DO UPDATE SET
-    doc_number=EXCLUDED.doc_number,doc_date=EXCLUDED.doc_date,
+    doc_number=EXCLUDED.doc_number,doc_date=EXCLUDED.doc_date,pole_id=EXCLUDED.pole_id,
     edinica_id=EXCLUDED.edinica_id,kolichestvo=EXCLUDED.kolichestvo,
     summa=EXCLUDED.summa,seriya=EXCLUDED.seriya,_updated_at=now();
 """
@@ -26,12 +26,12 @@ ON CONFLICT (doc_id,line_number,nomenklatura_id) DO UPDATE SET
 SQL_FACT_VYPUSK = """
 INSERT INTO mart.fact_vypusk_urozhaya
     (doc_id,doc_number,doc_date,pole_id,nomenklatura_id,line_number,edinica_id,kolichestvo,summa,seriya)
-SELECT d._id,d.doc_number,d.doc_date,COALESCE(l.pole_id, '00000000-0000-0000-0000-000000000000'),l.nomenklatura_id,l.line_number,l.edinica_id,l.kolichestvo,l.summa,l.seriya
+SELECT d._id,d.doc_number,d.doc_date,l.pole_id,l.nomenklatura_id,l.line_number,l.edinica_id,l.kolichestvo,l.summa,l.seriya
 FROM raw.r1c_dvizhenie_produkcii d
 JOIN raw.r1c_dvizhenie_produkcii_lines l ON l.doc_id = d._id
 WHERE d.operaciya = 'ПередачаПродукцииИзПроизводства' AND d._posted = TRUE AND d._deletionmark = FALSE
 ON CONFLICT (doc_id,line_number,nomenklatura_id) DO UPDATE SET
-    doc_number=EXCLUDED.doc_number,doc_date=EXCLUDED.doc_date,
+    doc_number=EXCLUDED.doc_number,doc_date=EXCLUDED.doc_date,pole_id=EXCLUDED.pole_id,
     edinica_id=EXCLUDED.edinica_id,kolichestvo=EXCLUDED.kolichestvo,
     summa=EXCLUDED.summa,seriya=EXCLUDED.seriya,_updated_at=now();
 """
@@ -42,13 +42,13 @@ INSERT INTO mart.fact_putevoy_rabota
      pole_id,agr_operaciya_id,line_number,edinica_id,obem_rabot_ga,norma_vyrabotki,
      narabotka_moto_chas,probeg_km,toplivo_vydano,toplivo_vozvrat)
 SELECT p._id,p.doc_number,p.doc_date,p.tehnika_id,p.model_tehniki_id,p.voditel_id,
-       COALESCE(l.pole_id, '00000000-0000-0000-0000-000000000000'),l.agr_operaciya_id,l.line_number,l.edinica_id,l.obem_rabot_ga,l.norma_vyrabotki,
+       l.pole_id,l.agr_operaciya_id,l.line_number,l.edinica_id,l.obem_rabot_ga,l.norma_vyrabotki,
        p.narabotka_moto_chas,p.probeg_km,p.toplivo_vydano,p.toplivo_vozvrat
 FROM raw.r1c_putevoy_list p
 JOIN raw.r1c_putevoy_list_lines l ON l.doc_id = p._id
 WHERE p._posted = TRUE AND p._deletionmark = FALSE
 ON CONFLICT (doc_id,line_number,agr_operaciya_id) DO UPDATE SET
-    doc_number=EXCLUDED.doc_number,doc_date=EXCLUDED.doc_date,
+    doc_number=EXCLUDED.doc_number,doc_date=EXCLUDED.doc_date,pole_id=EXCLUDED.pole_id,
     tehnika_id=EXCLUDED.tehnika_id,model_tehniki_id=EXCLUDED.model_tehniki_id,
     voditel_id=EXCLUDED.voditel_id,edinica_id=EXCLUDED.edinica_id,
     obem_rabot_ga=EXCLUDED.obem_rabot_ga,norma_vyrabotki=EXCLUDED.norma_vyrabotki,
