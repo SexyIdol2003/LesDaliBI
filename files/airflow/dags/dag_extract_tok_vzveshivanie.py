@@ -13,10 +13,8 @@ DAG_ID = "dag_extract_tok_vzveshivanie"
 POSTGRES_CONN_ID = "postgres_dwh"
 DEFAULT_PAGE_SIZE = 1000
 
-# ВНИМАНИЕ: имя OData-сущности ниже — предположение по конвенции проекта.
-# $metadata недоступен (HTTP 500), см. SESSION_2026-08-15_BI_1C_AUDIT_AND_ODATA.md.
-# Перед боевым запуском проверить вручную: GET {base_url}/Document_АпкРегистрацияВзвешиванияНаТоку?$format=json&$top=1
-ENTITY_NAME = "Document_АпкРегистрацияВзвешиванияНаТоку"
+# ПОДТВЕРЖДЕНО curl-запросом (2026-08-17): реальное имя сущности и поля.
+ENTITY_NAME = "Document_АпкРегистрацияВзвешиванийНаТоку"
 
 
 def _get_cfg():
@@ -31,6 +29,12 @@ def _get_cfg():
 
 def _norm_text(v):
     return None if v in (None, "", "null") else str(v)
+
+
+def _norm_uuid(v):
+    if v in (None, "", "null", "00000000-0000-0000-0000-000000000000"):
+        return None
+    return str(v)
 
 
 def _safe_float(v):
@@ -68,8 +72,6 @@ def _fetch_all(cfg, entity, select):
 
 
 def _verify_entity(**context):
-    """Разовая проверка: тянет 1 запись и логирует реальные ключи JSON,
-    чтобы свериться с ENTITY_NAME/полями до полноценной загрузки."""
     cfg = _get_cfg()
     session = _session(cfg)
     url = f'{cfg["base_url"].rstrip("/")}/{ENTITY_NAME}?$format=json&$top=1'
@@ -88,27 +90,42 @@ def _extract_tok(**context):
     raw = _fetch_all(
         cfg, ENTITY_NAME,
         "Ref_Key,DeletionMark,Posted,Number,Date,ВидВзвешивания,"
-        "Отправитель,Получатель,Номенклатура,Водитель,Автомобиль,"
-        "ВесТары,ВесБрутто,ВесНетто,Весовщик",
+        "Откуда,Куда,Номенклатура_Key,Водитель,Автомобиль,"
+        "ВесТары,ВесБрутто,ВесНетто,Автор_Key,Талоны",
     )
-    rows = []
+    docs, talony = [], []
     for d in raw:
-        rows.append((
-            d.get("Ref_Key"), d.get("DeletionMark"), d.get("Posted"),
+        doc_id = d.get("Ref_Key")
+        docs.append((
+            doc_id, d.get("DeletionMark"), d.get("Posted"),
             _norm_text(d.get("Number")), d.get("Date"),
             _norm_text(d.get("ВидВзвешивания")),
-            _norm_text(d.get("Отправитель")),
-            _norm_text(d.get("Получатель")),
-            _norm_text(d.get("Номенклатура")),
-            _norm_text(d.get("Водитель")),
-            _norm_text(d.get("Автомобиль")),
+            _norm_uuid(d.get("Откуда")),
+            _norm_uuid(d.get("Куда")),
+            _norm_uuid(d.get("Номенклатура_Key")),
+            _norm_uuid(d.get("Водитель")),
+            _norm_uuid(d.get("Автомобиль")),
             _safe_float(d.get("ВесТары")),
             _safe_float(d.get("ВесБрутто")),
             _safe_float(d.get("ВесНетто")),
-            _norm_text(d.get("Весовщик")),
+            _norm_uuid(d.get("Автор_Key")),
         ))
-    context["ti"].xcom_push(key="tok_rows", value=rows)
-    context["ti"].xcom_push(key="tok_count", value=len(rows))
+        for row in d.get("Талоны", []):
+            line_no = row.get("LineNumber")
+            talony.append((
+                f'{doc_id}-{line_no}', doc_id, line_no,
+                _norm_uuid(row.get("Поле_Key")),
+                _norm_text(row.get("НомерТалона")),
+                _norm_text(row.get("ТипТалона")),
+                _safe_float(row.get("Масса")),
+                _norm_uuid(row.get("Комбайн_Key")),
+                _norm_uuid(row.get("Механизатор")),
+                _safe_float(row.get("ОбъемБункера")),
+                _safe_float(row.get("ПроцентЗаполнения")),
+            ))
+    context["ti"].xcom_push(key="tok_rows", value=docs)
+    context["ti"].xcom_push(key="tok_talony", value=talony)
+    context["ti"].xcom_push(key="tok_count", value=len(docs))
 
 
 def _load_tok(**context):
@@ -120,19 +137,43 @@ def _load_tok(**context):
     sql = """
     INSERT INTO raw.r1c_tok_vzveshivanie (
         _id,_deletionmark,_posted,doc_number,doc_date,vid_vzveshivaniya,
-        otkuda_text,kuda_text,nomenklatura_text,voditel_id,avtomobil_id,
-        ves_tary_kg,ves_brutto_kg,ves_netto_kg,vesovshik_id
+        otkuda_id,kuda_id,nomenklatura_id,voditel_id,avtomobil_id,
+        ves_tary_kg,ves_brutto_kg,ves_netto_kg,avtor_id
     )
     VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
     ON CONFLICT (_id) DO UPDATE SET
         _deletionmark=EXCLUDED._deletionmark,_posted=EXCLUDED._posted,
         doc_number=EXCLUDED.doc_number,doc_date=EXCLUDED.doc_date,
         vid_vzveshivaniya=EXCLUDED.vid_vzveshivaniya,
-        otkuda_text=EXCLUDED.otkuda_text,kuda_text=EXCLUDED.kuda_text,
-        nomenklatura_text=EXCLUDED.nomenklatura_text,
+        otkuda_id=EXCLUDED.otkuda_id,kuda_id=EXCLUDED.kuda_id,
+        nomenklatura_id=EXCLUDED.nomenklatura_id,
         voditel_id=EXCLUDED.voditel_id,avtomobil_id=EXCLUDED.avtomobil_id,
         ves_tary_kg=EXCLUDED.ves_tary_kg,ves_brutto_kg=EXCLUDED.ves_brutto_kg,
-        ves_netto_kg=EXCLUDED.ves_netto_kg,vesovshik_id=EXCLUDED.vesovshik_id,
+        ves_netto_kg=EXCLUDED.ves_netto_kg,avtor_id=EXCLUDED.avtor_id,
+        _loaded_at=now()
+    """
+    conn = pg.get_conn(); cur = conn.cursor()
+    cur.executemany(sql, rows); conn.commit(); cur.close(); conn.close()
+
+
+def _load_talony(**context):
+    pg = PostgresHook(postgres_conn_id=POSTGRES_CONN_ID)
+    rows = context["ti"].xcom_pull(task_ids="extract_tok", key="tok_talony") or []
+    if not rows:
+        logging.info("No talony rows")
+        return
+    sql = """
+    INSERT INTO raw.r1c_tok_vzveshivanie_talony (
+        _id,doc_id,line_number,pole_id,nomer_talona,tip_talona,
+        massa_kg,kombayn_id,mehanizator_id,obem_bunkera,procent_zapolneniya
+    )
+    VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
+    ON CONFLICT (_id) DO UPDATE SET
+        pole_id=EXCLUDED.pole_id,nomer_talona=EXCLUDED.nomer_talona,
+        tip_talona=EXCLUDED.tip_talona,massa_kg=EXCLUDED.massa_kg,
+        kombayn_id=EXCLUDED.kombayn_id,mehanizator_id=EXCLUDED.mehanizator_id,
+        obem_bunkera=EXCLUDED.obem_bunkera,
+        procent_zapolneniya=EXCLUDED.procent_zapolneniya,
         _loaded_at=now()
     """
     conn = pg.get_conn(); cur = conn.cursor()
@@ -157,5 +198,6 @@ with DAG(
     t_verify = PythonOperator(task_id="verify_entity", python_callable=_verify_entity, provide_context=True)
     t_extract = PythonOperator(task_id="extract_tok", python_callable=_extract_tok, provide_context=True)
     t_load = PythonOperator(task_id="load_tok", python_callable=_load_tok, provide_context=True)
+    t_load_talony = PythonOperator(task_id="load_talony", python_callable=_load_talony, provide_context=True)
     t_qc = PythonOperator(task_id="quality_check", python_callable=_quality_check, provide_context=True)
-    t_verify >> t_extract >> t_load >> t_qc
+    t_verify >> t_extract >> t_load >> t_load_talony >> t_qc
