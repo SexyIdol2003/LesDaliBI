@@ -18,6 +18,9 @@ DEFAULT_PAGE_SIZE = 1000
 # Перед боевым запуском проверить вручную: GET {base_url}/Document_АпкСписаниеСемянУдобренийИЯдов?$format=json&$top=1
 ENTITY_NAME = "Document_АпкСписаниеСемянУдобренийИЯдов"
 
+# ИСПРАВЛЕНО (см. SESSION_2026-08-17): реальная схема raw.r1c_field_writeoff_doc/lines
+# использует doc_ref (не _id) и line_no (не line_number) — унаследовано от 02_raw.sql (2026-06-23).
+
 
 def _get_cfg():
     return {
@@ -68,8 +71,6 @@ def _fetch_all(cfg, entity, select):
 
 
 def _verify_entity(**context):
-    """Разовая проверка: тянет 1 запись и логирует реальные ключи JSON,
-    чтобы свериться с ENTITY_NAME/полями до полноценной загрузки."""
     cfg = _get_cfg()
     session = _session(cfg)
     url = f'{cfg["base_url"].rstrip("/")}/{ENTITY_NAME}?$format=json&$top=1'
@@ -92,9 +93,9 @@ def _extract_writeoffs(**context):
     )
     docs, lines = [], []
     for d in raw:
-        doc_id = d.get("Ref_Key")
+        doc_ref = d.get("Ref_Key")
         docs.append((
-            doc_id, d.get("DeletionMark"), d.get("Posted"),
+            doc_ref, d.get("DeletionMark"), d.get("Posted"),
             _norm_text(d.get("Number")), d.get("Date"),
             _norm_text(d.get("Отправитель")),
             _norm_text(d.get("Получатель")),
@@ -103,7 +104,7 @@ def _extract_writeoffs(**context):
         ))
         for row in d.get("Материалы", []):
             lines.append((
-                doc_id, row.get("LineNumber"),
+                doc_ref, row.get("LineNumber"),
                 _norm_text(row.get("Номенклатура_Key")),
                 _safe_float(row.get("Количество")),
                 _norm_text(row.get("ЕдиницаИзмерения_Key")),
@@ -121,11 +122,11 @@ def _load_writeoff_docs(**context):
         return
     sql = """
     INSERT INTO raw.r1c_field_writeoff_doc (
-        _id,_deletionmark,_posted,doc_number,doc_date,
+        doc_ref,_deletionmark,_posted,doc_number,doc_date,
         otpravitel_text,poluchatel_text,operaciya,otvetstvennyi_id
     )
     VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)
-    ON CONFLICT (_id) DO UPDATE SET
+    ON CONFLICT (doc_ref) DO UPDATE SET
         _deletionmark=EXCLUDED._deletionmark,_posted=EXCLUDED._posted,
         doc_number=EXCLUDED.doc_number,doc_date=EXCLUDED.doc_date,
         otpravitel_text=EXCLUDED.otpravitel_text,
@@ -145,12 +146,12 @@ def _load_writeoff_lines(**context):
         logging.info("No field_writeoff lines")
         return
     sql = """
-    INSERT INTO raw.r1c_field_writeoff_lines (doc_id,line_number,nomenklatura_id,kolichestvo,edinica_id)
+    INSERT INTO raw.r1c_field_writeoff_lines (doc_ref,line_no,nomenklatura_ref,quantity,uom_ref)
     VALUES (%s,%s,%s,%s,%s)
-    ON CONFLICT (doc_id,line_number) DO UPDATE SET
-        nomenklatura_id=EXCLUDED.nomenklatura_id,
-        kolichestvo=EXCLUDED.kolichestvo,
-        edinica_id=EXCLUDED.edinica_id,
+    ON CONFLICT (doc_ref,line_no) DO UPDATE SET
+        nomenklatura_ref=EXCLUDED.nomenklatura_ref,
+        quantity=EXCLUDED.quantity,
+        uom_ref=EXCLUDED.uom_ref,
         _loaded_at=now()
     """
     conn = pg.get_conn(); cur = conn.cursor()
