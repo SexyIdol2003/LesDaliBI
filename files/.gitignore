@@ -12,3 +12,14 @@
 # Python cache
 __pycache__/
 *.py[cod]
+
+# Python generated files
+__pycache__/
+*.py[cod]
+
+# Local extracts and diagnostics
+all_entities.txt
+field_work_bi.csv
+field_work_dataset.csv
+metadata.xml
+metadata_utf8.xml
