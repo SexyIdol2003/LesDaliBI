@@ -176,24 +176,72 @@ def _load_zapr_lines(**context):
     cur.executemany(sql, rows); conn.commit(); cur.close(); conn.close()
 
 
+def _load_mart_fuel_refuel(**context):
+    """Пересборка mart.fact_fuel_refuel из raw.r1c_zapravochnaya_vedomost(_gsm).
+    mart.fact_fuel_refuel — готовая таблица со звездными ключами
+    (date_day -> mart.dim_date, equipment_sk -> mart.dim_equipment), создана ранее
+    в 03_mart.sql/05_mart_facts.sql. Полная перезагрузка безопасна — объём мал."""
+    pg = PostgresHook(postgres_conn_id=POSTGRES_CONN_ID)
+    sql = """
+    TRUNCATE TABLE mart.fact_fuel_refuel;
+
+    INSERT INTO mart.fact_fuel_refuel (date_day, equipment_sk, fuel_brand_id, liters, src_doc_ref)
+    SELECT
+        d.date_day,
+        eq.eq_sk,
+        gsm.marka_topliva_id,
+        gsm.kolichestvo,
+        gsm.doc_id::text || ':' || gsm.line_number
+    FROM raw.r1c_zapravochnaya_vedomost_gsm gsm
+    JOIN raw.r1c_zapravochnaya_vedomost doc
+        ON doc._id = gsm.doc_id
+    JOIN mart.dim_date d
+        ON d.date_day = COALESCE(gsm.line_date, doc.doc_date::date)
+    LEFT JOIN mart.dim_equipment eq
+        ON eq.code_1c = COALESCE(gsm.line_tehnika_id, doc.tehnika_id)::text
+    WHERE doc._posted = true
+      AND (doc._deletionmark IS NULL OR doc._deletionmark = false)
+      AND gsm.kolichestvo IS NOT NULL;
+
+    DO $$
+    BEGIN
+        IF EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'datalens_ro') THEN
+            EXECUTE 'GRANT SELECT ON mart.fact_fuel_refuel TO datalens_ro';
+        END IF;
+    END $$;
+    """
+    conn = pg.get_conn(); cur = conn.cursor()
+    cur.execute(sql); conn.commit()
+    cur.execute("SELECT count(*) FROM mart.fact_fuel_refuel")
+    loaded = cur.fetchone()[0]
+    cur.close(); conn.close()
+    logging.info("mart.fact_fuel_refuel перезагружена: %s строк", loaded)
+    context["ti"].xcom_push(key="mart_fuel_refuel_count", value=loaded)
+
+
 def _quality_check(**context):
     docs = context["ti"].xcom_pull(task_ids="extract_zapravki", key="zapr_count") or 0
     lines = context["ti"].xcom_pull(task_ids="extract_zapravki", key="zapr_lines_count") or 0
+    mart_rows = context["ti"].xcom_pull(task_ids="load_mart_fuel_refuel", key="mart_fuel_refuel_count") or 0
     if docs == 0:
         logging.warning("АпкЗаправочныеВедомости вернул 0 документов")
-    logging.info("Quality check zapravochnaya_vedomost: %s документов, %s строк ГСМ", docs, lines)
+    logging.info(
+        "Quality check zapravochnaya_vedomost: %s документов, %s строк ГСМ, %s строк в mart.fact_fuel_refuel",
+        docs, lines, mart_rows,
+    )
 
 
 default_args = {"owner": "bi", "depends_on_past": False, "retries": 2, "retry_delay": timedelta(minutes=10)}
 
 with DAG(
     dag_id=DAG_ID, default_args=default_args,
-    description="Выгрузка Заправочных ведомостей — исправлен парсинг времени ГСМ (InvalidDatetimeFormat на '0001-01-01T07:00:00')",
+    description="Выгрузка заправочных ведомостей в raw + перезагрузка mart.fact_fuel_refuel",
     start_date=datetime(2026, 9, 7), schedule_interval="45 1 * * *",
-    catchup=False, max_active_runs=1, tags=["1c", "odata", "raw", "fuel"],
+    catchup=False, max_active_runs=1, tags=["1c", "odata", "raw", "mart", "fuel"],
 ) as dag:
     t_extract = PythonOperator(task_id="extract_zapravki", python_callable=_extract_zapravki, provide_context=True)
     t_load_docs = PythonOperator(task_id="load_zapr_docs", python_callable=_load_zapr_docs, provide_context=True)
     t_load_lines = PythonOperator(task_id="load_zapr_lines", python_callable=_load_zapr_lines, provide_context=True)
+    t_load_mart = PythonOperator(task_id="load_mart_fuel_refuel", python_callable=_load_mart_fuel_refuel, provide_context=True)
     t_qc = PythonOperator(task_id="quality_check", python_callable=_quality_check, provide_context=True)
-    t_extract >> [t_load_docs, t_load_lines] >> t_qc
+    t_extract >> [t_load_docs, t_load_lines] >> t_load_mart >> t_qc
