@@ -16,6 +16,16 @@ DEFAULT_PAGE_SIZE = 1000
 # Подтверждено прямым запросом OData 2026-09-07 — объект существует и отдаёт данные.
 ENTITY_NAME = "Document_АпкЗаправочныеВедомости"
 
+# ВАЖНО: табличная часть ГСМ должна входить в $select как обычное имя поля.
+# $expand=ГСМ для табличных частей в этом OData-сервисе не поддерживается —
+# реальный запуск с $expand вернул HTTP 501 Not Implemented (проверено curl'ом 2026-09-07).
+# С $select, включающим "ГСМ", табличная часть приходит инлайн без ошибок.
+DOC_SELECT = (
+    "Ref_Key,DeletionMark,Posted,Number,Date,Организация_Key,Подразделение_Key,"
+    "Склад_Key,ТранспортноеСредство_Key,Автор_Key,Сотрудник,Комментарий,"
+    "ВыдачаСТопливозаправщика,НаемноеТС,Партнер_Key,Соглашение_Key,ГСМ"
+)
+
 
 def _get_cfg():
     return {
@@ -45,7 +55,7 @@ def _session(cfg):
     return s
 
 
-def _fetch_all(cfg, entity, select, expand=None):
+def _fetch_all(cfg, entity, select):
     session = _session(cfg)
     rows, skip = [], 0
     while True:
@@ -53,8 +63,6 @@ def _fetch_all(cfg, entity, select, expand=None):
             f'{cfg["base_url"].rstrip("/")}/{entity}?$format=json&$select={select}'
             f'&$top={cfg["page_size"]}&$skip={skip}'
         )
-        if expand:
-            url += f"&$expand={expand}"
         resp = session.get(url, timeout=cfg["timeout_sec"])
         resp.raise_for_status()
         batch = resp.json().get("value", [])
@@ -69,13 +77,7 @@ def _fetch_all(cfg, entity, select, expand=None):
 
 def _extract_zapravki(**context):
     cfg = _get_cfg()
-    raw = _fetch_all(
-        cfg, ENTITY_NAME,
-        "Ref_Key,DeletionMark,Posted,Number,Date,Организация_Key,Подразделение_Key,"
-        "Склад_Key,ТранспортноеСредство_Key,Автор_Key,Сотрудник,Комментарий,"
-        "ВыдачаСТопливозаправщика,НаемноеТС,Партнер_Key,Соглашение_Key",
-        expand="ГСМ",
-    )
+    raw = _fetch_all(cfg, ENTITY_NAME, DOC_SELECT)
     docs, lines = [], []
     for d in raw:
         doc_id = d.get("Ref_Key")
@@ -176,7 +178,7 @@ default_args = {"owner": "bi", "depends_on_past": False, "retries": 2, "retry_de
 
 with DAG(
     dag_id=DAG_ID, default_args=default_args,
-    description="Выгрузка Заправочных ведомостей — подтверждённый факт заправки ГСМ по технике",
+    description="Выгрузка Заправочных ведомостей — исправлено $select вместо $expand для ГСМ (501 на сервере)",
     start_date=datetime(2026, 9, 7), schedule_interval="45 1 * * *",
     catchup=False, max_active_runs=1, tags=["1c", "odata", "raw", "fuel"],
 ) as dag:
