@@ -48,6 +48,16 @@ def _safe_float(v):
         return None
 
 
+def _extract_time(v):
+    """1С отдаёт время как ISO-datetime с фиктивной датой (например
+    '0001-01-01T07:00:00'). Postgres-колонка имеет тип time, поэтому
+    оставляем только часть после 'T'. Без 'T' — значит уже время/пусто."""
+    if not v:
+        return None
+    s = str(v)
+    return s.split("T", 1)[1] if "T" in s else s
+
+
 def _session(cfg):
     s = requests.Session()
     s.auth = (cfg["username"], cfg["password"])
@@ -91,7 +101,7 @@ def _extract_zapravki(**context):
             _norm_text(d.get("Автор_Key")),
             _norm_text(d.get("Сотрудник")),
             d.get("Комментарий"),
-            d.get("ВыдачаСТопливозаправщика"),
+            d.get("ВыдачаСТоплиозаправщика"),
             d.get("НаемноеТС"),
             _norm_text(d.get("Партнер_Key")),
             _norm_text(d.get("Соглашение_Key")),
@@ -100,7 +110,7 @@ def _extract_zapravki(**context):
             lines.append((
                 doc_id, int(row.get("LineNumber") or 0),
                 row.get("Дата"),
-                row.get("Время"),
+                _extract_time(row.get("Время")),
                 _norm_text(row.get("МаркаТоплива_Key")),
                 _safe_float(row.get("Количество")),
                 _norm_text(row.get("ТранспортноеСредство_Key")),
@@ -178,7 +188,7 @@ default_args = {"owner": "bi", "depends_on_past": False, "retries": 2, "retry_de
 
 with DAG(
     dag_id=DAG_ID, default_args=default_args,
-    description="Выгрузка Заправочных ведомостей — исправлено $select вместо $expand для ГСМ (501 на сервере)",
+    description="Выгрузка Заправочных ведомостей — исправлен парсинг времени ГСМ (InvalidDatetimeFormat на '0001-01-01T07:00:00')",
     start_date=datetime(2026, 9, 7), schedule_interval="45 1 * * *",
     catchup=False, max_active_runs=1, tags=["1c", "odata", "raw", "fuel"],
 ) as dag:
