@@ -17,6 +17,16 @@ RAW_DOC_TABLE = "raw.r1c_putevoy_list"
 RAW_LINE_TABLE = "raw.r1c_putevoy_list_lines"
 DOC_SELECT = "Ref_Key,DeletionMark,Posted,Number,Date,ДатаНачалаРабот,ДатаОкончанияРабот,Техника_Key,Механизатор,МоточасовВсего,Комментарий"
 
+# Расширенный список полей строки "ВыполненныеРаботы", подтверждён прямыми запросами
+# OData 2026-09-07 (curl + jq на реальных документах). Добавлены поля ГСМ (норма/план),
+# оборудование, доп.объёмы и статьи затрат — нужны для показателей план-факт ГСМ и себестоимости.
+LINE_SELECT = (
+    "Ref_Key,LineNumber,ДеньРаботы,ВидРаботы_Key,Оборудование_Key,"
+    "ЕдиницаДопОбъема_Key,Гектаров,Тонн,Километров,ДопОбъемРабот,"
+    "СменнаяНормаВыработки,НормаРасходаГСМ,НормаРасходаГСМ_Ед,НормативныйРасходГСМ,"
+    "Часов,ЧасовПоНорме,Моточасов,ОсновнаяЗП,ИтогоЗП,ТипЗатрат,АналитикаРасходов,КлючСвязи"
+)
+
 
 def _get_cfg():
     return {
@@ -33,7 +43,7 @@ def _safe_decimal(v):
 def _safe_int(v):
     return None if v in (None, "", "null") else int(v)
 def _norm_text(v):
-    return None if v in (None, "", "null") else str(v)
+    return None if v in (None, "", "null", "00000000-0000-0000-0000-000000000000") else str(v)
 def _session(cfg):
     s = requests.Session()
     s.auth = (cfg["username"], cfg["password"])
@@ -56,7 +66,7 @@ def _build_url_lines(cfg, dt_from, skip=0):
     return (
         f'{cfg["base_url"].rstrip("/")}/Document_АпкПутевойЛистТракториста_ВыполненныеРаботы'
         f"?$format=json&$filter=ДеньРаботы ge datetime'{dt_str}'"
-        f"&$select=Ref_Key,LineNumber,ДеньРаботы,ВидРаботы_Key,ЕдиницаДопОбъема_Key,Гектаров,СменнаяНормаВыработки"
+        f"&$select={LINE_SELECT}"
         f"&$orderby=Ref_Key,LineNumber&$top={cfg['page_size']}&$skip={skip}"
     )
 
@@ -77,8 +87,38 @@ def _doc_to_row(doc):
         _norm_text(doc.get("Техника_Key")), None,  # МодельТехники_Key — не существует в этой схеме
         _norm_text(doc.get("Механизатор")),
         _safe_decimal(doc.get("МоточасовВсего")), None,  # ПробегКм — не существует
-        None, None,  # ТопливоВыдано / ТопливоВозврат — не существуют как простые поля
+        None, None,  # ТопливоВыдано / ТопливоВозврат — не существуют как простые поля документа
         _norm_text(doc.get("Комментарий")),
+    )
+
+
+def _line_to_row(row, doc_id, ln):
+    return (
+        f"{doc_id}_{ln}" if ln is not None else None,
+        doc_id, ln,
+        None,  # pole_id — в этой табличной части поля нет
+        _norm_text(row.get("ВидРаботы_Key")),
+        _norm_text(row.get("ЕдиницаДопОбъема_Key")),
+        _safe_decimal(row.get("Гектаров")), _safe_decimal(row.get("СменнаяНормаВыработки")),
+        _norm_text(row.get("ВидРаботы_Key")),          # vid_raboty_id (дублирует agr_operaciya_id по имени поля 1С)
+        _norm_text(row.get("Оборудование_Key")),        # oborudovanie_id
+        row.get("ДеньРаботы"),                            # den_raboty
+        _safe_decimal(row.get("Гектаров")),               # gektarov
+        _safe_decimal(row.get("Тонн")),                    # tonn
+        _safe_decimal(row.get("Километров")),               # kilometrov
+        _safe_decimal(row.get("ДопОбъемРабот")),             # dop_obem_rabot
+        _norm_text(row.get("ЕдиницаДопОбъема_Key")),          # edinica_dop_obema_id
+        _safe_decimal(row.get("НормаРасходаГСМ")),             # norma_rashoda_gsm
+        _norm_text(row.get("НормаРасходаГСМ_Ед")),              # norma_rashoda_gsm_ed
+        _safe_decimal(row.get("НормативныйРасходГСМ")),          # normativny_raskhod_gsm
+        _safe_decimal(row.get("Часов")),                          # chasov
+        _safe_decimal(row.get("ЧасовПоНорме")),                    # chasov_po_norme
+        _safe_decimal(row.get("Моточасов")),                        # mototochas
+        _safe_decimal(row.get("ОсновнаяЗП")),                        # osnovnaya_zp
+        _safe_decimal(row.get("ИтогоЗП")),                            # itogo_zp
+        _norm_text(row.get("ТипЗатрат")),                              # tip_zatrat
+        _norm_text(row.get("АналитикаРасходов")),                       # analitika_raskhodov_id
+        _norm_text(row.get("КлючСвязи")),                                 # klyuch_svyazi
     )
 
 
@@ -148,14 +188,7 @@ def _extract_docs(**context):
             skipped_no_doc += 1
             continue
         ln = _safe_int(row.get("LineNumber"))
-        lines.append((
-            f"{doc_id}_{ln}" if ln is not None else f"{doc_id}_{len(lines)+1}",
-            doc_id, ln,
-            None,  # pole_id — в этой табличной части поля нет
-            _norm_text(row.get("ВидРаботы_Key")),
-            _norm_text(row.get("ЕдиницаДопОбъема_Key")),
-            _safe_decimal(row.get("Гектаров")), _safe_decimal(row.get("СменнаяНормаВыработки")),
-        ))
+        lines.append(_line_to_row(row, doc_id, ln if ln is not None else len(lines) + 1))
 
     if skipped_no_doc:
         logging.warning("Пропущено строк работ без доступной шапки: %s", skipped_no_doc)
@@ -195,12 +228,27 @@ def _load_lines(**context):
         logging.info("No lines to load")
         return
     sql = f"""
-    INSERT INTO {RAW_LINE_TABLE} (_id,doc_id,line_number,pole_id,agr_operaciya_id,edinica_id,obem_rabot_ga,norma_vyrabotki)
-    VALUES (%s,%s,%s,%s,%s,%s,%s,%s)
+    INSERT INTO {RAW_LINE_TABLE} (
+        _id,doc_id,line_number,pole_id,agr_operaciya_id,edinica_id,obem_rabot_ga,norma_vyrabotki,
+        vid_raboty_id,oborudovanie_id,den_raboty,gektarov,tonn,kilometrov,dop_obem_rabot,
+        edinica_dop_obema_id,norma_rashoda_gsm,norma_rashoda_gsm_ed,normativny_raskhod_gsm,
+        chasov,chasov_po_norme,mototochas,osnovnaya_zp,itogo_zp,tip_zatrat,analitika_raskhodov_id,klyuch_svyazi
+    )
+    VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
     ON CONFLICT (_id) DO UPDATE SET
         doc_id=EXCLUDED.doc_id,line_number=EXCLUDED.line_number,pole_id=EXCLUDED.pole_id,
         agr_operaciya_id=EXCLUDED.agr_operaciya_id,edinica_id=EXCLUDED.edinica_id,
-        obem_rabot_ga=EXCLUDED.obem_rabot_ga,norma_vyrabotki=EXCLUDED.norma_vyrabotki,_loaded_at=now()
+        obem_rabot_ga=EXCLUDED.obem_rabot_ga,norma_vyrabotki=EXCLUDED.norma_vyrabotki,
+        vid_raboty_id=EXCLUDED.vid_raboty_id,oborudovanie_id=EXCLUDED.oborudovanie_id,
+        den_raboty=EXCLUDED.den_raboty,gektarov=EXCLUDED.gektarov,tonn=EXCLUDED.tonn,
+        kilometrov=EXCLUDED.kilometrov,dop_obem_rabot=EXCLUDED.dop_obem_rabot,
+        edinica_dop_obema_id=EXCLUDED.edinica_dop_obema_id,
+        norma_rashoda_gsm=EXCLUDED.norma_rashoda_gsm,norma_rashoda_gsm_ed=EXCLUDED.norma_rashoda_gsm_ed,
+        normativny_raskhod_gsm=EXCLUDED.normativny_raskhod_gsm,
+        chasov=EXCLUDED.chasov,chasov_po_norme=EXCLUDED.chasov_po_norme,mototochas=EXCLUDED.mototochas,
+        osnovnaya_zp=EXCLUDED.osnovnaya_zp,itogo_zp=EXCLUDED.itogo_zp,tip_zatrat=EXCLUDED.tip_zatrat,
+        analitika_raskhodov_id=EXCLUDED.analitika_raskhodov_id,klyuch_svyazi=EXCLUDED.klyuch_svyazi,
+        _loaded_at=now()
     """
     conn = pg.get_conn(); cur = conn.cursor()
     cur.executemany(sql, lines); conn.commit(); cur.close(); conn.close()
@@ -216,7 +264,7 @@ default_args = {"owner": "bi", "depends_on_past": False, "retries": 2, "retry_de
 
 with DAG(
     dag_id=DAG_ID, default_args=default_args,
-    description="Инкрементальная выгрузка Document_АпкПутевойЛистТракториста из 1С OData",
+    description="Инкрементальная выгрузка Document_АпкПутевойЛистТракториста из 1С OData (расширено полями ГСМ/затрат 2026-09-07)",
     start_date=datetime(2026, 7, 1), schedule_interval="0 2 * * *",
     catchup=False, max_active_runs=1, tags=["1c", "odata", "raw", "documents"],
 ) as dag:
