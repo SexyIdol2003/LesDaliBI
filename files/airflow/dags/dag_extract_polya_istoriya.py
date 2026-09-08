@@ -18,6 +18,11 @@ DEFAULT_PAGE_SIZE = 200
 # (без 404 / "Доступ запрещён", в отличие от состояния на 2026-08-13).
 # Площадь хранится НЕ как плоское поле (АпкПлощадьПоляГа не существует),
 # а в табличной части "ИсторияПоля" — по годам урожая и культурам.
+#
+# ВАЖНО (найдено 2026-09-08 при первом запуске): $expand для табличных частей в этом
+# OData-сервисе не работает (HTTP 501 Not Implemented) — точно так же, как с табличной
+# частью ГСМ в заправочных ведомостях (см. SESSION_2026-09-07_FUEL_PIPELINE_AND_NORM_VARIANCE.md).
+# Фикс: табличная часть запрашивается как обычное поле в $select — она приходит инлайн.
 # См. SESSION_2026-09-08_POLYA_AREA_DISCOVERY.md.
 ENTITY_NAME = "Catalog_АпкПоля"
 
@@ -55,21 +60,22 @@ def _build_url(cfg, skip=0):
     select = (
         "Ref_Key,DeletionMark,Description,Parent_Key,IsFolder,"
         "Организация_Key,НомерПоляЕФИС,"
-        "СкладСемян_Key,СкладУдобрений_Key,СкладСЗР_Key,СкладПродукции_Key,СкладПрочихМатериалов_Key"
+        "СкладСемян_Key,СкладУдобрений_Key,СкладСЗР_Key,СкладПродукции_Key,СкладПрочихМатериалов_Key,"
+        "ИсторияПоля"
     )
     return (
         f'{cfg["base_url"].rstrip("/")}/{ENTITY_NAME}'
         f"?$format=json&$select={select}"
-        f"&$expand=ИсторияПоля"
         f"&$top={cfg['page_size']}&$skip={skip}"
     )
 
 
 def _verify_entity(**context):
-    """Разовая проверка: тянет 1 запись с $expand и логирует реальные ключи JSON."""
+    """Разовая проверка: тянет 1 запись (табличная часть — обычное поле в $select,
+    так как $expand даёт HTTP 501 в этом OData-сервисе) и логирует реальные ключи JSON."""
     cfg = _get_cfg()
     session = _session(cfg)
-    url = f'{cfg["base_url"].rstrip("/")}/{ENTITY_NAME}?$format=json&$top=1&$expand=ИсторияПоля'
+    url = f'{cfg["base_url"].rstrip("/")}/{ENTITY_NAME}?$format=json&$top=1&$select=Ref_Key,Description,ИсторияПоля'
     resp = session.get(url, timeout=cfg["timeout_sec"])
     logging.info("Verify %s -> HTTP %s", ENTITY_NAME, resp.status_code)
     if resp.ok:
@@ -197,7 +203,7 @@ def _quality_check(**context):
     fields_count = context["ti"].xcom_pull(task_ids="extract_polya", key="fields_count") or 0
     history_count = context["ti"].xcom_pull(task_ids="extract_polya", key="history_count") or 0
     if fields_count > 0 and history_count == 0:
-        raise ValueError("Загружены поля без истории площадей — проверь $expand=ИсторияПоля")
+        raise ValueError("Загружены поля без истории площадей — проверь наличие ПоляИстория в $select")
     logging.info("Quality check polya: fields=%s, history=%s", fields_count, history_count)
 
 
