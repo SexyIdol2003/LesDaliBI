@@ -14,16 +14,6 @@ DAG_ID = "dag_extract_polya_istoriya"
 POSTGRES_CONN_ID = "postgres_dwh"
 DEFAULT_PAGE_SIZE = 200
 
-# Сущность подтверждена вручную 2026-09-08: Catalog_АпкПоля отвечает нормально
-# (без 404 / "Доступ запрещён", в отличие от состояния на 2026-08-13).
-# Площадь хранится НЕ как плоское поле (АпкПлощадьПоляГа не существует),
-# а в табличной части "ИсторияПоля" — по годам урожая и культурам.
-#
-# ВАЖНО (найдено 2026-09-08 при первом запуске): $expand для табличных частей в этом
-# OData-сервисе не работает (HTTP 501 Not Implemented) — точно так же, как с табличной
-# частью ГСМ в заправочных ведомостях (см. SESSION_2026-09-07_FUEL_PIPELINE_AND_NORM_VARIANCE.md).
-# Фикс: табличная часть запрашивается как обычное поле в $select — она приходит инлайн.
-# См. SESSION_2026-09-08_POLYA_AREA_DISCOVERY.md.
 ENTITY_NAME = "Catalog_АпкПоля"
 
 
@@ -71,8 +61,6 @@ def _build_url(cfg, skip=0):
 
 
 def _verify_entity(**context):
-    """Разовая проверка: тянет 1 запись (табличная часть — обычное поле в $select,
-    так как $expand даёт HTTP 501 в этом OData-сервисе) и логирует реальные ключи JSON."""
     cfg = _get_cfg()
     session = _session(cfg)
     url = f'{cfg["base_url"].rstrip("/")}/{ENTITY_NAME}?$format=json&$top=1&$select=Ref_Key,Description,ИсторияПоля'
@@ -125,6 +113,8 @@ def _extract_polya(**context):
                     _norm_text(row.get("ПредшественникПредставление")),
                     _norm_text(row.get("Подразделение_Key")),
                     row.get("НеИспользуется"),
+                    row.get("ЭтоРодитель"),
+                    row.get("ЭтоВетвь"),
                 ))
         if len(batch) < cfg["page_size"]:
             break
@@ -178,9 +168,10 @@ def _load_history(**context):
         ploshad_obshaya, ploshad_seva, ploshad_kontura,
         nachalo_perioda, konec_perioda,
         predshestvennik_id, predshestvennik_text,
-        podrazdelenie_id, ne_ispolzuetsya
+        podrazdelenie_id, ne_ispolzuetsya,
+        eto_roditel, eto_vetv
     )
-    VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
+    VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
     ON CONFLICT (_id) DO UPDATE SET
         god_urozhaya=EXCLUDED.god_urozhaya,
         kultura_id=EXCLUDED.kultura_id,
@@ -193,6 +184,8 @@ def _load_history(**context):
         predshestvennik_text=EXCLUDED.predshestvennik_text,
         podrazdelenie_id=EXCLUDED.podrazdelenie_id,
         ne_ispolzuetsya=EXCLUDED.ne_ispolzuetsya,
+        eto_roditel=EXCLUDED.eto_roditel,
+        eto_vetv=EXCLUDED.eto_vetv,
         _loaded_at=now()
     """
     conn = pg.get_conn(); cur = conn.cursor()
@@ -203,7 +196,7 @@ def _quality_check(**context):
     fields_count = context["ti"].xcom_pull(task_ids="extract_polya", key="fields_count") or 0
     history_count = context["ti"].xcom_pull(task_ids="extract_polya", key="history_count") or 0
     if fields_count > 0 and history_count == 0:
-        raise ValueError("Загружены поля без истории площадей — проверь наличие ПоляИстория в $select")
+        raise ValueError("Загружены поля без истории площадей")
     logging.info("Quality check polya: fields=%s, history=%s", fields_count, history_count)
 
 
