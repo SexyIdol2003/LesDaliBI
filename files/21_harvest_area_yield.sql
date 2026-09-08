@@ -1,12 +1,14 @@
 -- ============================================================================
 -- 21_harvest_area_yield.sql
 -- Финальная витрина урожайности (т/га): связывает факт урожая с площадью
--- поля на дату взвешивания, без задвоения площади.
+-- поля на дату взвешивания.
 --
--- ВАЖНО: в табличной части ИсторияПоля поля Начало/КонецПериодаАктуальности
--- иногда идут в обратном порядке — сравнение через LEAST/GREATEST.
--- DROP VIEW ... CASCADE обязателен, потому что CREATE OR REPLACE VIEW не даёт
--- переименовать существующие колонки view (nachalo_perioda -> period_start).
+-- ВАЖНО (исправлено 2026-09-08 после диагностики на поле 318):
+-- Признак ЭтоРодитель имеет обратный смысл, чем предполагалось:
+--   eto_roditel = true  -> служебная строка-заголовок года: площадь=0, даты-заглушка 0001-01-01
+--   eto_roditel = false -> РЕАЛЬНЫЕ строки с площадью и реальными датами (и общие на весь год,
+--                           и разбитые по контурам/культурам внутри года — их периоды НЕ пересекаются,
+--                           так что задвоения нет — не нужно исключать eto_vetv).
 -- См. SESSION_2026-09-08_POLYA_AREA_DISCOVERY.md.
 -- ============================================================================
 
@@ -16,7 +18,8 @@ ALTER TABLE raw.r1c_polya_istoriya ADD COLUMN IF NOT EXISTS eto_vetv boolean;
 DROP VIEW IF EXISTS mart.v_fact_harvest_yield CASCADE;
 DROP VIEW IF EXISTS mart.v_field_area_by_date CASCADE;
 
--- ---- Витрина: площадь поля на конкретную дату, без задвоения ----
+-- ---- Витрина: площадь поля на конкретную дату ----
+-- Исключаем только служебные строки-заголовки (eto_roditel=true и/или даты-заглушка 0001-01-01).
 CREATE VIEW mart.v_field_area_by_date AS
 SELECT
     h.pole_id,
@@ -29,8 +32,10 @@ SELECT
 FROM raw.r1c_polya_istoriya h
 JOIN raw.r1c_polya p ON p._id = h.pole_id
 WHERE COALESCE(h.ne_ispolzuetsya, false) = false
-  AND COALESCE(h.eto_roditel, true) = true
-  AND COALESCE(h.eto_vetv, false) = false;
+  AND COALESCE(h.eto_roditel, false) = false
+  AND h.ploshad_obshaya > 0
+  AND h.nachalo_perioda > '0002-01-01'::timestamp
+  AND h.konec_perioda   > '0002-01-01'::timestamp;
 
 GRANT SELECT ON mart.v_field_area_by_date TO datalens_ro;
 
