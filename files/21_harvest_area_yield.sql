@@ -1,21 +1,23 @@
 -- ============================================================================
 -- 21_harvest_area_yield.sql
 -- Финальная витрина урожайности (т/га): связывает факт урожая с площадью
--- поля на дату взвешивания, без задвоения площади (использует Признак
--- ЭтоРодитель из ИсторияПоля, чтобы брать только общую строку на поле,
--- а не раздробленные контуры/культуры внутри того же периода).
+-- поля на дату взвешивания, без задвоения площади.
 --
--- ВАЖНО (найдено 2026-09-08 при первой проверке): в табличной части ИсторияПоля
--- поля НачалоПериодаАктуальности/КонецПериодаАктуальности иногда идут в обратном
--- порядке (начало > конца) — поэтому сравнение через LEAST/GREATEST, а не просто BETWEEN.
+-- ВАЖНО: в табличной части ИсторияПоля поля Начало/КонецПериодаАктуальности
+-- иногда идут в обратном порядке — сравнение через LEAST/GREATEST.
+-- DROP VIEW ... CASCADE обязателен, потому что CREATE OR REPLACE VIEW не даёт
+-- переименовать существующие колонки view (nachalo_perioda -> period_start).
 -- См. SESSION_2026-09-08_POLYA_AREA_DISCOVERY.md.
 -- ============================================================================
 
 ALTER TABLE raw.r1c_polya_istoriya ADD COLUMN IF NOT EXISTS eto_roditel boolean;
 ALTER TABLE raw.r1c_polya_istoriya ADD COLUMN IF NOT EXISTS eto_vetv boolean;
 
+DROP VIEW IF EXISTS mart.v_fact_harvest_yield CASCADE;
+DROP VIEW IF EXISTS mart.v_field_area_by_date CASCADE;
+
 -- ---- Витрина: площадь поля на конкретную дату, без задвоения ----
-CREATE OR REPLACE VIEW mart.v_field_area_by_date AS
+CREATE VIEW mart.v_field_area_by_date AS
 SELECT
     h.pole_id,
     p.description AS field_name,
@@ -33,7 +35,7 @@ WHERE COALESCE(h.ne_ispolzuetsya, false) = false
 GRANT SELECT ON mart.v_field_area_by_date TO datalens_ro;
 
 -- ---- Финальная витрина: факт урожая + площадь на дату взвешивания + т/га ----
-CREATE OR REPLACE VIEW mart.v_fact_harvest_yield AS
+CREATE VIEW mart.v_fact_harvest_yield AS
 WITH harvest_by_field_year AS (
     SELECT
         h.pole_id,
