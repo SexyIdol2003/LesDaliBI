@@ -61,7 +61,7 @@ WHERE COALESCE(v._deletionmark, false) = false
 CREATE TABLE IF NOT EXISTS mart.fact_fuel_writeoff (
     fuel_writeoff_sk bigserial PRIMARY KEY,
     period_month date NOT NULL,
-    equipment_sk int REFERENCES mart.dim_equipment(equipment_sk),
+    equipment_sk int REFERENCES mart.dim_equipment(eq_sk),
     fuel_brand_id uuid,
     liters_start numeric(12,3),
     liters_end numeric(12,3),
@@ -77,7 +77,7 @@ INSERT INTO mart.fact_fuel_writeoff (
 )
 SELECT
     s.period_month,
-    e.equipment_sk,
+    e.eq_sk,
     s.marka_topliva_id,
     s.nachalny_ostatok,
     s.konechny_ostatok,
@@ -85,7 +85,7 @@ SELECT
     s.fakticheskiy_raskhod,
     s.doc_id::text || '-' || s.line_number::text
 FROM staging.v_fuel_writeoff_clean s
-LEFT JOIN mart.dim_equipment e ON e.ref_key_1c::text = s.tehnika_id::text
+LEFT JOIN mart.dim_equipment e ON e.code_1c::text = s.tehnika_id::text
 WHERE NOT EXISTS (
     SELECT 1 FROM mart.fact_fuel_writeoff f
     WHERE f.src_doc_ref = s.doc_id::text || '-' || s.line_number::text
