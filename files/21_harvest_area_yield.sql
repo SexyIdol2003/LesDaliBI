@@ -3,12 +3,11 @@
 -- Финальная витрина урожайности (т/га): связывает факт урожая с площадью
 -- поля на дату взвешивания.
 --
--- ВАЖНО (исправлено 2026-09-08 после диагностики на поле 318):
--- Признак ЭтоРодитель имеет обратный смысл, чем предполагалось:
---   eto_roditel = true  -> служебная строка-заголовок года: площадь=0, даты-заглушка 0001-01-01
---   eto_roditel = false -> РЕАЛЬНЫЕ строки с площадью и реальными датами (и общие на весь год,
---                           и разбитые по контурам/культурам внутри года — их периоды НЕ пересекаются,
---                           так что задвоения нет — не нужно исключать eto_vetv).
+-- ВАЖНО (исправлено 2026-09-08, второй раунд диагностики на поле 318):
+-- Признак НеИспользуется (ne_ispolzuetsya) означает "эта историческая запись больше
+-- не актуальна" (ср. текст вида "318, Пар 2020 г. (не исп. с 31.12.2020)") — поэтому
+-- ОН СТАВИТСЯ true У ВСЕХ прошлых периодов после того как их сменила следующая запись.
+-- Фильтр "ne_ispolzuetsya=false" ошибочно вырезал всю историю (оставив только текущий 2026 год) — убран.
 -- См. SESSION_2026-09-08_POLYA_AREA_DISCOVERY.md.
 -- ============================================================================
 
@@ -19,7 +18,8 @@ DROP VIEW IF EXISTS mart.v_fact_harvest_yield CASCADE;
 DROP VIEW IF EXISTS mart.v_field_area_by_date CASCADE;
 
 -- ---- Витрина: площадь поля на конкретную дату ----
--- Исключаем только служебные строки-заголовки (eto_roditel=true и/или даты-заглушка 0001-01-01).
+-- Исключаем только служебные строки-заголовки (eto_roditel=true) и строки без площади/дат.
+-- ne_ispolzuetsya НЕ фильтруем — он мечен на всех исторических записях, нам они как раз нужны.
 CREATE VIEW mart.v_field_area_by_date AS
 SELECT
     h.pole_id,
@@ -31,8 +31,7 @@ SELECT
     GREATEST(h.nachalo_perioda, h.konec_perioda) AS period_end
 FROM raw.r1c_polya_istoriya h
 JOIN raw.r1c_polya p ON p._id = h.pole_id
-WHERE COALESCE(h.ne_ispolzuetsya, false) = false
-  AND COALESCE(h.eto_roditel, false) = false
+WHERE COALESCE(h.eto_roditel, false) = false
   AND h.ploshad_obshaya > 0
   AND h.nachalo_perioda > '0002-01-01'::timestamp
   AND h.konec_perioda   > '0002-01-01'::timestamp;
