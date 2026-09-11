@@ -70,7 +70,7 @@ WHERE COALESCE(r._deletionmark, false) = false
 CREATE TABLE IF NOT EXISTS mart.fact_equipment_repair_cost (
     repair_cost_sk bigserial PRIMARY KEY,
     repair_month date NOT NULL,
-    equipment_sk int REFERENCES mart.dim_equipment(equipment_sk),
+    equipment_sk int REFERENCES mart.dim_equipment(eq_sk),
     labor_hours numeric(10,3),
     labor_cost_rub numeric(14,2),
     cost_type text DEFAULT 'labor_only',
@@ -83,12 +83,12 @@ INSERT INTO mart.fact_equipment_repair_cost (
 )
 SELECT
     s.repair_month,
-    e.equipment_sk,
+    e.eq_sk,
     s.chasov,
     s.itogo_zp,
     s.doc_id::text
 FROM staging.v_equipment_repair_clean s
-LEFT JOIN mart.dim_equipment e ON e.ref_key_1c::text = s.tehnika_id::text
+LEFT JOIN mart.dim_equipment e ON e.code_1c::text = s.tehnika_id::text
 WHERE NOT EXISTS (
     SELECT 1 FROM mart.fact_equipment_repair_cost f WHERE f.src_doc_ref = s.doc_id::text
 );

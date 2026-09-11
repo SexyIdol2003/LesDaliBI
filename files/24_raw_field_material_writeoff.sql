@@ -107,7 +107,7 @@ SELECT
     w.rate_per_ha,
     w.doc_id::text
 FROM staging.v_field_agro_input_writeoff w
-LEFT JOIN mart.dim_field f ON f.ref_key_1c::text = w.field_id::text
+LEFT JOIN mart.dim_field f ON f.field_code_1c::text = w.field_id::text
 WHERE NOT EXISTS (
     SELECT 1 FROM mart.fact_agro_input_usage m WHERE m.src_doc_ref = w.doc_id::text
 );
