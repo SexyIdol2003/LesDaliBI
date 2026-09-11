@@ -1,7 +1,9 @@
 from __future__ import annotations
 
 import logging
+import time
 from datetime import datetime, timedelta
+from urllib.parse import quote
 
 import requests
 from airflow import DAG
@@ -15,6 +17,10 @@ DEFAULT_PAGE_SIZE = 200
 
 ENTITY_NAME = "Document_ДвижениеПродукцииИМатериалов"
 DOC_TYPE = "АктНаСписанияСемянУдобренийИЯдов"
+
+RETRYABLE_STATUS_CODES = {500, 502, 503, 504}
+MAX_HTTP_RETRIES = 4
+BASE_BACKOFF_SEC = 2
 
 
 def _get_cfg():
@@ -47,23 +53,66 @@ def _session(cfg):
     return session
 
 
-def _fetch_all(cfg, entity, select, filter_expr=None):
+def _build_query_string(odata_params):
+    parts = []
+    for key, value in odata_params.items():
+        encoded_value = quote(str(value), safe="")
+        parts.append(f"{key}={encoded_value}")
+    return "&".join(parts)
+
+
+def _get_with_retry(session, base_url, odata_params, timeout_sec):
+    query_string = _build_query_string(odata_params)
+    full_url = f"{base_url}?{query_string}"
+    last_exc = None
+
+    for attempt in range(1, MAX_HTTP_RETRIES + 1):
+        try:
+            response = session.get(full_url, timeout=timeout_sec)
+            if response.status_code in RETRYABLE_STATUS_CODES:
+                raise requests.exceptions.HTTPError(
+                    f"{response.status_code} retryable server error",
+                    response=response,
+                )
+            response.raise_for_status()
+            return response
+        except (requests.exceptions.HTTPError, requests.exceptions.ConnectionError,
+                 requests.exceptions.Timeout) as exc:
+            last_exc = exc
+            status = getattr(getattr(exc, "response", None), "status_code", None)
+            is_retryable_http = status in RETRYABLE_STATUS_CODES
+            is_network_error = isinstance(
+                exc, (requests.exceptions.ConnectionError, requests.exceptions.Timeout)
+            )
+
+            if attempt == MAX_HTTP_RETRIES or not (is_retryable_http or is_network_error):
+                raise
+
+            backoff = BASE_BACKOFF_SEC * (2 ** (attempt - 1))
+            logging.warning(
+                "Retryable error on attempt %s/%s for %s (status=%s): %s. "
+                "Retrying in %ss",
+                attempt, MAX_HTTP_RETRIES, full_url, status, exc, backoff,
+            )
+            time.sleep(backoff)
+
+    raise last_exc
+
+
+def _fetch_all_full_documents(cfg, entity, filter_expr):
     session = _session(cfg)
+    base_url = f'{cfg["base_url"].rstrip("/")}/{entity}'
     rows, skip = [], 0
 
     while True:
-        params = {
+        odata_params = {
             "$format": "json",
-            "$select": select,
+            "$filter": filter_expr,
             "$top": cfg["page_size"],
             "$skip": skip,
         }
-        if filter_expr:
-            params["$filter"] = filter_expr
 
-        url = f'{cfg["base_url"].rstrip("/")}/{entity}'
-        response = session.get(url, params=params, timeout=cfg["timeout_sec"])
-        response.raise_for_status()
+        response = _get_with_retry(session, base_url, odata_params, cfg["timeout_sec"])
 
         batch = response.json().get("value", [])
         if not batch:
@@ -80,48 +129,27 @@ def _fetch_all(cfg, entity, select, filter_expr=None):
 
 def _verify_entity(**_):
     cfg = _get_cfg()
-    session = _session(cfg)
-    url = f'{cfg["base_url"].rstrip("/")}/{ENTITY_NAME}'
-    response = session.get(
-        url,
-        params={
-            "$format": "json",
-            "$select": "Ref_Key,АпкВидДокумента",
-            "$top": 50,
-        },
-        timeout=cfg["timeout_sec"],
+    raw_docs = _fetch_all_full_documents(
+        cfg, ENTITY_NAME, f"АпкВидДокумента eq '{DOC_TYPE}'"
     )
-    response.raise_for_status()
-
-    sample = response.json().get("value", [])
-    matching = sum(
-        1 for row in sample
-        if row.get("АпкВидДокумента") == DOC_TYPE
-    )
+    with_lines = sum(1 for d in raw_docs if d.get("Товары"))
     logging.info(
-        "Verified %s without server filter: %s sampled, %s matching %s",
-        ENTITY_NAME,
-        len(sample),
-        matching,
-        DOC_TYPE,
+        "Verified %s: %s matching documents, %s with non-empty Товары",
+        ENTITY_NAME, len(raw_docs), with_lines,
     )
 
 
 def _extract_agro_input_writeoffs(**context):
     cfg = _get_cfg()
 
-    raw = _fetch_all(
-        cfg,
-        ENTITY_NAME,
-        "Ref_Key,DeletionMark,Posted,Number,Date,АпкВидДокумента,"
-        "ХозяйственнаяОперация,Организация_Key,Отправитель,Получатель,"
-        "АпкВидРаботы_Key,АпкОбъектЗатрат_Key,Товары",
-        filter_expr=f"АпкВидДокумента eq '{DOC_TYPE}'",
+    raw_docs = _fetch_all_full_documents(
+        cfg, ENTITY_NAME, f"АпкВидДокумента eq '{DOC_TYPE}'"
     )
 
-    docs, lines = [], []
+    docs = []
+    lines = []
 
-    for document in raw:
+    for document in raw_docs:
         doc_id = _norm_text(document.get("Ref_Key"))
         if not doc_id:
             continue
@@ -141,10 +169,10 @@ def _extract_agro_input_writeoffs(**context):
             _norm_text(document.get("АпкОбъектЗатрат_Key")),
         ))
 
-        for index, row in enumerate(document.get("Товары", []), start=1):
+        for row in document.get("Товары", []):
             lines.append((
                 doc_id,
-                int(row.get("LineNumber") or index),
+                int(row.get("LineNumber") or 0),
                 _norm_text(row.get("Номенклатура_Key")),
                 _norm_text(row.get("Характеристика_Key")),
                 _norm_text(row.get("Серия_Key")),
