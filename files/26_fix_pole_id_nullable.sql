@@ -1,0 +1,45 @@
+-- ============================================================================
+-- Fix: mart.fact_spisanie_materialov / fact_vypusk_urozhaya / fact_putevoy_rabota
+-- pole_id NOT NULL -> nullable
+--
+-- НАЙДЕНО (сессия 2026-09-11): dag_transform_mart падал ежедневно с конца
+-- июля на всех трёх тасках (transform_spisanie_materialov,
+-- transform_vypusk_urozhaya, transform_putevoy_rabota) с одинаковой ошибкой:
+--
+--   psycopg2.errors.NotNullViolation: null value in column "pole_id" of
+--   relation "fact_spisanie_materialov" violates not-null constraint
+--   DETAIL: Failing row contains (..., doc_number=0000-000366, 2024-07-30,
+--   pole_id=NULL, ...)
+--
+-- ПРИЧИНА: raw.r1c_dvizhenie_produkcii_lines (источник для spisanie/vypusk)
+-- и raw.r1c_putevoy_list_lines (источник для putevoy_rabota) легитимно
+-- содержат строки документов 1С без привязки к полю (pole_id = NULL) —
+-- например, списание материалов на общий склад/ГСМ не для конкретного поля.
+-- Схема mart трёх фактовых таблиц требовала pole_id NOT NULL, из-за
+-- чего INSERT обрывался на первой такой строке и ВСЯ вставка не проходила —
+-- соответствующие mart-таблицы оставались полностью пустыми (0 строк)
+-- несмотря на то, что raw-источники были наполнены.
+--
+-- ПОСЛЕДСТВИЯ ДО ФИКСА: fact_spisanie_materialov и fact_vypusk_urozhaya
+-- были пустыми (0 строк) => показатель "руб удобрений/СЗР на 1 га по
+-- сезонам" был полностью нереализуем, хотя raw-данные для него существуют.
+-- fact_putevoy_rabota частично наполнялась через отдельный ручной запуск (25279
+-- строк на момент проверки), но 388 строк без pole_id ежедневно терялись
+-- при каждой попытке пересборки.
+--
+-- ФИКС: разрешить pole_id = NULL на уровне схемы (это легитимный бизнес-
+-- кейс в 1С), НЕ фильтровать такие строки в INSERT — иначе они пропадут
+-- из mart совсем, включая случаи, нужные для показателя "руб на технику".
+-- Фильтрацию `WHERE pole_id IS NOT NULL` следует делать точечно на уровне
+-- BI-view для показателей, привязанных к площади поля (например, руб
+-- удобрений на га), а не на уровне общей фактовой таблицы.
+--
+-- РЕЗУЛЬТАТ ПОСЛЕ ФИКСА (проверено airflow tasks test):
+--   fact_spisanie_materialov: 30 строк (было 0)
+--   fact_vypusk_urozhaya: 2164 строки (было 0)
+--   fact_putevoy_rabota: 25667 строк (было 25279, +388)
+-- ============================================================================
+
+ALTER TABLE mart.fact_spisanie_materialov ALTER COLUMN pole_id DROP NOT NULL;
+ALTER TABLE mart.fact_vypusk_urozhaya ALTER COLUMN pole_id DROP NOT NULL;
+ALTER TABLE mart.fact_putevoy_rabota ALTER COLUMN pole_id DROP NOT NULL;
