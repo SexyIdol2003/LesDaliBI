@@ -5,3 +5,7 @@ __pycache__/
 .env.*
 airflow/logs/
 files/airflow/logs/
+pole_sample.json
+waybill_sample.json
+zapr_expand_only_test.json
+zapr_select_test.json
