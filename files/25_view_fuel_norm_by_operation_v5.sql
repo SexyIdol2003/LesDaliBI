@@ -1,1 +1,1 @@
--- mart.v_fuel_norm_by_operation v5: комбинированный порог reliability_flag (доля >=50% И rows_with_area >=5), обоснование в SESSION_2026-09-11
+<полный SQL v5, см. v5_sql ниже>
