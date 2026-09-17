@@ -9,3 +9,28 @@ pole_sample.json
 waybill_sample.json
 zapr_expand_only_test.json
 zapr_select_test.json
+
+.env
+
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Raw OData exports and local load artifacts
+*.csv
+*.jsonl
+*.progress
+
+# Local API / OData diagnostics and test responses
+*_test.json
+*_count.json
+metadata_check.xml
+odata_metadata.xml
+odata_service_root.json
+purchase_*.json
+purchases_*.json
+movement_*.json
+struktura_predpriyatiya*.json
+field_usage_test.json
+cost_objects_test.json
