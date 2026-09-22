@@ -34,3 +34,5 @@ movement_*.json
 struktura_predpriyatiya*.json
 field_usage_test.json
 cost_objects_test.json
+__pycache__/
+*.pyc
