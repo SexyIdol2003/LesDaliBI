@@ -61,3 +61,10 @@ FROM raw.r1c_putevoy_list_lines
 WHERE klyuch_svyazi IS NOT NULL
 ORDER BY den_raboty DESC NULLS LAST
 LIMIT 20;
+
+-- 2026-09-23: итог проверки моста через raw.r1c_dvizhenie_produkcii_lines.
+-- raw.r1c_putevoy_list_lines.klyuch_svyazi имеет тип uuid и заполнен.
+-- Сопоставление p.klyuch_svyazi::text с d._id, d.doc_id, d.pole_id
+-- и d.nomenklatura_id вернуло 0 совпадений во всех вариантах.
+-- Следовательно, r1c_dvizhenie_produkcii_lines не является владельцем
+-- ключа связи путевого листа и не может использоваться для восстановления pole_id.
