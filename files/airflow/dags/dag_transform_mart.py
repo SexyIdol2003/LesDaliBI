@@ -57,6 +57,38 @@ ON CONFLICT (doc_id,line_number,agr_operaciya_id) DO UPDATE SET
 """
 
 
+
+SQL_FACT_FUEL_WRITEOFF = """
+INSERT INTO mart.fact_fuel_writeoff (
+    period_month,
+    equipment_sk,
+    fuel_brand_id,
+    liters_start,
+    liters_end,
+    liters_refueled,
+    liters_consumed,
+    src_doc_ref
+)
+SELECT
+    s.period_month,
+    e.eq_sk,
+    s.marka_topliva_id,
+    s.nachalny_ostatok,
+    s.konechny_ostatok,
+    s.zapravleno,
+    s.fakticheskiy_raskhod,
+    s.doc_id::text || '-' || s.line_number::text
+FROM staging.v_fuel_writeoff_clean s
+LEFT JOIN mart.dim_equipment e
+    ON e.code_1c::text = s.tehnika_id::text
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM mart.fact_fuel_writeoff f
+    WHERE f.src_doc_ref =
+          s.doc_id::text || '-' || s.line_number::text
+);
+"""
+
 def _run_sql(sql, label):
     pg = PostgresHook(postgres_conn_id=POSTGRES_CONN_ID)
     conn = pg.get_conn(); cur = conn.cursor()
@@ -67,6 +99,10 @@ def _run_sql(sql, label):
 def _transform_spisanie(**context): _run_sql(SQL_FACT_SPISANIE, "fact_spisanie_materialov")
 def _transform_vypusk(**context): _run_sql(SQL_FACT_VYPUSK, "fact_vypusk_urozhaya")
 def _transform_putevoy(**context): _run_sql(SQL_FACT_PUTEVOY, "fact_putevoy_rabota")
+
+def _transform_fuel_writeoff(**context):
+    _run_sql(SQL_FACT_FUEL_WRITEOFF, "fact_fuel_writeoff")
+
 
 
 default_args = {"owner": "bi", "depends_on_past": False, "retries": 2, "retry_delay": timedelta(minutes=5)}
@@ -80,4 +116,5 @@ with DAG(
     t_sp = PythonOperator(task_id="transform_spisanie_materialov", python_callable=_transform_spisanie, provide_context=True)
     t_vy = PythonOperator(task_id="transform_vypusk_urozhaya", python_callable=_transform_vypusk, provide_context=True)
     t_pu = PythonOperator(task_id="transform_putevoy_rabota", python_callable=_transform_putevoy, provide_context=True)
-    [t_sp, t_vy, t_pu]
+    t_fw = PythonOperator(task_id="transform_fuel_writeoff", python_callable=_transform_fuel_writeoff, provide_context=True)
+    [t_sp, t_vy, t_pu, t_fw]
