@@ -36,3 +36,14 @@ field_usage_test.json
 cost_objects_test.json
 __pycache__/
 *.pyc
+
+# Локальная диагностика опубликованной OData-модели 1С
+files/odata_diagnostics_2026-09-23/metadata.xml
+files/odata_diagnostics_2026-09-23/service_document.xml
+files/odata_diagnostics_2026-09-23/*.csv
+files/odata_diagnostics_2026-09-23/*.txt
+
+# Локальная диагностика OData и одноразовые результаты
+files/odata_diagnostics_2026-09-23/
+files/fetch_unresolved_waybill_analytics.py
+files/airflow/dags/*.bak_*

@@ -91,6 +91,92 @@ def _extract_company_structure(**context):
     context["ti"].xcom_push(key="company_structure_count", value=len(rows))
 
 
+
+def _extract_apk_cost_structure(**context):
+    cfg = _get_cfg()
+    raw = _fetch_all(
+        cfg,
+        "Catalog_СтруктураПредприятия",
+        "Ref_Key,DeletionMark,Code,Description,АпкПоле_Key,АпкГодУрожая,Статус",
+    )
+    rows = [
+        (
+            _norm_text(r.get("Ref_Key")),
+            _norm_text(r.get("Code")),
+            _norm_text(r.get("Description")),
+            _norm_text(r.get("АпкПоле_Key")),
+            r.get("DeletionMark"),
+            (
+                int(r.get("АпкГодУрожая"))
+                if r.get("АпкГодУрожая") not in (None, "", "null")
+                else None
+            ),
+            _norm_text(r.get("Статус")),
+        )
+        for r in raw
+        if r.get("Ref_Key")
+    ]
+    context["ti"].xcom_push(key="apk_cost_structure_rows", value=rows)
+    context["ti"].xcom_push(key="apk_cost_structure_count", value=len(rows))
+
+
+
+def _load_apk_cost_structure(**context):
+    pg = PostgresHook(postgres_conn_id=POSTGRES_CONN_ID)
+    rows = (
+        context["ti"].xcom_pull(
+            task_ids="extract_apk_cost_structure",
+            key="apk_cost_structure_rows",
+        )
+        or []
+    )
+
+    if not rows:
+        raise ValueError(
+            "Catalog_СтруктураПредприятия вернул 0 строк: "
+            "загрузка raw.r1c_struktura_predpriyatiya отменена."
+        )
+
+    sql = """
+        INSERT INTO raw.r1c_struktura_predpriyatiya (
+            ref_key,
+            code,
+            description,
+            apk_pole_key,
+            deletion_mark,
+            apk_harvest_year,
+            status
+        )
+        VALUES (%s, %s, %s, %s, %s, %s, %s)
+        ON CONFLICT (ref_key) DO UPDATE
+        SET
+            code = EXCLUDED.code,
+            description = EXCLUDED.description,
+            apk_pole_key = EXCLUDED.apk_pole_key,
+            deletion_mark = EXCLUDED.deletion_mark,
+            apk_harvest_year = EXCLUDED.apk_harvest_year,
+            status = EXCLUDED.status,
+            _loaded_at = now()
+    """
+
+    conn = pg.get_conn()
+    cur = conn.cursor()
+
+    try:
+        cur.executemany(sql, rows)
+        conn.commit()
+        logging.info(
+            "Загружено/обновлено элементов структуры затрат: %s",
+            len(rows),
+        )
+    except Exception:
+        conn.rollback()
+        raise
+    finally:
+        cur.close()
+        conn.close()
+
+
 def _load_employees(**context):
     pg = PostgresHook(postgres_conn_id=POSTGRES_CONN_ID)
     rows = context["ti"].xcom_pull(task_ids="extract_employees", key="employees_rows") or []
@@ -184,12 +270,14 @@ with DAG(
     t_ex_cf = PythonOperator(task_id="extract_cashflow_items", python_callable=_extract_cashflow_items, provide_context=True)
     t_ex_cr = PythonOperator(task_id="extract_crop_rotations", python_callable=_extract_crop_rotations, provide_context=True)
     t_ex_cs = PythonOperator(task_id="extract_company_structure", python_callable=_extract_company_structure, provide_context=True)
+    t_ex_acs = PythonOperator(task_id="extract_apk_cost_structure", python_callable=_extract_apk_cost_structure, provide_context=True)
     t_ex_eq = PythonOperator(task_id="extract_equipment", python_callable=_extract_equipment, provide_context=True)
     t_ex_ei = PythonOperator(task_id="extract_expense_items", python_callable=_extract_expense_items, provide_context=True)
     t_ld_em = PythonOperator(task_id="load_employees", python_callable=_load_employees, provide_context=True)
     t_ld_cf = PythonOperator(task_id="load_cashflow_items", python_callable=_load_cashflow_items, provide_context=True)
     t_ld_cr = PythonOperator(task_id="load_crop_rotations", python_callable=_load_crop_rotations, provide_context=True)
     t_ld_cs = PythonOperator(task_id="load_company_structure", python_callable=_load_company_structure, provide_context=True)
+    t_ld_acs = PythonOperator(task_id="load_apk_cost_structure", python_callable=_load_apk_cost_structure, provide_context=True)
     t_ld_eq = PythonOperator(task_id="load_equipment", python_callable=_load_equipment, provide_context=True)
     t_ld_ei = PythonOperator(task_id="load_expense_items", python_callable=_load_expense_items, provide_context=True)
     t_qc = PythonOperator(task_id="quality_check", python_callable=_quality_check, provide_context=True)
@@ -197,5 +285,6 @@ with DAG(
     t_ex_cf >> t_ld_cf >> t_qc
     t_ex_cr >> t_ld_cr >> t_qc
     t_ex_cs >> t_ld_cs >> t_qc
+    t_ex_acs >> t_ld_acs >> t_qc
     t_ex_eq >> t_ld_eq >> t_qc
     t_ex_ei >> t_ld_ei >> t_qc
