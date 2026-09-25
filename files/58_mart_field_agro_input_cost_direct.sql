@@ -19,6 +19,13 @@
 --
 -- Документные цены/суммы сейчас нулевые у всех строк OData, поэтому не
 -- используются как финансовый источник.
+--
+-- ИСПРАВЛЕНО 2026-09-25: добавлен отдельный статус
+-- OWN_SEED_COST_NOT_AVAILABLE_IN_EXTRACT для собственных семян
+-- ("Семена собств..."), чтобы не путать их с обычным NO_PURCHASE_PRICE.
+-- Задеплоено в прод, проверено: OK_STRICT_COST=4223,
+-- PRICE_AFTER_WRITEOFF_NOT_IN_STRICT_COST=291,
+-- OWN_SEED_COST_NOT_AVAILABLE_IN_EXTRACT=17, NO_PURCHASE_PRICE=13.
 -- ============================================================================
 
 CREATE OR REPLACE VIEW mart.v_field_agro_input_cost_direct AS
@@ -116,6 +123,9 @@ SELECT
             THEN 'OK_STRICT_COST'
         WHEN purchase_price_match_status = 'ONLY_PRICE_AFTER_WRITEOFF'
             THEN 'PRICE_AFTER_WRITEOFF_NOT_IN_STRICT_COST'
+        WHEN agro_input_category = 'SEEDS'
+         AND lower(COALESCE(nomenklatura_name, '')) LIKE 'семена собств%'
+            THEN 'OWN_SEED_COST_NOT_AVAILABLE_IN_EXTRACT'
         WHEN purchase_price_match_status = 'NO_PURCHASE_PRICE'
             THEN 'NO_PURCHASE_PRICE'
         ELSE 'CHECK_AGRO_PRICE'
@@ -130,6 +140,6 @@ SELECT
 FROM classified;
 
 COMMENT ON VIEW mart.v_field_agro_input_cost_direct IS
-    'Расчётная field-level стоимость фактических списаний семян, удобрений и СЗР. В strict_cost_rub_no_vat включаются только закупочные цены на дату не позже списания. Цена после списания сохраняется диагностически и не включается в строгую СС.';
+    'Расчётная field-level стоимость фактических списаний семян, удобрений и СЗР. В strict_cost_rub_no_vat включаются только закупочные цены на дату не позже списания. Собственные семена помечены статусом OWN_SEED_COST_NOT_AVAILABLE_IN_EXTRACT. Цена после списания сохраняется диагностически и не включается в строгую СС.';
 
 GRANT SELECT ON mart.v_field_agro_input_cost_direct TO datalens_ro;
