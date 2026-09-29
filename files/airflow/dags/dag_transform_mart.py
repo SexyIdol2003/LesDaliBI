@@ -105,6 +105,24 @@ def _transform_fuel_writeoff(**context):
 
 
 
+
+MATERIALIZED_VIEWS_TO_REFRESH = [
+    "mart.mv_field_agro_input_cost_per_ha_season",
+]
+
+def _refresh_materialized_views(**context):
+    pg = PostgresHook(postgres_conn_id=POSTGRES_CONN_ID)
+    conn = pg.get_conn()
+    conn.autocommit = True
+    cur = conn.cursor()
+    try:
+        cur.execute("SET statement_timeout = '15min'")
+        for mv in MATERIALIZED_VIEWS_TO_REFRESH:
+            cur.execute(f"REFRESH MATERIALIZED VIEW CONCURRENTLY {mv}")
+            logging.info("refreshed %s", mv)
+    finally:
+        cur.close(); conn.close()
+
 default_args = {"owner": "bi", "depends_on_past": False, "retries": 2, "retry_delay": timedelta(minutes=5)}
 
 with DAG(
@@ -117,4 +135,5 @@ with DAG(
     t_vy = PythonOperator(task_id="transform_vypusk_urozhaya", python_callable=_transform_vypusk, provide_context=True)
     t_pu = PythonOperator(task_id="transform_putevoy_rabota", python_callable=_transform_putevoy, provide_context=True)
     t_fw = PythonOperator(task_id="transform_fuel_writeoff", python_callable=_transform_fuel_writeoff, provide_context=True)
-    [t_sp, t_vy, t_pu, t_fw]
+    t_refresh = PythonOperator(task_id="refresh_mv_agro_cost", python_callable=_refresh_materialized_views, provide_context=True)
+    [t_sp, t_vy, t_pu, t_fw] >> t_refresh
