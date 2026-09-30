@@ -179,16 +179,16 @@ SELECT
     'ALLOCATED_MONTHLY_EQUIPMENT_FUEL_BY_POSITIVE_NORM'::text
         AS fact_method
 FROM mart.fact_fuel_plan_fact_by_operation
-WHERE reliability_flag = 'OK'
-  AND hectares_op > 0
+WHERE hectares_op > 0
   AND norm_liters > 0
-  AND fact_liters > 0;
+  AND fact_liters > 0
+  AND reliability_flag NOT LIKE 'НЕТ ДАННЫХ:%';
 
 COMMENT ON VIEW mart.fact_fuel_plan_fact_by_operation IS
     'KPI 5: месячное списание техники распределено по положительному нормативу операций. Это расчётная аллокация, не прямой факт по операции; при отсутствии норматива факт показан отдельной нераспределённой строкой.';
 
 COMMENT ON VIEW mart.fact_fuel_plan_fact_by_operation_confirmed IS
-    'Отбор строк расчётной аллокации с площадью, нормативом и статусом OK; слово confirmed не означает прямое подтверждение списания по операции.';
+    'Кандидаты для полевой сверки: расчётная аллокация с площадью и нормативом. Статус месячного покрытия строк сохранён как диагностика; окончательное полевое подтверждение требует reconciliation_status = RECONCILED в витрине №50. Не является прямым списанием по операции.';
 
 GRANT SELECT ON
     mart.fact_fuel_plan_fact_by_operation,
