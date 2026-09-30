@@ -29,6 +29,8 @@ WITH field_work AS (
     JOIN mart.dim_equipment e
       ON e.code_1c = h.tehnika_id::text
     WHERE l.link_status = 'resolved_one_field_active'
+      AND h._posted = true
+      AND COALESCE(h._deletionmark, false) = false
       AND l.work_date IS NOT NULL
     GROUP BY
         date_trunc('month', l.work_date)::date,
@@ -93,6 +95,8 @@ WITH field_by_key AS (
     JOIN mart.dim_equipment e
       ON e.code_1c = h.tehnika_id::text
     WHERE l.link_status = 'resolved_one_field_active'
+      AND h._posted = true
+      AND COALESCE(h._deletionmark, false) = false
       AND l.work_date IS NOT NULL
       AND l.pole_id IS NOT NULL
     GROUP BY
