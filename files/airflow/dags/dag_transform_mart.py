@@ -107,6 +107,7 @@ def _transform_fuel_writeoff(**context):
 
 
 MATERIALIZED_VIEWS_TO_REFRESH = [
+    "mart.mv_field_economic_area_by_date",
     "mart.mv_field_agro_input_cost_per_ha_season",
     "mart.mv_field_season_kpi6_with_scenarios",
 ]
