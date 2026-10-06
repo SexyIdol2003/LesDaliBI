@@ -1,0 +1,1 @@
+{"Servers":{"1":{"Name":"ldali_dwh","Group":"Servers","Host":"postgres-dwh","Port":5432,"MaintenanceDB":"ldali_dwh","Username":"ldali_admin","SSLMode":"prefer"}}}

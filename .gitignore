@@ -1,49 +1,43 @@
-.DS_Store
-__pycache__/
-*.py[cod]
-.env
-.env.*
+
 airflow/logs/
-files/airflow/logs/
-pole_sample.json
-waybill_sample.json
-zapr_expand_only_test.json
-zapr_select_test.json
-
-.env
-
-# Local secrets and environment files
+*.bak
+cost_objects_test.json
+*_count.json
+*.csv
+.DS_Store
+*.dump
+*.dump.gz
 .env
 .env.*
 !.env.example
-
-# Raw OData exports and local load artifacts
-*.csv
-*.jsonl
-*.progress
-
-# Local API / OData diagnostics and test responses
-*_test.json
-*_count.json
-metadata_check.xml
-odata_metadata.xml
-odata_service_root.json
-purchase_*.json
-purchases_*.json
-movement_*.json
-struktura_predpriyatiya*.json
 field_usage_test.json
-cost_objects_test.json
-__pycache__/
-*.pyc
-
-# Локальная диагностика опубликованной OData-модели 1С
+files/airflow/dags/*.bak_*
+files/airflow/logs/
+files/fetch_unresolved_waybill_analytics.py
+files/odata_diagnostics_2026-09-23/
+files/odata_diagnostics_2026-09-23/*.csv
 files/odata_diagnostics_2026-09-23/metadata.xml
 files/odata_diagnostics_2026-09-23/service_document.xml
-files/odata_diagnostics_2026-09-23/*.csv
 files/odata_diagnostics_2026-09-23/*.txt
-
+*.jsonl
+# Local API / OData diagnostics and test responses
+# Local secrets and environment files
+metadata_check.xml
+movement_*.json
+odata_metadata.xml
+odata_service_root.json
+pole_sample.json
+*.progress
+purchase_*.json
+purchases_*.json
+*.pyc
+__pycache__/
+*.py[cod]
+# Raw OData exports and local load artifacts
+struktura_predpriyatiya*.json
+*_test.json
+waybill_sample.json
+zapr_expand_only_test.json
+zapr_select_test.json
 # Локальная диагностика OData и одноразовые результаты
-files/odata_diagnostics_2026-09-23/
-files/fetch_unresolved_waybill_analytics.py
-files/airflow/dags/*.bak_*
+# Локальная диагностика опубликованной OData-модели 1С

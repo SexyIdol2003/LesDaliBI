@@ -1,0 +1,708 @@
+name: datalens
+services:
+  auth:
+    restart: unless-stopped
+    container_name: datalens-auth
+    depends_on:
+      postgres:
+        condition: service_healthy
+        required: true
+    environment:
+      APP_ENV: prod
+      APP_INSTALLATION: opensource
+      AUTH_ADMIN_PASSWORD: nGi9dRiEF3ZFGWGz
+      AUTH_SIGNUP_DISABLED: "false"
+      DISABLE_WILDCARD_COOKIE: "true"
+      MASTER_TOKEN: Zzx6YeknA1gxCXQ6AfyyYxNouvV8rgGy
+      POSTGRES_DSN_LIST: postgres://pg-user:yUtPnN6XVeQv61IOJdvaThTPDJ4Pakxc@postgres:5432/pg-auth-db
+      SKIP_INSTALL_DB_EXTENSIONS: "1"
+      TOKEN_PRIVATE_KEY: |
+        -----BEGIN PRIVATE KEY-----
+        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
+        jbTlgYsvYEhRnV8kS0ywBa/Ng/IE9g==
+        -----END PRIVATE KEY-----
+      TOKEN_PUBLIC_KEY: |
+        -----BEGIN PUBLIC KEY-----
+        MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAuGRbrN8KLg2GApol83aq
+        4ZqaPC9Si61tRQMcZdKLFeyLkrpDdMsBiuIBkcalY3BBO3iNtYCTG9Im4WCi51kq
+        kiw6M5xIQnWw7lKQQxMttO4kHeO/e3mL+ZSxhNA+MiRZ09nQAZKrurGe9rHhGiLz
+        DVHBAOyeXmZX0FduUI9/ylRqjBkt9xxX6Fgh0z4DKyyDa51fe+HyuU3sXuY1Am1d
+        LDDZ0j3NjkfMGCPYPXCg9Owc5HsPGvctnam5baIaVOV0OTzblmZEhvJqdLEQgG7u
+        rezS028DBblWCEoyQD94pXizPopiiVbA/uU00CYihkkZRMiiErSxlssYSdpYfkl3
+        uT8jviUfsS81Xg4eVeQCZgFMeCOTE+lhyHPRtXXOQ53tTGV05Hggldvyi2qJiJRl
+        Clg2WqoV4XqvpQeE/E6+RSjCt6ZDkchyZc/RqPyIm9pSZ3DMRrYw4relCKB3MvYb
+        hjGMXxVVuiz+pFUgJAB6TPJrn/agVWB9VXOtJxZJPbLSVna4w2AiHa8XYc6FEiAC
+        DyjZzWQpvq2MtiLBMIAPYdGwP1RVnzCVjqQMPmD+cSSMDCOmk63iJtptXdPlBFlp
+        CRBriEDBV7v62xp5WrRhDeCwnUbF82jtUo9dXzqALWNtPPIgV5ufF/XDfrA9bDBC
+        3sgejFyNBNcPjrFo8oP18nUCAwEAAQ==
+        -----END PUBLIC KEY-----
+      UI_APP_ENDPOINT: ""
+      US_MASTER_TOKEN: f0ZXhrzfcVAjl5iCDUsOi0lertm898ZT
+      US_SURPRESS_DB_STATUS_LOGS: "true"
+    image: ghcr.io/datalens-tech/datalens-auth:0.27.0
+    networks:
+      default: null
+  control-api:
+    restart: unless-stopped
+    container_name: datalens-control-api
+    environment:
+      AUTH__JWT_ALGORITHM: PS256
+      AUTH__JWT_KEY: |
+        -----BEGIN PUBLIC KEY-----
+        MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAuGRbrN8KLg2GApol83aq
+        4ZqaPC9Si61tRQMcZdKLFeyLkrpDdMsBiuIBkcalY3BBO3iNtYCTG9Im4WCi51kq
+        kiw6M5xIQnWw7lKQQxMttO4kHeO/e3mL+ZSxhNA+MiRZ09nQAZKrurGe9rHhGiLz
+        DVHBAOyeXmZX0FduUI9/ylRqjBkt9xxX6Fgh0z4DKyyDa51fe+HyuU3sXuY1Am1d
+        LDDZ0j3NjkfMGCPYPXCg9Owc5HsPGvctnam5baIaVOV0OTzblmZEhvJqdLEQgG7u
+        rezS028DBblWCEoyQD94pXizPopiiVbA/uU00CYihkkZRMiiErSxlssYSdpYfkl3
+        uT8jviUfsS81Xg4eVeQCZgFMeCOTE+lhyHPRtXXOQ53tTGV05Hggldvyi2qJiJRl
+        Clg2WqoV4XqvpQeE/E6+RSjCt6ZDkchyZc/RqPyIm9pSZ3DMRrYw4relCKB3MvYb
+        hjGMXxVVuiz+pFUgJAB6TPJrn/agVWB9VXOtJxZJPbLSVna4w2AiHa8XYc6FEiAC
+        DyjZzWQpvq2MtiLBMIAPYdGwP1RVnzCVjqQMPmD+cSSMDCOmk63iJtptXdPlBFlp
+        CRBriEDBV7v62xp5WrRhDeCwnUbF82jtUo9dXzqALWNtPPIgV5ufF/XDfrA9bDBC
+        3sgejFyNBNcPjrFo8oP18nUCAwEAAQ==
+        -----END PUBLIC KEY-----
+      AUTH__TYPE: NATIVE
+      BI_API_UWSGI_WORKERS_COUNT: "4"
+      CONNECTOR_AVAILABILITY_VISIBLE: clickhouse,postgres,chyt,ydb,mysql,greenplum,mssql,oracle,trino,appmetrica_api,metrika_api
+      DL_CRY_ACTUAL_KEY_ID: KEY
+      DL_CRY_KEY_VAL_ID_KEY: c1JwWXhyM0FHWktyNTNxc1VqS2dvTTNTaTdkVmFzR00=
+      RQE_FORCE_OFF: "1"
+      RQE_SECRET_KEY: ""
+      US_DYNAMIC_AUTH_PRIVATE_KEY: |
+        -----BEGIN PRIVATE KEY-----
+        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
+        WUfE+PcZm9vC9CiFyu8GQBlBYg3j
+        -----END PRIVATE KEY-----
+      US_HOST: http://us:8080
+      US_MASTER_TOKEN: f0ZXhrzfcVAjl5iCDUsOi0lertm898ZT
+    image: ghcr.io/datalens-tech/datalens-control-api:0.2457.0
+    networks:
+      default: null
+      files_default: null
+  data-api:
+    restart: unless-stopped
+    container_name: datalens-data-api
+    depends_on:
+      postgres:
+        condition: service_healthy
+        required: true
+    environment:
+      AUTH__JWT_ALGORITHM: PS256
+      AUTH__JWT_KEY: |
+        -----BEGIN PUBLIC KEY-----
+        MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAuGRbrN8KLg2GApol83aq
+        4ZqaPC9Si61tRQMcZdKLFeyLkrpDdMsBiuIBkcalY3BBO3iNtYCTG9Im4WCi51kq
+        kiw6M5xIQnWw7lKQQxMttO4kHeO/e3mL+ZSxhNA+MiRZ09nQAZKrurGe9rHhGiLz
+        DVHBAOyeXmZX0FduUI9/ylRqjBkt9xxX6Fgh0z4DKyyDa51fe+HyuU3sXuY1Am1d
+        LDDZ0j3NjkfMGCPYPXCg9Owc5HsPGvctnam5baIaVOV0OTzblmZEhvJqdLEQgG7u
+        rezS028DBblWCEoyQD94pXizPopiiVbA/uU00CYihkkZRMiiErSxlssYSdpYfkl3
+        uT8jviUfsS81Xg4eVeQCZgFMeCOTE+lhyHPRtXXOQ53tTGV05Hggldvyi2qJiJRl
+        Clg2WqoV4XqvpQeE/E6+RSjCt6ZDkchyZc/RqPyIm9pSZ3DMRrYw4relCKB3MvYb
+        hjGMXxVVuiz+pFUgJAB6TPJrn/agVWB9VXOtJxZJPbLSVna4w2AiHa8XYc6FEiAC
+        DyjZzWQpvq2MtiLBMIAPYdGwP1RVnzCVjqQMPmD+cSSMDCOmk63iJtptXdPlBFlp
+        CRBriEDBV7v62xp5WrRhDeCwnUbF82jtUo9dXzqALWNtPPIgV5ufF/XDfrA9bDBC
+        3sgejFyNBNcPjrFo8oP18nUCAwEAAQ==
+        -----END PUBLIC KEY-----
+      AUTH__TYPE: NATIVE
+      BI_COMPENG_PG_ON: "1"
+      BI_COMPENG_PG_URL: postgres://pg-user:yUtPnN6XVeQv61IOJdvaThTPDJ4Pakxc@postgres:5432/pg-compeng-db
+      CACHES_ON: "0"
+      DL_CRY_ACTUAL_KEY_ID: KEY
+      DL_CRY_KEY_VAL_ID_KEY: c1JwWXhyM0FHWktyNTNxc1VqS2dvTTNTaTdkVmFzR00=
+      GUNICORN_WORKERS_COUNT: "5"
+      MUTATIONS_CACHES_ON: "0"
+      RQE_FORCE_OFF: "1"
+      RQE_SECRET_KEY: ""
+      US_DYNAMIC_AUTH_PRIVATE_KEY: |
+        -----BEGIN PRIVATE KEY-----
+        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
+        WUfE+PcZm9vC9CiFyu8GQBlBYg3j
+        -----END PRIVATE KEY-----
+      US_HOST: http://us:8080
+      US_MASTER_TOKEN: f0ZXhrzfcVAjl5iCDUsOi0lertm898ZT
+    image: ghcr.io/datalens-tech/datalens-data-api:0.2457.0
+    networks:
+      default: null
+      files_default: null
+  meta-manager:
+    restart: unless-stopped
+    container_name: datalens-meta-manager
+    depends_on:
+      temporal:
+        condition: service_healthy
+        required: true
+      ui-api:
+        condition: service_started
+        required: true
+    environment:
+      APP_ENV: prod
+      APP_INSTALLATION: opensource
+      APP_PORT: "8080"
+      AUTH_ENABLED: "true"
+      AUTH_TOKEN_PUBLIC_KEY: |
+        -----BEGIN PUBLIC KEY-----
+        MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAuGRbrN8KLg2GApol83aq
+        4ZqaPC9Si61tRQMcZdKLFeyLkrpDdMsBiuIBkcalY3BBO3iNtYCTG9Im4WCi51kq
+        kiw6M5xIQnWw7lKQQxMttO4kHeO/e3mL+ZSxhNA+MiRZ09nQAZKrurGe9rHhGiLz
+        DVHBAOyeXmZX0FduUI9/ylRqjBkt9xxX6Fgh0z4DKyyDa51fe+HyuU3sXuY1Am1d
+        LDDZ0j3NjkfMGCPYPXCg9Owc5HsPGvctnam5baIaVOV0OTzblmZEhvJqdLEQgG7u
+        rezS028DBblWCEoyQD94pXizPopiiVbA/uU00CYihkkZRMiiErSxlssYSdpYfkl3
+        uT8jviUfsS81Xg4eVeQCZgFMeCOTE+lhyHPRtXXOQ53tTGV05Hggldvyi2qJiJRl
+        Clg2WqoV4XqvpQeE/E6+RSjCt6ZDkchyZc/RqPyIm9pSZ3DMRrYw4relCKB3MvYb
+        hjGMXxVVuiz+pFUgJAB6TPJrn/agVWB9VXOtJxZJPbLSVna4w2AiHa8XYc6FEiAC
+        DyjZzWQpvq2MtiLBMIAPYdGwP1RVnzCVjqQMPmD+cSSMDCOmk63iJtptXdPlBFlp
+        CRBriEDBV7v62xp5WrRhDeCwnUbF82jtUo9dXzqALWNtPPIgV5ufF/XDfrA9bDBC
+        3sgejFyNBNcPjrFo8oP18nUCAwEAAQ==
+        -----END PUBLIC KEY-----
+      EXPORT_DATA_VERIFICATION_KEY: Y0Sa7d7x1cj3bBC3PBZNTu6JdwXNVumY
+      POSTGRES_DSN_LIST: postgres://pg-user:yUtPnN6XVeQv61IOJdvaThTPDJ4Pakxc@postgres:5432/pg-meta-manager-db
+      TEMPORAL_AUTH_ENABLED: "true"
+      TEMPORAL_AUTH_PRIVATE_KEY: |
+        -----BEGIN PRIVATE KEY-----
+        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
+        TmwZdIJPOuqFxPD/+xl62wILE/7exlE=
+        -----END PRIVATE KEY-----
+      TEMPORAL_ENDPOINT: temporal:7233
+      UI_API_ENDPOINT: http://ui-api:8080
+      US_ENDPOINT: http://us:8080
+      US_MASTER_TOKEN: f0ZXhrzfcVAjl5iCDUsOi0lertm898ZT
+    image: ghcr.io/datalens-tech/datalens-meta-manager:0.52.0
+    networks:
+      default: null
+  postgres:
+    restart: unless-stopped
+    container_name: datalens-postgres
+    environment:
+      CONTROL_API_CRYPTO_KEY: c1JwWXhyM0FHWktyNTNxc1VqS2dvTTNTaTdkVmFzR00=
+      HC: "0"
+      INIT_DB_AUTH: "1"
+      INIT_DB_DEMO: "1"
+      INIT_DB_META_MANAGER: "1"
+      INIT_DB_TEMPORAL: "1"
+      INIT_DEMO_DATA: "1"
+      INIT_EXTERNAL_POSTGRES: "0"
+      POSTGRES_DB_AUTH: pg-auth-db
+      POSTGRES_DB_COMPENG: pg-compeng-db
+      POSTGRES_DB_DEMO: pg-demo-db
+      POSTGRES_DB_META_MANAGER: pg-meta-manager-db
+      POSTGRES_DB_TEMPORAL: pg-temporal-db
+      POSTGRES_DB_TEMPORAL_VISIBILITY: pg-temporal-visibility-db
+      POSTGRES_DB_US: pg-us-db
+      POSTGRES_HOST: localhost
+      POSTGRES_MAX_CONNECTIONS: "512"
+      POSTGRES_PASSWORD: yUtPnN6XVeQv61IOJdvaThTPDJ4Pakxc
+      POSTGRES_PORT: "5432"
+      POSTGRES_USER: pg-user
+      US_ENDPOINT: http://us:8080
+    healthcheck:
+      test:
+        - CMD
+        - pg_isready
+        - -d
+        - pg-us-db
+        - -U
+        - pg-user
+      timeout: 5s
+      interval: 10s
+      retries: 6
+      start_period: 3s
+    image: ghcr.io/datalens-tech/datalens-postgres:16-1.3.0
+    networks:
+      default: null
+    pull_policy: always
+    volumes:
+      - type: volume
+        source: db-postgres
+        target: /var/lib/postgresql/data
+        volume: {}
+  temporal:
+    restart: unless-stopped
+    container_name: datalens-temporal
+    depends_on:
+      postgres:
+        condition: service_healthy
+        required: true
+    environment:
+      NAMESPACES: meta-manager
+      POSTGRES_DB: pg-temporal-db
+      POSTGRES_DB_VISIBILITY: pg-temporal-visibility-db
+      POSTGRES_HOST: postgres
+      POSTGRES_PASSWORD: yUtPnN6XVeQv61IOJdvaThTPDJ4Pakxc
+      POSTGRES_PORT: "5432"
+      POSTGRES_TLS_CA_FILE: ""
+      POSTGRES_TLS_DISABLE_HOST_VERIFICATION: "true"
+      POSTGRES_TLS_ENABLED: "false"
+      POSTGRES_USER: pg-user
+      TEMPORAL_AUTH_ENABLED: "true"
+      TEMPORAL_AUTH_PRIVATE_KEY: |
+        -----BEGIN PRIVATE KEY-----
+        MIIJQwIBADANBgkqhkiG9w0BAQEFAASCCS0wggkpAgEAAoICAQCPJEYVNuFEwN9F
+        VV2nbDpTe+QLbmfTplJL+b/fLXZ7bGgm/u90Y0zEm70/4hsyEvDnYB5AghV0AyYZ
+        EYi6VxyPkLI7Lfj7lJ5d7Sw/lGIrecMBxQH1o0f1COU33Qa7S5S2ZKz7wSDT7nQj
+        mjBaAhi2SgP2e3tyowyWFHQoHWijJegM7sose9XG4Xf87mhrgLMg/f19h+727xuR
+        hCx8ivSOmgbUtbe288dXCLEflaE75N1uLekhU2SzEvaaDaZZ5f+arfJvlNWORoON
+        XlY8uygw8lfENuwWCEKLcLpAkqjEDUfd1ZJNj0nroHuLwPYYCshKOhQRVkwwxj9G
+        8RvNKsyUPT6u9IntgyVy/4vNGI4dgZ1htgTDoiVa/X7L+Q3r+kWpVN6Kixn8juTX
+        wvsZWpieLwZ68Kb/ySNzSLrABdn2XtSGlTFv6b/+U/P/5rf9/iLy6N4bav9+NaHL
+        bZlo9NOtzplHaAYG1z2VPGGnPnUXLEmLDXqLZ35l9vYfn/dzwFk+p4QQOPhAGHa9
+        43MibdiWJpD0t4IVMbbN96EiU4/N7xAroz/oGm7q717Vd8EFuyUf1uVyKWPOrfQF
+        WuleKDIVWyA0oDzQZpiPYfUP8B/E5fuFWwIGqD2m0g3kcbJNUzhq9K+iZFJPuzl+
+        k7yDT2ujQm4+YFk1AQ7UqzqPViHO+QIDAQABAoICAAD8W6HdxONiU1H46oeH+Ubb
+        PZDOloHLTW8fLdvC8Q6cioMU57VCJySGJgwrPyCzJ1w7OeTGgJCnTOXd9wvBedLg
+        njmbcXGEw9UbGF4/uVqvS1EseCem6OHzyRBUwgJxh3lSFtbiV5reCN1jPHNXka//
+        sSigumg/CIvStudn0caohivrS70kBS7fcqIX9OQjThiAvJ7WsXtF3kdm759+nXyL
+        QazJVkCOS+XPi4Nk1mgWhWfdgmjWWC/bhj3oBiiXADxNIl7zrsd8uNSKZ8b3Sv7l
+        9wYaPWSmyJPel4nGTh87hYPY6q8EuO+Z0AAAY4bQMYeWqs4LwsPl5EhVdL7kTTsI
+        JeTb836uTSwM08xbvQ+TVviV6HyMHYeLg6jNNXLY5BInacSsbw2PJVV705vA9wES
+        MHlWruVzjzC8ZXgBQqSoI1DYf/oh1R2vACyx9QNGmo+WrgN6J4iNhKU1KydR1MEc
+        2aHKZKzqUVlxYORbhb7PgzF8axKoJewnIRqR6HAiKujHjXIKpCk98Ax85hJp8X/N
+        VbNWdDFyeyvDB9IpkYRs0Bl1sAgt3jruino+ruyG9n5NmAKK6YAcOA8E7H0u55D2
+        iGVrtcsqIoFsjWIZKT3rgt2in80sIEm4YoXoLs+WrQ4JyhapcE5GqTVZa4GOgEnm
+        p7dyYm1bkbjutIY5LCPhAoIBAQDCOCPO8bzbAD+kbSnva1JlmnKaBPqvgT23jy8T
+        E+FEuqyldJsrRIRU8517HEYp9P++EZrlAvZdbprlm8P+YT0xPlGFNJEWpN6khCG8
+        yFWjGbETVrqmlDqbI268zrNlzGRtIQX748vjfYMbdhFMFvu4iNPPmiBGnbb/2Bg9
+        hTGr+z8/Mxhe07UVT4h7KJOP0iyjzSWPX3YQJT16dCGbSr1mHjrKrSMmgC37of60
+        zxDsAqBjB4dvYaDQ3/TMF731oudg5DISF8z1RX+azzFUhcycIVgK2XfHPswKqr/0
+        aC1sNZ9Qy+AlKJKIk9rBPjPh7QRmDf3yjUJVgiw6zA8jGMUFAoIBAQC8rLtCIdot
+        tjTea3u4BhDWgIS7WALW/k3W1hkxFZ08BIiC1mlmCgjw1UQ120gWfutIYCf95QAW
+        Qtuljq+cFzXmIlEmNZxhVaGy67EXMeOQEXeVF7zwFom4EKsSJZBSGyu7bCt53Enk
+        eX6epok7qw8EMxqIzyuqMQ5qfj8nQ1hso2qJdwMlp9LNe0rNUJ69je4kgyToHiPa
+        gYt1eLXRB89OytZ/PiRM8O5t1VmyBbBuIWbS+vTKn0h+EdmMc2iTsapUN3+orom4
+        +tPPYyMez88FuEAhlrY/FH7jO0W+TOa3YOzQ0PlYU9/RAGMupvk1PVpCsLzHfK9d
+        CkssrL7DqARlAoIBABilwT2ZBguQ64K1a9X7e7hzMkoDicDOGQP7gtDb/AGZ4yEY
+        PDzwdA7H39toyiq28eGwIEUh7BwNVlD/RI86zeY672OFOUhzYeHk9tcbYWrSbtty
+        bTuIoitgAsSpQrEPkEsdHsJJtW1IV2QbxrQuUoGns6GsAJ6Vk0zCosjj51rZBrzB
+        gj0+hsOOlVZz3s4osQuUlEiup7AC2dt5c25evMyB15ozALv5FlzRwR43DQG2j54h
+        rXlgHWWElm90L+JFazGrpAMRzCvwRvJhivQcCsxhmue9k2rQuFo+MyAUPHd4EqDR
+        Tr/Id1gn02Ikv7bTOnStH+YxMRLi8zP/A4jDsvUCggEBAI1SkJzzgFoXDbjAJ5Zq
+        rLgO4dz2CoKBT0qpaYszlme7OYlPEvmEcLf79rCkhHWdMZ0vsSTjH9KM17tFilJP
+        rGaps8D8DRt3Kbw8AJTQIJTsEHdTpYjsSNHfYlQgYN6vTW2Ak3wevhZtzqMFOOvB
+        sGjD4o8xJpK/Vf38fE9riVMugIFg7LGK6EJTpG7vgUeYhRVCSiW3VcG4oP4noYBl
+        6ikpk8sRf91F5kHMufe3fTSwvjUwFqWi84jC1AH4/A8M1/lm7K8rtSsibf78UfUl
+        UPsGzLqcCfxr3LNV1WK6dWJMLnYm4W4AvTfuo1vxY982CmLDwVNnGG+HY1GePvGM
+        62UCggEBAKiDrnywQwmLDFltFUXfhB7DoDNu858/4Cn0vDVkvbDzwXiJr8YaKjos
+        LXQH0svOpMnro9RZlpzRAG6oy3NpBU65Gpq/r8bmwsuignd/2yYfe5TVExqF35JR
+        TVYeW8NhrQPt8xHXirI7XKiT0VtgiMWDXl9yHZNUJFsJeVL56oEObxEA/3QZ1agY
+        c4jurGBTMW26fbwmGQFfMbZbshPwmmm1DOaCObUeEXayF1ESRR4v8+5KAZLzMebK
+        mjCz7e2WC0rNr/Kta7vLbc3sdtQASNpNtBSiNoGAKgpM3UvbrcrPG8wullBeYyi8
+        TmwZdIJPOuqFxPD/+xl62wILE/7exlE=
+        -----END PRIVATE KEY-----
+      TEMPORAL_AUTH_PUBLIC_KEY: |
+        -----BEGIN PUBLIC KEY-----
+        MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAjyRGFTbhRMDfRVVdp2w6
+        U3vkC25n06ZSS/m/3y12e2xoJv7vdGNMxJu9P+IbMhLw52AeQIIVdAMmGRGIulcc
+        j5CyOy34+5SeXe0sP5RiK3nDAcUB9aNH9QjlN90Gu0uUtmSs+8Eg0+50I5owWgIY
+        tkoD9nt7cqMMlhR0KB1ooyXoDO7KLHvVxuF3/O5oa4CzIP39fYfu9u8bkYQsfIr0
+        jpoG1LW3tvPHVwixH5WhO+Tdbi3pIVNksxL2mg2mWeX/mq3yb5TVjkaDjV5WPLso
+        MPJXxDbsFghCi3C6QJKoxA1H3dWSTY9J66B7i8D2GArISjoUEVZMMMY/RvEbzSrM
+        lD0+rvSJ7YMlcv+LzRiOHYGdYbYEw6IlWv1+y/kN6/pFqVTeiosZ/I7k18L7GVqY
+        ni8GevCm/8kjc0i6wAXZ9l7UhpUxb+m//lPz/+a3/f4i8ujeG2r/fjWhy22ZaPTT
+        rc6ZR2gGBtc9lTxhpz51FyxJiw16i2d+Zfb2H5/3c8BZPqeEEDj4QBh2veNzIm3Y
+        liaQ9LeCFTG2zfehIlOPze8QK6M/6Bpu6u9e1XfBBbslH9blciljzq30BVrpXigy
+        FVsgNKA80GaYj2H1D/AfxOX7hVsCBqg9ptIN5HGyTVM4avSvomRST7s5fpO8g09r
+        o0JuPmBZNQEO1Ks6j1YhzvkCAwEAAQ==
+        -----END PUBLIC KEY-----
+    healthcheck:
+      test:
+        - CMD
+        - /etc/temporal/healthcheck.sh
+      timeout: 5s
+      interval: 10s
+      retries: 6
+      start_period: 3s
+    image: ghcr.io/datalens-tech/datalens-temporal:1.27.2
+    networks:
+      default: null
+    pull_policy: always
+  ui:
+    restart: unless-stopped
+    container_name: datalens-ui
+    depends_on:
+      us:
+        condition: service_started
+        required: true
+    environment:
+      APP_ENV: production
+      APP_INSTALLATION: opensource
+      APP_MODE: full
+      AUTH_ENABLED: "true"
+      AUTH_ENDPOINT: http://auth:8080
+      AUTH_MASTER_TOKEN: Zzx6YeknA1gxCXQ6AfyyYxNouvV8rgGy
+      AUTH_POLICY: disabled
+      AUTH_SIGNUP_DISABLED: "false"
+      AUTH_TOKEN_PUBLIC_KEY: |
+        -----BEGIN PUBLIC KEY-----
+        MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAuGRbrN8KLg2GApol83aq
+        4ZqaPC9Si61tRQMcZdKLFeyLkrpDdMsBiuIBkcalY3BBO3iNtYCTG9Im4WCi51kq
+        kiw6M5xIQnWw7lKQQxMttO4kHeO/e3mL+ZSxhNA+MiRZ09nQAZKrurGe9rHhGiLz
+        DVHBAOyeXmZX0FduUI9/ylRqjBkt9xxX6Fgh0z4DKyyDa51fe+HyuU3sXuY1Am1d
+        LDDZ0j3NjkfMGCPYPXCg9Owc5HsPGvctnam5baIaVOV0OTzblmZEhvJqdLEQgG7u
+        rezS028DBblWCEoyQD94pXizPopiiVbA/uU00CYihkkZRMiiErSxlssYSdpYfkl3
+        uT8jviUfsS81Xg4eVeQCZgFMeCOTE+lhyHPRtXXOQ53tTGV05Hggldvyi2qJiJRl
+        Clg2WqoV4XqvpQeE/E6+RSjCt6ZDkchyZc/RqPyIm9pSZ3DMRrYw4relCKB3MvYb
+        hjGMXxVVuiz+pFUgJAB6TPJrn/agVWB9VXOtJxZJPbLSVna4w2AiHa8XYc6FEiAC
+        DyjZzWQpvq2MtiLBMIAPYdGwP1RVnzCVjqQMPmD+cSSMDCOmk63iJtptXdPlBFlp
+        CRBriEDBV7v62xp5WrRhDeCwnUbF82jtUo9dXzqALWNtPPIgV5ufF/XDfrA9bDBC
+        3sgejFyNBNcPjrFo8oP18nUCAwEAAQ==
+        -----END PUBLIC KEY-----
+      BI_API_ENDPOINT: http://control-api:8080
+      BI_DATA_ENDPOINT: http://data-api:8080
+      EXPORT_WORKBOOK_ENABLED: "true"
+      HC: "0"
+      HC_ENDPOINT: ""
+      HC_MODULES: ""
+      HC_PROTOCOL: ""
+      META_MANAGER_ENDPOINT: http://meta-manager:8080
+      RELEASE_VERSION: 2.9.0
+      US_DYNAMIC_MASTER_TOKEN_PRIVATE_KEY: |
+        -----BEGIN PRIVATE KEY-----
+        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
+        ZR2e647dY1sH1fuQF9xNZgbNgKqBBUyI
+        -----END PRIVATE KEY-----
+      US_ENDPOINT: http://us:8080
+      US_MASTER_TOKEN: f0ZXhrzfcVAjl5iCDUsOi0lertm898ZT
+      YANDEX_MAP_ENABLED: "0"
+      YANDEX_MAP_TOKEN: ""
+    image: ghcr.io/datalens-tech/datalens-ui:0.3831.0
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8088"
+        protocol: tcp
+  ui-api:
+    restart: unless-stopped
+    container_name: datalens-ui-api
+    depends_on:
+      us:
+        condition: service_started
+        required: true
+    environment:
+      APP_ENV: production
+      APP_INSTALLATION: opensource
+      APP_MODE: api
+      BI_API_ENDPOINT: http://control-api:8080
+      US_ENDPOINT: http://us:8080
+    image: ghcr.io/datalens-tech/datalens-ui:0.3831.0
+    networks:
+      default: null
+  us:
+    restart: unless-stopped
+    container_name: datalens-us
+    depends_on:
+      postgres:
+        condition: service_healthy
+        required: true
+    environment:
+      APP_ENV: prod
+      APP_INSTALLATION: opensource
+      APP_PORT: "8080"
+      AUTH_ENABLED: "true"
+      AUTH_ENDPOINT: http://auth:8080
+      AUTH_MASTER_TOKEN: Zzx6YeknA1gxCXQ6AfyyYxNouvV8rgGy
+      AUTH_TOKEN_PUBLIC_KEY: |
+        -----BEGIN PUBLIC KEY-----
+        MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAuGRbrN8KLg2GApol83aq
+        4ZqaPC9Si61tRQMcZdKLFeyLkrpDdMsBiuIBkcalY3BBO3iNtYCTG9Im4WCi51kq
+        kiw6M5xIQnWw7lKQQxMttO4kHeO/e3mL+ZSxhNA+MiRZ09nQAZKrurGe9rHhGiLz
+        DVHBAOyeXmZX0FduUI9/ylRqjBkt9xxX6Fgh0z4DKyyDa51fe+HyuU3sXuY1Am1d
+        LDDZ0j3NjkfMGCPYPXCg9Owc5HsPGvctnam5baIaVOV0OTzblmZEhvJqdLEQgG7u
+        rezS028DBblWCEoyQD94pXizPopiiVbA/uU00CYihkkZRMiiErSxlssYSdpYfkl3
+        uT8jviUfsS81Xg4eVeQCZgFMeCOTE+lhyHPRtXXOQ53tTGV05Hggldvyi2qJiJRl
+        Clg2WqoV4XqvpQeE/E6+RSjCt6ZDkchyZc/RqPyIm9pSZ3DMRrYw4relCKB3MvYb
+        hjGMXxVVuiz+pFUgJAB6TPJrn/agVWB9VXOtJxZJPbLSVna4w2AiHa8XYc6FEiAC
+        DyjZzWQpvq2MtiLBMIAPYdGwP1RVnzCVjqQMPmD+cSSMDCOmk63iJtptXdPlBFlp
+        CRBriEDBV7v62xp5WrRhDeCwnUbF82jtUo9dXzqALWNtPPIgV5ufF/XDfrA9bDBC
+        3sgejFyNBNcPjrFo8oP18nUCAwEAAQ==
+        -----END PUBLIC KEY-----
+      BI_MASTER_TOKEN_PUBLIC_KEY_PRIMARY: |
+        -----BEGIN PUBLIC KEY-----
+        MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA5C4xsOnrPL1wR+89VFzi
+        0KhA9+zx2rviJT5ZPmYv3QRkalg15TEMTeb66+jz2Oi5ZlL2rxzTvtn+OxSexywj
+        voDe8VjyS8zawgwx24JBriMD/2fVGukP2r/lkShqRTRzV4re0OwYzsUoLjVPWUcf
+        WI0A3UL1YK7apI8WYm2H84o0vbdZEYT8pqgGEYIDVpxXDhVIYZeagSQ3HWIeUcfo
+        fuDbc6E3vzkyjH51H29bDEvuikHMzDo2fA7OgHNNzSSjjzFww+j/Gyepeu2wlO8m
+        xe3BWW/5i+JPrgkNL9Ega8zzfZAwhZouQZ/GaWTbBKyTHSQnOqrODLeGWURkoCn8
+        ZHMzXCYZoRPHQbRct/5h3kYi/6MdIM+tshYCEDlPMX+lFNRMfKBHmctddbHogGW5
+        3/f+Nf1Zr9p/+8Vpr19HCY4+4b4q5pwNVQ93dtOjIH0KppTQk4MJ/JdKMWzW/Q52
+        6tNCSFjEJ58BtclbE6SfOq8cdPMu2u8rnSqR00Sk3de+UAVB5byLP3umy8QlEBmK
+        Gl+nMHuiJZLXIpi5BtUeL5fl/v/qiCL2UGMsg/NwnBt9UpzskhXSu/AzMc1xu5QR
+        /bI42ai1dB7iurcGKPh5ilkZoRNTF6dDXllX3hX33O1z5p3xGCzejyNNwhqInua8
+        6HEOGOlybDyt23M86idLITkCAwEAAQ==
+        -----END PUBLIC KEY-----
+      HC: "0"
+      MASTER_TOKEN: f0ZXhrzfcVAjl5iCDUsOi0lertm898ZT
+      POSTGRES_DSN_LIST: postgres://pg-user:yUtPnN6XVeQv61IOJdvaThTPDJ4Pakxc@postgres:5432/pg-us-db
+      SKIP_INSTALL_DB_EXTENSIONS: "1"
+      UI_MASTER_TOKEN_PUBLIC_KEY_PRIMARY: |
+        -----BEGIN PUBLIC KEY-----
+        MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAuxNF1nCAyAa66dsJZ1cU
+        uEZEEEMkMSnrDQ7eJXKNC+Hpv9d3/lzz7uKYxMFJggHPNASZfTXZBX3AdR7dHIEq
+        nKRMUbTMDcT+O8S4IHvyadiKq6EDS2BaT6aL8P2/8WedkMaelOPWm+IQxiOqkpFu
+        RE5ZjirBU6Cg5f/oU/lCMZWrTyDehTtmpgyXH26VrT1H5+/uYSr4IY1qt1JUUhYX
+        zNGDrpMOvjgpG3RM3qJNvdZT34vxtU3JusNigGKfeAFFfNOv83ZvDezzzxE93L5M
+        Rghz1DbToe0+VDZrxe6awO8bnEu3ReCqpldhonfNeOqDpgA2NQl16LjLIzW5IeAC
+        B7mRqEiM4JRY8R+KSr3yWrYwo7lZ2W7peZpEXsUaZOAEHEU56EnhR7yxnD4voVKa
+        /h4PXWIDKilCNG0sZe6f61xZEFEU0PGCQZpLo6r7Kuw/LSSllrXONBGKkjtIoOTb
+        H22bCVZ8A+kt2b2Rrpw1a8Nb52erz9xPX5HdvOuv2oKYNu2RyODCdNxSK5E5ZT9k
+        lJWMwYHA4MDq6iFR2JqDzwvI2JR0v0/6COqrUk1ITz9kHuiboNmQa410/c5gu/N7
+        NfKJ4Kkay7e/+qVrsA7uJZMDsgdXqWrVQucpXFeAHS+nUnGKJenolYyByi0AjPrd
+        fNk3J1JhSO5pFeV7ULd3sKMCAwEAAQ==
+        -----END PUBLIC KEY-----
+      US_SURPRESS_DB_STATUS_LOGS: "true"
+      USE_DEMO_DATA: "0"
+    image: ghcr.io/datalens-tech/datalens-us:1.39.0
+    networks:
+      default: null
+networks:
+  default:
+    name: datalens_default
+    enable_ipv6: false
+  files_default:
+    external: true
+    name: files_default
+volumes:
+  db-postgres:
+    name: datalens_db-postgres
