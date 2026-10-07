@@ -1,7 +1,7 @@
 # SESSION 2026-10-06 — Стабилизация сервера vm-bi, автозапуск, доступ сотрудников к DataLens
 
 Дата: 2026-10-06 (вечер, МСК)
-Сервер: `vm-bi` (Ubuntu 22.04.5 LTS, `10.50.254.42`, пользователь `ilya`)
+Сервер: `vm-bi` (Ubuntu 22.04.5 LTS, `<server-ip>`, пользователь `ilya`)
 Репозиторий: https://github.com/SexyIdol2003/LesDaliBI
 
 ---
@@ -22,7 +22,7 @@
 - `/data/apps/datalens` — DataLens (`docker-compose.production.yaml`, собран `init.sh`).
 - Диски: `/` — 10 ГБ (LV `ubuntu-vg/ubuntu-lv`), `/data` — 80 ГБ (LV `vg-data/data`, занято ~13 ГБ).
 - Доступ с ноутбука — SSH-туннель:
-  `ssh -N -L 18088:localhost:8088 -L 18080:localhost:8080 -L 15050:localhost:5050 ilya@10.50.254.42`
+  `ssh -N -L 18088:localhost:8088 -L 18080:localhost:8080 -L 15050:localhost:5050 ilya@<server-ip>`
   (DataLens :18088, Airflow :18080, pgAdmin :15050).
 
 ### Контекст в репозитории (по структуре и коммитам)
@@ -106,9 +106,9 @@
 - Аутентификация включена (`AUTH_ENABLED: "true"`, контейнер `datalens-auth`); `UI_APP_ENDPOINT: ""`, `DISABLE_WILDCARD_COOKIE: "true"` — вход по IP работает.
 - Роли (глобальные, без прав на отдельные дашборды): `datalens.viewer` (просмотр), `datalens.editor` (создание/правка), `datalens.admin`.
 - В админке созданы пользователи и роли (в т.ч. viewer-аккаунт руководителя).
-- Проверка: `curl -sI http://10.50.254.42:8088` → `HTTP/1.1 200 OK`; вход под viewer из режима инкогнито без туннеля — успешен.
+- Проверка: `curl -sI http://<server-ip>:8088` → `HTTP/1.1 200 OK`; вход под viewer из режима инкогнито без туннеля — успешен.
 - Проверка портов: наружу опубликован только `0.0.0.0:8088` (DataLens UI). Airflow `127.0.0.1:8080`, pgAdmin `127.0.0.1:5050`, Postgres DWH `127.0.0.1:5432` — только локально (доступ по SSH-туннелю).
-- Раздача: ссылка `http://10.50.254.42:8088`, личный логин и пароль, роль viewer; работает из офисной сети или через VPN.
+- Раздача: ссылка `http://<server-ip>:8088`, личный логин и пароль, роль viewer; работает из офисной сети или через VPN.
 
 ---
 
@@ -123,7 +123,7 @@
 | Ротация логов | настроена (для новых контейнеров) |
 | Корень `/` | ~14,25 ГБ |
 | Бэкап DWH | ночной cron, 7 дней, `/data/backups` |
-| DataLens | доступен по `http://10.50.254.42:8088`, роли viewer/editor |
+| DataLens | доступен по `http://<server-ip>:8088`, роли viewer/editor |
 | Airflow / pgAdmin / DWH | только localhost + SSH-туннель |
 | GitHub | `ee43ef9` в `main` (содержит секреты, см. 3.5) |
 
@@ -163,5 +163,5 @@ cd /data/apps/LesDaliBI/files && docker compose up -d
 cd /data/apps/datalens && docker compose -f docker-compose.production.yaml up -d
 
 # Туннель с ноутбука (БЕЗ знака %!)
-ssh -N -L 18088:localhost:8088 -L 18080:localhost:8080 -L 15050:localhost:5050 ilya@10.50.254.42
+ssh -N -L 18088:localhost:8088 -L 18080:localhost:8080 -L 15050:localhost:5050 ilya@<server-ip>
 ```
