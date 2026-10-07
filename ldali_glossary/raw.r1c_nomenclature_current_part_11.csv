@@ -1,0 +1,1060 @@
+﻿category,source_table,object_id,object_code,original_name,full_name,parent_id,is_folder,deletion_mark
+Номенклатура — current,raw.r1c_nomenclature_current,474e8846-a308-11ed-9c4c-00505689ff45,00-00007617,яя_1 сорт Индиго РС2 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,736eaa41-5db4-11ed-9c44-005056893f2c,00-00007369,яя_1 сорт Индиго РС2 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d232cdda-0598-11ec-9c3a-00505689ff45,АК-00004726,яя_1 сорт Кармен РС0 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,af679214-0598-11ec-9c3a-00505689ff45,АК-00004725,яя_1 сорт Кармен РС0 крупный не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f2758f56-0598-11ec-9c3a-00505689ff45,АК-00004728,яя_1 сорт Кармен РС0 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e353488d-0598-11ec-9c3a-00505689ff45,АК-00004727,яя_1 сорт Кармен РС0 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,96ad9c57-0598-11ec-9c3a-00505689ff45,АК-00004724,яя_1 сорт Кармен РС0 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,7077636b-0598-11ec-9c3a-00505689ff45,АК-00004723,яя_1 сорт Кармен РС0 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d010668a-1c4a-11ec-9c3a-00505689ff45,АК-00005193,яя_1 сорт Кармен РС1 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,da09d6e0-1c4a-11ec-9c3a-00505689ff45,АК-00005194,яя_1 сорт Кармен РС1 крупный не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3edd231-1c4a-11ec-9c3a-00505689ff45,АК-00005195,яя_1 сорт Кармен РС1 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ecb3b473-1c4a-11ec-9c3a-00505689ff45,АК-00005196,яя_1 сорт Кармен РС1 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f4d2b1a4-1c4a-11ec-9c3a-00505689ff45,АК-00005197,яя_1 сорт Кармен РС1 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,fc4d2e0e-1c4a-11ec-9c3a-00505689ff45,АК-00005198,яя_1 сорт Кармен РС1 стандарт нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,440449a1-926b-11ed-9c4c-00505689ff45,00-00007559,яя_1 сорт Кармен РС2 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,23ac749b-8688-11ed-9c4c-00505689ff45,00-00007539,яя_1 сорт Кармен РС2 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,413ec23e-5db8-11ed-9c44-005056893f2c,00-00007371,яя_1 сорт Кармен РС2 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,02312d02-05a8-11ec-9c3a-00505689ff45,АК-00004786,яя_1 сорт Кестрел РС1 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c917e169-05a7-11ec-9c3a-00505689ff45,АК-00004785,яя_1 сорт Кестрел РС1 крупный нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,17ced14d-05a8-11ec-9c3a-00505689ff45,АК-00004788,яя_1 сорт Кестрел РС1 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,0f2f15b9-05a8-11ec-9c3a-00505689ff45,АК-00004787,яя_1 сорт Кестрел РС1 мелкий нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b9ddc63e-05a7-11ec-9c3a-00505689ff45,АК-00004784,яя_1 сорт Кестрел РС1 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,9ea3c61b-059b-11ec-9c3a-00505689ff45,АК-00004735,яя_1 сорт Кестрел РС1 стандарт нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,53a204de-01ae-11ec-9c3a-00505689ff45,АК-00004086,яя_1 сорт Коломба РС1 крупный мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,5af65b7a-01ae-11ec-9c3a-00505689ff45,АК-00004087,яя_1 сорт Коломба РС1 крупный не мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,70f3601e-01ae-11ec-9c3a-00505689ff45,АК-00004090,яя_1 сорт Коломба РС1 мелкий мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,7823f37f-01ae-11ec-9c3a-00505689ff45,АК-00004091,яя_1 сорт Коломба РС1 мелкий не мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,68fa873d-01ae-11ec-9c3a-00505689ff45,АК-00004089,яя_1 сорт Коломба РС1 стандарт мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,62163ef0-01ae-11ec-9c3a-00505689ff45,АК-00004088,яя_1 сорт Коломба РС1 стандарт не мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d363390e-7b2f-11eb-9c2e-0050560417d5,00-00003197,яя_1 сорт Коломба РС2 крупный мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bf3e2e7b-7b2f-11eb-9c2e-0050560417d5,00-00003196,яя_1 сорт Коломба РС2 крупный не мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,074807b0-7b30-11eb-9c2e-0050560417d5,00-00003199,яя_1 сорт Коломба РС2 мелкий мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ebcc3b2f-7b2f-11eb-9c2e-0050560417d5,00-00003198,яя_1 сорт Коломба РС2 мелкий не мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a2c0e349-7b2f-11eb-9c2e-0050560417d5,00-00003195,яя_1 сорт Коломба РС2 стандарт мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,8841d0ec-7b2f-11eb-9c2e-0050560417d5,00-00003194,яя_1 сорт Коломба РС2 стандарт нельзя мыть,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,48c1e961-7087-11ed-9c4d-00505689c8d9,00-00007449,яя_1 сорт Мадейра РС1 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,20530016-f557-11ed-9c4e-00505689ff45,00-00008033,яя_1 сорт Мадейра РС1 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,fed9e77d-5467-11ed-9c43-cb6d75bb653b,00-00007354,яя_1 сорт Мадейра РС2 мелкий мытый,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b26b887d-5076-11ed-9c43-cb6d75bb653b,00-00007343,яя_1 сорт Мадейра РС2 мелкий не мытый,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e16b854d-5073-11ed-9c43-cb6d75bb653b,00-00007339,яя_1 сорт Мадейра РС2 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c3849ff3-5075-11ed-9c43-cb6d75bb653b,00-00007342,яя_1 сорт Мадейра РС2 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ee82e06f-6c8c-11ed-9c4d-00505689c8d9,00-00007448,яя_1 сорт Ред Соня РС2 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,fdb1f6be-4e2c-11ed-9c43-cb6d75bb653b,00-00007294,яя_1 сорт Ред Соня РС2 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,1e35b1a5-4e25-11ed-9c43-cb6d75bb653b,00-00007293,яя_1 сорт Ред Соня РС2 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,5854fca8-4494-11ed-9c43-cb6d75bb653b,00-00007226,яя_1 сорт Ред Соня РС2 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,92294fde-01ae-11ec-9c3a-00505689ff45,АК-00004092,яя_1 сорт РедСкарлетт РС1 крупный мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,9a9498e4-01ae-11ec-9c3a-00505689ff45,АК-00004093,яя_1 сорт РедСкарлетт РС1 крупный не мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b18e5605-01ae-11ec-9c3a-00505689ff45,АК-00004096,яя_1 сорт РедСкарлетт РС1 мелкий мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b8c61090-01ae-11ec-9c3a-00505689ff45,АК-00004097,яя_1 сорт РедСкарлетт РС1 мелкий не мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a971ba31-01ae-11ec-9c3a-00505689ff45,АК-00004095,яя_1 сорт РедСкарлетт РС1 стандарт мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a251d6ef-01ae-11ec-9c3a-00505689ff45,АК-00004094,яя_1 сорт РедСкарлетт РС1 стандарт нельзя мыть,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,317f5e6f-7b5d-11eb-9c2e-0050560417d5,00-00003209,яя_1 сорт РедСкарлетт РС2 крупный мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,1c0eec1c-7b5d-11eb-9c2e-0050560417d5,00-00003208,яя_1 сорт РедСкарлетт РС2 крупный не мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75ba1241-7b5d-11eb-9c2e-0050560417d5,00-00003211,яя_1 сорт РедСкарлетт РС2 мелкий мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,51aa6bd5-7b5d-11eb-9c2e-0050560417d5,00-00003210,яя_1 сорт РедСкарлетт РС2 мелкий не мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,04185ab6-7b5d-11eb-9c2e-0050560417d5,00-00003207,яя_1 сорт РедСкарлетт РС2 стандарт мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d8490af5-7b5c-11eb-9c2e-0050560417d5,00-00003206,яя_1 сорт РедСкарлетт РС2 стандарт не мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b793d19e-f54c-11ed-9c4e-00505689ff45,00-00008031,яя_1 сорт РедСкарлетт покупной  стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,33449c54-059c-11ec-9c3a-00505689ff45,АК-00004739,яя_1 сорт Северное сияние РС1 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,181c639f-059c-11ec-9c3a-00505689ff45,АК-00004738,яя_1 сорт Северное сияние РС1 крупный не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,641b28c6-059c-11ec-9c3a-00505689ff45,АК-00004741,яя_1 сорт Северное сияние РС1 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,52588f76-059c-11ec-9c3a-00505689ff45,АК-00004740,яя_1 сорт Северное сияние РС1 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,04272109-059c-11ec-9c3a-00505689ff45,АК-00004737,яя_1 сорт Северное сияние РС1 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f30b6c7b-059b-11ec-9c3a-00505689ff45,АК-00004736,яя_1 сорт Северное сияние РС1 стандарт нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,4f1043dd-04fc-11ee-9c4e-00505689ff45,00-00008113,яя_1 сорт Северное сияние РС2 мелкий ,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,115a6f34-5dd5-11ed-9c44-005056893f2c,00-00007372,яя_1 сорт Северное сияние РС2 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a2e8b00f-05a8-11ec-9c3a-00505689ff45,АК-00004798,яя_1 сорт Фалькон РС1 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,98f66557-05a8-11ec-9c3a-00505689ff45,АК-00004797,яя_1 сорт Фалькон РС1 крупный нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b64ee61c-05a8-11ec-9c3a-00505689ff45,АК-00004800,яя_1 сорт Фалькон РС1 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,acf794ae-05a8-11ec-9c3a-00505689ff45,АК-00004799,яя_1 сорт Фалькон РС1 мелкий нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,8f33cb0e-05a8-11ec-9c3a-00505689ff45,АК-00004796,яя_1 сорт Фалькон РС1 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,83d98223-05a8-11ec-9c3a-00505689ff45,АК-00004795,яя_1 сорт Фалькон РС1 стандарт нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,1caf8f0b-0597-11ec-9c3a-00505689ff45,АК-00004714,яя_1 сорт Фламинго РС0 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,0fc71d4a-0597-11ec-9c3a-00505689ff45,АК-00004713,яя_1 сорт Фламинго РС0 крупный не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,3c3854b9-0597-11ec-9c3a-00505689ff45,АК-00004716,яя_1 сорт Фламинго РС0 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,2a8d950b-0597-11ec-9c3a-00505689ff45,АК-00004715,яя_1 сорт Фламинго РС0 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6d18f3d-0596-11ec-9c3a-00505689ff45,АК-00004712,яя_1 сорт Фламинго РС0 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e269dd3d-0596-11ec-9c3a-00505689ff45,АК-00004711,яя_1 сорт Фламинго РС0 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,57d976ae-1c4d-11ec-9c3a-00505689ff45,АК-00005205,яя_1 сорт Фламинго РС1 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,607b95f4-1c4d-11ec-9c3a-00505689ff45,АК-00005206,яя_1 сорт Фламинго РС1 крупный не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,67f61154-1c4d-11ec-9c3a-00505689ff45,АК-00005207,яя_1 сорт Фламинго РС1 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,6f2906ad-1c4d-11ec-9c3a-00505689ff45,АК-00005208,яя_1 сорт Фламинго РС1 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,7620618a-1c4d-11ec-9c3a-00505689ff45,АК-00005209,яя_1 сорт Фламинго РС1 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,7de98aa3-1c4d-11ec-9c3a-00505689ff45,АК-00005210,яя_1 сорт Фламинго РС1 стандарт нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,00b0e24d-cf03-11ed-9c4e-00505689ff45,00-00007700,яя_1 сорт Фламинго РС2 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,590225c0-5142-11ed-9c43-cb6d75bb653b,00-00007346,яя_1 сорт Фламинго РС2 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d78e411e-05a9-11ec-9c3a-00505689ff45,АК-00004816,яя_2 сорт Аваланч РС1 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,cd75d30c-05a9-11ec-9c3a-00505689ff45,АК-00004815,яя_2 сорт Аваланч РС1 крупный не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f8030f05-05a9-11ec-9c3a-00505689ff45,АК-00004818,яя_2 сорт Аваланч РС1 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e4afecff-05a9-11ec-9c3a-00505689ff45,АК-00004817,яя_2 сорт Аваланч РС1 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c1feeb70-05a9-11ec-9c3a-00505689ff45,АК-00004814,яя_2 сорт Аваланч РС1 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b7afa746-05a9-11ec-9c3a-00505689ff45,АК-00004813,яя_2 сорт Аваланч РС1 стандарт нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,87660280-05a7-11ec-9c3a-00505689ff45,АК-00004780,яя_2 сорт Аметист РС0 крупный не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,9c1ec43b-05a7-11ec-9c3a-00505689ff45,АК-00004782,яя_2 сорт Аметист РС0 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,71964dd7-05a7-11ec-9c3a-00505689ff45,АК-00004778,яя_2 сорт Аметист РС0 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c487cad9-05a6-11ec-9c3a-00505689ff45,АК-00004769,яя_2 сорт Аметист РС7 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ba0fff43-05a6-11ec-9c3a-00505689ff45,АК-00004768,яя_2 сорт Аметист РС7 крупный не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,dea75fe6-05a6-11ec-9c3a-00505689ff45,АК-00004771,яя_2 сорт Аметист РС7 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d567e664-05a6-11ec-9c3a-00505689ff45,АК-00004770,яя_2 сорт Аметист РС7 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,afdd585a-05a6-11ec-9c3a-00505689ff45,АК-00004767,яя_2 сорт Аметист РС7 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a701fdf2-05a6-11ec-9c3a-00505689ff45,АК-00004766,яя_2 сорт Аметист РС7 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,91394be6-05a7-11ec-9c3a-00505689ff45,АК-00004781,яя_2 сорт Аметист РС9 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a7c7bc16-05a7-11ec-9c3a-00505689ff45,АК-00004783,яя_2 сорт Аметист РС9 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,7c8c76c6-05a7-11ec-9c3a-00505689ff45,АК-00004779,яя_2 сорт Аметист РС9 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75f18e63-0596-11ec-9c3a-00505689ff45,АК-00004708,яя_2 сорт Балтик Роуз РС1 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,43ba2391-0596-11ec-9c3a-00505689ff45,АК-00004707,яя_2 сорт Балтик Роуз РС1 крупный не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,9260681b-0596-11ec-9c3a-00505689ff45,АК-00004710,яя_2 сорт Балтик Роуз РС1 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,86a1fab9-0596-11ec-9c3a-00505689ff45,АК-00004709,яя_2 сорт Балтик Роуз РС1 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,0e6ff34c-0596-11ec-9c3a-00505689ff45,АК-00004706,яя_2 сорт Балтик Роуз РС1 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f7aaab09-0595-11ec-9c3a-00505689ff45,АК-00004705,яя_2 сорт Балтик Роуз РС1 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a3c59513-634e-11ed-9c43-00505689cfb8,00-00007385,яя_2 сорт Балтик Роуз РС2 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,3145fdf8-7b5f-11eb-9c2e-0050560417d5,00-00003227,яя_2 сорт БеллаРоза РС1 крупный мытый,,3f205a72-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,09056f27-7b5f-11eb-9c2e-0050560417d5,00-00003226,яя_2 сорт БеллаРоза РС1 крупный не мытый,,3f205a72-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,5c3069a6-7b5f-11eb-9c2e-0050560417d5,00-00003229,яя_2 сорт БеллаРоза РС1 мелкий мытый,,3f205a72-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,46524b27-7b5f-11eb-9c2e-0050560417d5,00-00003228,яя_2 сорт БеллаРоза РС1 мелкий не мытый,,3f205a72-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f37d253c-7b5e-11eb-9c2e-0050560417d5,00-00003225,яя_2 сорт БеллаРоза РС1 стандарт мытый,,3f205a72-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d8cbffdf-7b5e-11eb-9c2e-0050560417d5,00-00003224,яя_2 сорт БеллаРоза РС1 стандарт не мытый,,3f205a72-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,61b3ee69-1621-11ec-9c3a-00505689ff45,АК-00005030,яя_2 сорт БеллаРоза РС2 крупный мытый,,3f205a72-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,597d193d-1621-11ec-9c3a-00505689ff45,АК-00005029,яя_2 сорт БеллаРоза РС2 крупный не мытый,,3f205a72-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,2fa50cb1-1621-11ec-9c3a-00505689ff45,АК-00005026,яя_2 сорт БеллаРоза РС2 мелкий не мытый,,3f205a72-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,4c30836a-1621-11ec-9c3a-00505689ff45,АК-00005028,яя_2 сорт БеллаРоза РС2 стандарт мытый,,3f205a72-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,3cc91b59-1621-11ec-9c3a-00505689ff45,АК-00005027,яя_2 сорт БеллаРоза РС2 стандарт не мытый,,3f205a72-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,8b9da904-05aa-11ec-9c3a-00505689ff45,АК-00004828,яя_2 сорт Болдор РС1 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,7f8e2aea-05aa-11ec-9c3a-00505689ff45,АК-00004827,яя_2 сорт Болдор РС1 крупный не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a39b440d-05aa-11ec-9c3a-00505689ff45,АК-00004830,яя_2 сорт Болдор РС1 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,979c7701-05aa-11ec-9c3a-00505689ff45,АК-00004829,яя_2 сорт Болдор РС1 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,73621115-05aa-11ec-9c3a-00505689ff45,АК-00004826,яя_2 сорт Болдор РС1 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,685672b0-05aa-11ec-9c3a-00505689ff45,АК-00004825,яя_2 сорт Болдор РС1 стандарт нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,28eea0bc-01ac-11ec-9c3a-00505689ff45,АК-00004073,яя_2 сорт Вега РС0 крупный мытый,,5072ea7f-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,319cab84-01ac-11ec-9c3a-00505689ff45,АК-00004074,яя_2 сорт Вега РС0 крупный не мытый,,5072ea7f-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,4f99af08-01ac-11ec-9c3a-00505689ff45,АК-00004078,яя_2 сорт Вега РС0 мелкий мытый,,5072ea7f-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,4908d8f2-01ac-11ec-9c3a-00505689ff45,АК-00004077,яя_2 сорт Вега РС0 мелкий не мытый,,5072ea7f-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,3c206522-01ac-11ec-9c3a-00505689ff45,АК-00004075,яя_2 сорт Вега РС0 стандарт мытый,,5072ea7f-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,4269b4c0-01ac-11ec-9c3a-00505689ff45,АК-00004076,яя_2 сорт Вега РС0 стандарт не мытый,,5072ea7f-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,751220b6-16cf-11ec-9c3a-00505689ff45,АК-00005038,яя_2 сорт Вега РС1 крупный мытый,,5072ea7f-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,7eae9655-16cf-11ec-9c3a-00505689ff45,АК-00005039,яя_2 сорт Вега РС1 крупный не мытый,,5072ea7f-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,8688710c-16cf-11ec-9c3a-00505689ff45,АК-00005040,яя_2 сорт Вега РС1 мелкий мытый,,5072ea7f-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,92421a0e-16cf-11ec-9c3a-00505689ff45,АК-00005041,яя_2 сорт Вега РС1 мелкий не мытый,,5072ea7f-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a22f0606-16cf-11ec-9c3a-00505689ff45,АК-00005042,яя_2 сорт Вега РС1 стандарт мытый,,5072ea7f-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,af87881a-16cf-11ec-9c3a-00505689ff45,АК-00005043,яя_2 сорт Вега РС1 стандарт не мытый,,5072ea7f-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,364a64f6-7b2f-11eb-9c2e-0050560417d5,00-00003191,яя_2 сорт Вега РС2 крупный мытый,,5072ea7f-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,1bc1c735-7b2f-11eb-9c2e-0050560417d5,00-00003190,яя_2 сорт Вега РС2 крупный не мытый,,5072ea7f-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,6991d976-7b2f-11eb-9c2e-0050560417d5,00-00003193,яя_2 сорт Вега РС2 мелкий мытый,,5072ea7f-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,4d3f78d5-7b2f-11eb-9c2e-0050560417d5,00-00003192,яя_2 сорт Вега РС2 мелкий не мытый,,5072ea7f-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,04020b93-7b2f-11eb-9c2e-0050560417d5,00-00003189,яя_2 сорт Вега РС2 стандарт мытый,,5072ea7f-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ea4b3f3d-7b2e-11eb-9c2e-0050560417d5,00-00003188,яя_2 сорт Вега РС2 стандарт не мытый,,5072ea7f-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,68d1dab2-5dad-11ed-9c44-005056893f2c,00-00007365,яя_2 сорт Венди РС3 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,52e81743-01ab-11ec-9c3a-00505689ff45,АК-00004066,яя_2 сорт Вэнди РС1 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,52e81742-01ab-11ec-9c3a-00505689ff45,АК-00004065,яя_2 сорт Вэнди РС1 крупный не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,44680a62-01ab-11ec-9c3a-00505689ff45,АК-00004063,яя_2 сорт Вэнди РС1 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,4b477573-01ab-11ec-9c3a-00505689ff45,АК-00004064,яя_2 сорт Вэнди РС1 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,3c60c9b5-01ab-11ec-9c3a-00505689ff45,АК-00004062,яя_2 сорт Вэнди РС1 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,292f0448-01ab-11ec-9c3a-00505689ff45,АК-00004061,яя_2 сорт Вэнди РС1 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,06c9b463-1c48-11ec-9c3a-00505689ff45,АК-00005187,яя_2 сорт Вэнди РС2 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,0e337ffd-1c48-11ec-9c3a-00505689ff45,АК-00005188,яя_2 сорт Вэнди РС2 крупный не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,15f0bd9a-1c48-11ec-9c3a-00505689ff45,АК-00005189,яя_2 сорт Вэнди РС2 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,1dca97ac-1c48-11ec-9c3a-00505689ff45,АК-00005190,яя_2 сорт Вэнди РС2 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,26907a54-1c48-11ec-9c3a-00505689ff45,АК-00005191,яя_2 сорт Вэнди РС2 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,2e206b5f-1c48-11ec-9c3a-00505689ff45,АК-00005192,яя_2 сорт Вэнди РС2 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e01342fd-76d1-11ed-9c4d-00505689c8d9,00-00007478,яя_2 сорт Гала ВОЛГОГРАД РС2 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ef91f4aa-d165-11ed-9c4e-00505689ff45,00-00007702,яя_2 сорт Гала ЛЕНИНСКОЕ РС2 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,000568d7-76d2-11ed-9c4d-00505689c8d9,00-00007479,яя_2 сорт Гала ОРЕЛ РС2 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a3ff04cb-01aa-11ec-9c3a-00505689ff45,АК-00004053,яя_2 сорт Гала РС0 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,abe72c9e-01aa-11ec-9c3a-00505689ff45,АК-00004054,яя_2 сорт Гала РС0 крупный не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,8748a352-01aa-11ec-9c3a-00505689ff45,АК-00004050,яя_2 сорт Гала РС0 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,77274712-01aa-11ec-9c3a-00505689ff45,АК-00004049,яя_2 сорт Гала РС0 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,9c4db2ab-01aa-11ec-9c3a-00505689ff45,АК-00004052,яя_2 сорт Гала РС0 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,94442aa6-01aa-11ec-9c3a-00505689ff45,АК-00004051,яя_2 сорт Гала РС0 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f59b8211-7a93-11eb-9c2e-0050560417d5,00-00003167,яя_2 сорт Гала РС1 крупный мытый,,894987c2-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c22b879b-7a93-11eb-9c2e-0050560417d5,00-00003166,яя_2 сорт Гала РС1 крупный не мытый,,894987c2-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,4c2b73fd-7a95-11eb-9c2e-0050560417d5,00-00003169,яя_2 сорт Гала РС1 мелкий мытый,,894987c2-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,54c2f79f-7a94-11eb-9c2e-0050560417d5,00-00003168,яя_2 сорт Гала РС1 мелкий не мытый,,894987c2-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,828a9f94-7a93-11eb-9c2e-0050560417d5,00-00003165,яя_2 сорт Гала РС1 стандарт мытый,,894987c2-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,3a90b5d2-7a8e-11eb-9c2e-0050560417d5,00-00003164,яя_2 сорт Гала РС1 стандарт не мытый,,894987c2-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ba7759ad-7a99-11eb-9c2e-0050560417d5,00-00003179,яя_2 сорт Гала РС2 крупный мытый,,894987c2-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ff5ca779-7a98-11eb-9c2e-0050560417d5,00-00003178,яя_2 сорт Гала РС2 крупный не мытый,,894987c2-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,4cdf1752-7a9a-11eb-9c2e-0050560417d5,00-00003181,яя_2 сорт Гала РС2 мелкий мытый,,894987c2-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9e61df0-7a99-11eb-9c2e-0050560417d5,00-00003180,яя_2 сорт Гала РС2 мелкий не мытый,,894987c2-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,55cdc8b7-7a98-11eb-9c2e-0050560417d5,00-00003177,яя_2 сорт Гала РС2 стандарт мытый,,894987c2-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,2f8dd78d-7a98-11eb-9c2e-0050560417d5,00-00003176,яя_2 сорт Гала РС2 стандарт не мытый,,894987c2-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c45480f8-76d1-11ed-9c4d-00505689c8d9,00-00007477,яя_2 сорт Гала ТВЕРЬ РС2 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,529f18d2-0033-11ec-9c3a-00505689ff45,АК-00003985,яя_2 сорт Гладиатор РС1 крупный не мытый,,9b060c36-71d9-11e7-85a2-d43d7eec442d,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,3890337e-0033-11ec-9c3a-00505689ff45,АК-00003984,яя_2 сорт Гладиатор РС1 мелкий не мытый,,9b060c36-71d9-11e7-85a2-d43d7eec442d,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,2b970e81-0033-11ec-9c3a-00505689ff45,АК-00003983,яя_2 сорт Гладиатор РС1 стандарт не мытый,,9b060c36-71d9-11e7-85a2-d43d7eec442d,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b8ed368b-0032-11ec-9c3a-00505689ff45,АК-00003976,яя_2 сорт Григорий Комаров РС1 крупный не мытый,,9b060c36-71d9-11e7-85a2-d43d7eec442d,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c3f672f5-0032-11ec-9c3a-00505689ff45,АК-00003977,яя_2 сорт Григорий Комаров РС1 мелкий не мытый,,9b060c36-71d9-11e7-85a2-d43d7eec442d,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e1d214ed-0032-11ec-9c3a-00505689ff45,АК-00003979,яя_2 сорт Григорий Комаров РС1 стандарт не мытый,,9b060c36-71d9-11e7-85a2-d43d7eec442d,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,afd643dd-05a5-11ec-9c3a-00505689ff45,АК-00004757,яя_2 сорт Индиго РС0 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a64ce1ae-05a5-11ec-9c3a-00505689ff45,АК-00004756,яя_2 сорт Индиго РС0 крупный не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c8dc8484-05a5-11ec-9c3a-00505689ff45,АК-00004758,яя_2 сорт Индиго РС0 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,948f0bf9-05a5-11ec-9c3a-00505689ff45,АК-00004755,яя_2 сорт Индиго РС0 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,8b3a1d80-05a5-11ec-9c3a-00505689ff45,АК-00004754,яя_2 сорт Индиго РС0 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d206885a-05a5-11ec-9c3a-00505689ff45,АК-00004759,яя_2 сорт Индиго РС1 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d1dc69fd-4630-11ec-9c45-00505689c17d,АК-00005589,яя_2 сорт Индиго РС1 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ed1385db-4630-11ec-9c45-00505689c17d,АК-00005591,яя_2 сорт Индиго РС1 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,de792098-4630-11ec-9c45-00505689c17d,АК-00005590,яя_2 сорт Индиго РС1 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f5aba9ad-5db3-11ed-9c44-005056893f2c,00-00007368,яя_2 сорт Индиго РС2 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,89fe4985-0599-11ec-9c3a-00505689ff45,АК-00004732,яя_2 сорт Кармен РС0 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,3b25f3c4-0599-11ec-9c3a-00505689ff45,АК-00004731,яя_2 сорт Кармен РС0 крупный не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bdae6646-0599-11ec-9c3a-00505689ff45,АК-00004734,яя_2 сорт Кармен РС0 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a9503e89-0599-11ec-9c3a-00505689ff45,АК-00004733,яя_2 сорт Кармен РС0 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,2cd31af5-0599-11ec-9c3a-00505689ff45,АК-00004730,яя_2 сорт Кармен РС0 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,21d36854-0599-11ec-9c3a-00505689ff45,АК-00004729,яя_2 сорт Кармен РС0 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,05b2cd2f-1c4b-11ec-9c3a-00505689ff45,АК-00005199,яя_2 сорт Кармен РС1 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,0f2457e9-1c4b-11ec-9c3a-00505689ff45,АК-00005200,яя_2 сорт Кармен РС1 крупный не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,16e65a0d-1c4b-11ec-9c3a-00505689ff45,АК-00005201,яя_2 сорт Кармен РС1 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,1f88794b-1c4b-11ec-9c3a-00505689ff45,АК-00005202,яя_2 сорт Кармен РС1 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,2743561f-1c4b-11ec-9c3a-00505689ff45,АК-00005203,яя_2 сорт Кармен РС1 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,2eaf81da-1c4b-11ec-9c3a-00505689ff45,АК-00005204,яя_2 сорт Кармен РС1 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b5dcfcd8-8687-11ed-9c4c-00505689ff45,00-00007538,яя_2 сорт Кармен РС2 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,50c92083-05a8-11ec-9c3a-00505689ff45,АК-00004792,яя_2 сорт Кестрел РС1 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,48b14a17-05a8-11ec-9c3a-00505689ff45,АК-00004791,яя_2 сорт Кестрел РС1 крупный не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,6955c819-05a8-11ec-9c3a-00505689ff45,АК-00004794,яя_2 сорт Кестрел РС1 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,619163d5-05a8-11ec-9c3a-00505689ff45,АК-00004793,яя_2 сорт Кестрел РС1 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,3d9c2718-05a8-11ec-9c3a-00505689ff45,АК-00004790,яя_2 сорт Кестрел РС1 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,3524ee55-05a8-11ec-9c3a-00505689ff45,АК-00004789,яя_2 сорт Кестрел РС1 стандарт нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,60ae39df-01ad-11ec-9c3a-00505689ff45,АК-00004082,яя_2 сорт Коломба РС1 крупный мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,6ac90ccc-01ad-11ec-9c3a-00505689ff45,АК-00004083,яя_2 сорт Коломба РС1 крупный не мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,6b2fd187-05ac-11ec-9c3a-00505689ff45,АК-00004831,яя_2 сорт Коломба РС1 мелкий мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,73074570-05ac-11ec-9c3a-00505689ff45,АК-00004832,яя_2 сорт Коломба РС1 мелкий не мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,8bebedba-01ad-11ec-9c3a-00505689ff45,АК-00004085,яя_2 сорт Коломба РС1 стандарт мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,84aaa8e7-01ad-11ec-9c3a-00505689ff45,АК-00004084,яя_2 сорт Коломба РС1 стандарт не мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,7f43c86f-7b30-11eb-9c2e-0050560417d5,00-00003203,яя_2 сорт Коломба РС2 крупный мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,6737f850-7b30-11eb-9c2e-0050560417d5,00-00003202,яя_2 сорт Коломба РС2 крупный не мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d2d54788-7b30-11eb-9c2e-0050560417d5,00-00003205,яя_2 сорт Коломба РС2 мелкий мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b42c786a-7b30-11eb-9c2e-0050560417d5,00-00003204,яя_2 сорт Коломба РС2 мелкий не мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,4ea636b6-7b30-11eb-9c2e-0050560417d5,00-00003201,яя_2 сорт Коломба РС2 стандарт мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,327ec130-7b30-11eb-9c2e-0050560417d5,00-00003200,яя_2 сорт Коломба РС2 стандарт не мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,086f6975-f640-11ed-9c4e-00505689ff45,00-00008042,яя_2 сорт Мадейра РС1 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,8f9995de-4df7-11ed-9c43-cb6d75bb653b,00-00007291,яя_2 сорт Мадейра РС2 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,2f91e96b-4afe-11ed-9c43-cb6d75bb653b,00-00007239,яя_2 сорт Ред Соня РС2 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d331f125-01ae-11ec-9c3a-00505689ff45,АК-00004099,яя_2 сорт РедСкарлетт РС1 крупный мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,dae3435e-01ae-11ec-9c3a-00505689ff45,АК-00004100,яя_2 сорт РедСкарлетт РС1 крупный не мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f20325a1-01ae-11ec-9c3a-00505689ff45,АК-00004103,яя_2 сорт РедСкарлетт РС1 мелкий мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f920a701-01ae-11ec-9c3a-00505689ff45,АК-00004104,яя_2 сорт РедСкарлетт РС1 мелкий не мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e810db7f-01ae-11ec-9c3a-00505689ff45,АК-00004102,яя_2 сорт РедСкарлетт РС1 стандарт мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e1505644-01ae-11ec-9c3a-00505689ff45,АК-00004101,яя_2 сорт РедСкарлетт РС1 стандарт не мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,966e219f-7b5e-11eb-9c2e-0050560417d5,00-00003221,яя_2 сорт РедСкарлетт РС2 крупный мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,8522a753-7b5e-11eb-9c2e-0050560417d5,00-00003220,яя_2 сорт РедСкарлетт РС2 крупный не мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c06c8769-7b5e-11eb-9c2e-0050560417d5,00-00003223,яя_2 сорт РедСкарлетт РС2 мелкий мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ab2e253f-7b5e-11eb-9c2e-0050560417d5,00-00003222,яя_2 сорт РедСкарлетт РС2 мелкий не мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,701b1cfc-7b5e-11eb-9c2e-0050560417d5,00-00003219,яя_2 сорт РедСкарлетт РС2 стандарт мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,51534ef1-7b5e-11eb-9c2e-0050560417d5,00-00003218,яя_2 сорт РедСкарлетт РС2 стандарт не мытый,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,34074a30-05a4-11ec-9c3a-00505689ff45,АК-00004745,яя_2 сорт Северное сияние РС1 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,24db7a99-05a4-11ec-9c3a-00505689ff45,АК-00004744,яя_2 сорт Северное сияние РС1 крупный не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,4d03fefb-05a4-11ec-9c3a-00505689ff45,АК-00004747,яя_2 сорт Северное сияние РС1 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,42d88035-05a4-11ec-9c3a-00505689ff45,АК-00004746,яя_2 сорт Северное сияние РС1 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,1831040c-05a4-11ec-9c3a-00505689ff45,АК-00004743,яя_2 сорт Северное сияние РС1 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d1a03413-05a3-11ec-9c3a-00505689ff45,АК-00004742,яя_2 сорт Северное сияние РС1 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,01b51770-05a9-11ec-9c3a-00505689ff45,АК-00004804,яя_2 сорт Фалькон РС1 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f7610d9b-05a8-11ec-9c3a-00505689ff45,АК-00004803,яя_2 сорт Фалькон РС1 крупный не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,153a4d5d-05a9-11ec-9c3a-00505689ff45,АК-00004806,яя_2 сорт Фалькон РС1 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,0bcd8796-05a9-11ec-9c3a-00505689ff45,АК-00004805,яя_2 сорт Фалькон РС1 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e95a816b-05a8-11ec-9c3a-00505689ff45,АК-00004802,яя_2 сорт Фалькон РС1 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ddf44905-05a8-11ec-9c3a-00505689ff45,АК-00004801,яя_2 сорт Фалькон РС1 стандарт нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,12222e0e-0598-11ec-9c3a-00505689ff45,АК-00004720,яя_2 сорт Фламинго РС0 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,0711cd58-0598-11ec-9c3a-00505689ff45,АК-00004719,яя_2 сорт Фламинго РС0 крупный не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,37aa5cad-0598-11ec-9c3a-00505689ff45,АК-00004722,яя_2 сорт Фламинго РС0 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,233de512-0598-11ec-9c3a-00505689ff45,АК-00004721,яя_2 сорт Фламинго РС0 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f1c53674-0597-11ec-9c3a-00505689ff45,АК-00004718,яя_2 сорт Фламинго РС0 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d27809b9-0597-11ec-9c3a-00505689ff45,АК-00004717,яя_2 сорт Фламинго РС0 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,85109439-1c4d-11ec-9c3a-00505689ff45,АК-00005211,яя_2 сорт Фламинго РС1 крупный мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,8c8b0fc5-1c4d-11ec-9c3a-00505689ff45,АК-00005212,яя_2 сорт Фламинго РС1 крупный не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,936f5832-1c4d-11ec-9c3a-00505689ff45,АК-00005213,яя_2 сорт Фламинго РС1 мелкий мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,9b741c31-1c4d-11ec-9c3a-00505689ff45,АК-00005214,яя_2 сорт Фламинго РС1 мелкий не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a3df6482-1c4d-11ec-9c3a-00505689ff45,АК-00005215,яя_2 сорт Фламинго РС1 стандарт мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,abafb4b7-1c4d-11ec-9c3a-00505689ff45,АК-00005216,яя_2 сорт Фламинго РС1 стандарт не мытый,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f49-02a7-11ec-9c3a-00505689ff45,АК-00004605,яя_Аваланч Белый сорт  РС1 кубик в ву 1кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,true
+Номенклатура — current,raw.r1c_nomenclature_current,75533f4b-02a7-11ec-9c3a-00505689ff45,АК-00004607,яя_Аваланч Белый сорт  РС1 кубик в ву 5кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f51-02a7-11ec-9c3a-00505689ff45,АК-00004613,яя_Аваланч Белый сорт  РС1 очищенная в ву 1кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f53-02a7-11ec-9c3a-00505689ff45,АК-00004615,яя_Аваланч Белый сорт  РС1 очищенная в ву 5кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f55-02a7-11ec-9c3a-00505689ff45,АК-00004617,яя_Аваланч Белый сорт  РС1 пастеризованная в ву 0.5кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f57-02a7-11ec-9c3a-00505689ff45,АК-00004619,яя_Аваланч Белый сорт  РС1 пастеризованная в ву 2.5кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f4d-02a7-11ec-9c3a-00505689ff45,АК-00004609,яя_Аваланч Белый сорт  РС1 соломка в ву 1кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f4f-02a7-11ec-9c3a-00505689ff45,АК-00004611,яя_Аваланч Белый сорт  РС1 соломка в ву 5кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f43-02a7-11ec-9c3a-00505689ff45,АК-00004599,яя_Аваланч Белый сорт РС1 Пакет - клипса 1 кг.,,053ba6bf-30e0-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f45-02a7-11ec-9c3a-00505689ff45,АК-00004601,яя_Аваланч Белый сорт РС1 грязный Сетка 25 кг.,,053ba6bf-30e0-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f47-02a7-11ec-9c3a-00505689ff45,АК-00004603,яя_Аваланч Белый сорт РС1 грязный Сетка на завязке 25 кг.,,053ba6bf-30e0-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,30f37373-1afb-11ec-9c3a-00505689ff45,АК-00005143,"яя_Аметист РС0 Сетка - (домик)1,5 кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,1f773c43-1afb-11ec-9c3a-00505689ff45,АК-00005142,яя_Аметист РС0 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,11cb1edb-1afb-11ec-9c3a-00505689ff45,АК-00005141,яя_Аметист РС0 грязный Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,7e0823ab-1afb-11ec-9c3a-00505689ff45,АК-00005150,яя_Аметист РС0 дольки 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,74d69d2a-1afb-11ec-9c3a-00505689ff45,АК-00005149,яя_Аметист РС0 дольки 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,6a1e0072-1afb-11ec-9c3a-00505689ff45,АК-00005148,яя_Аметист РС0 кубик 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,5eca5c32-1afb-11ec-9c3a-00505689ff45,АК-00005147,яя_Аметист РС0 кубик 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,540824ee-1afb-11ec-9c3a-00505689ff45,АК-00005146,яя_Аметист РС0 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,47c857a5-1afb-11ec-9c3a-00505689ff45,АК-00005145,яя_Аметист РС0 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,3e15e585-1afb-11ec-9c3a-00505689ff45,АК-00005144,"яя_Аметист РС0 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,9ad095e2-ff8f-11ed-9c4e-00505689ff45,00-00008077,яя_Аметист РС0 семена биг-бэг 1000кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852db-02a7-11ec-9c3a-00505689ff45,АК-00004622,"яя_Аметист РС7 Сетка - (домик)1,5 кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852df-02a7-11ec-9c3a-00505689ff45,АК-00004626,яя_Аметист РС7 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852e3-02a7-11ec-9c3a-00505689ff45,АК-00004630,яя_Аметист РС7 грязный Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852ef-02a7-11ec-9c3a-00505689ff45,АК-00004642,яя_Аметист РС7 дольки 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852f3-02a7-11ec-9c3a-00505689ff45,АК-00004646,яя_Аметист РС7 дольки 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852e7-02a7-11ec-9c3a-00505689ff45,АК-00004634,яя_Аметист РС7 кубик 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852eb-02a7-11ec-9c3a-00505689ff45,АК-00004638,яя_Аметист РС7 кубик 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852f7-02a7-11ec-9c3a-00505689ff45,АК-00004650,яя_Аметист РС7 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852fb-02a7-11ec-9c3a-00505689ff45,АК-00004654,яя_Аметист РС7 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852ff-02a7-11ec-9c3a-00505689ff45,АК-00004658,"яя_Аметист РС7 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852dc-02a7-11ec-9c3a-00505689ff45,АК-00004623,"яя_Аметист РС9 Сетка - (домик)1,5 кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852e0-02a7-11ec-9c3a-00505689ff45,АК-00004627,яя_Аметист РС9 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852e4-02a7-11ec-9c3a-00505689ff45,АК-00004631,яя_Аметист РС9 грязный Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852f0-02a7-11ec-9c3a-00505689ff45,АК-00004643,яя_Аметист РС9 дольки 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852f4-02a7-11ec-9c3a-00505689ff45,АК-00004647,яя_Аметист РС9 дольки 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852e8-02a7-11ec-9c3a-00505689ff45,АК-00004635,яя_Аметист РС9 кубик 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852ec-02a7-11ec-9c3a-00505689ff45,АК-00004639,яя_Аметист РС9 кубик 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852f8-02a7-11ec-9c3a-00505689ff45,АК-00004651,яя_Аметист РС9 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852fc-02a7-11ec-9c3a-00505689ff45,АК-00004655,яя_Аметист РС9 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,95285300-02a7-11ec-9c3a-00505689ff45,АК-00004659,"яя_Аметист РС9 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a81539d1-02a3-11ec-9c3a-00505689ff45,АК-00004200,яя_Балтик Роуз РС0 Биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784b9-02a3-11ec-9c3a-00505689ff45,АК-00004171,яя_Балтик Роуз РС0 Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784c7-02a3-11ec-9c3a-00505689ff45,АК-00004185,яя_Балтик Роуз РС0 Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d91-02a2-11ec-9c3a-00505689ff45,АК-00004140,"яя_Балтик Роуз РС0 Сетка-домик 2,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d9f-02a2-11ec-9c3a-00505689ff45,АК-00004154,яя_Балтик Роуз РС0 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d562-02a5-11ec-9c3a-00505689ff45,АК-00004514,"яя_Балтик Роуз РС0 бэби Сетка-домик 1,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89329-02a6-11ec-9c3a-00505689ff45,АК-00004530,яя_Балтик Роуз РС0 бэби Сетка-домик 2кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0ef-02a5-11ec-9c3a-00505689ff45,АК-00004483,яя_Балтик Роуз РС0 бэби очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a540-02a5-11ec-9c3a-00505689ff45,АК-00004389,яя_Балтик Роуз РС0 дольки в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a550-02a5-11ec-9c3a-00505689ff45,АК-00004405,яя_Балтик Роуз РС0 дольки в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e680b-02a5-11ec-9c3a-00505689ff45,АК-00004325,яя_Балтик Роуз РС0 кубик в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e681b-02a5-11ec-9c3a-00505689ff45,АК-00004341,яя_Балтик Роуз РС0 кубик в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f4e94eb8-58f1-11ec-9c40-00505689c8d9,АК-00005761,яя_Балтик Роуз РС0 мытый сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0d1-02a5-11ec-9c3a-00505689ff45,АК-00004453,яя_Балтик Роуз РС0 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0e0-02a5-11ec-9c3a-00505689ff45,АК-00004468,яя_Балтик Роуз РС0 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d553-02a5-11ec-9c3a-00505689ff45,АК-00004499,"яя_Балтик Роуз РС0 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89339-02a6-11ec-9c3a-00505689ff45,АК-00004546,яя_Балтик Роуз РС0 семена Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89348-02a6-11ec-9c3a-00505689ff45,АК-00004561,яя_Балтик Роуз РС0 семена Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,09b3e5d2-02a6-11ec-9c3a-00505689ff45,АК-00004576,яя_Балтик Роуз РС0 семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e682b-02a5-11ec-9c3a-00505689ff45,АК-00004357,яя_Балтик Роуз РС0 слайс в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e683b-02a5-11ec-9c3a-00505689ff45,АК-00004373,яя_Балтик Роуз РС0 слайс в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0b1-02a5-11ec-9c3a-00505689ff45,АК-00004421,яя_Балтик Роуз РС0 соломка в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0c1-02a5-11ec-9c3a-00505689ff45,АК-00004437,яя_Балтик Роуз РС0 соломка в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,be98058d-827d-11ec-9c41-00505689c8d9,00-00006056,яя_Балтик Роуз РС1 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2018-02a4-11ec-9c3a-00505689ff45,АК-00004262,яя_Балтик Роуз РС1 грязный Сетка 10кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e0d-02a4-11ec-9c3a-00505689ff45,АК-00004216,яя_Балтик Роуз РС1 грязный Сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2028-02a4-11ec-9c3a-00505689ff45,АК-00004278,яя_Балтик Роуз РС1 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e1d-02a4-11ec-9c3a-00505689ff45,АК-00004232,яя_Балтик Роуз РС1 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e2c-02a4-11ec-9c3a-00505689ff45,АК-00004247,яя_Балтик Роуз РС1 грязный Сетка 5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2036-02a4-11ec-9c3a-00505689ff45,АК-00004292,яя_Балтик Роуз РС1 грязный Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c6d81083-02a4-11ec-9c3a-00505689ff45,АК-00004308,яя_Балтик Роуз РС1 грязный биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e405cbcd-58f1-11ec-9c40-00505689c8d9,АК-00005760,яя_Балтик Роуз РС1 мытый сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,788e0a95-b103-11ec-9c42-00505689c8d9,00-00006418,яя_Балтик Роуз РС1 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d0af7876-9bbf-11ec-9c42-00505689c8d9,00-00006287,яя_Балтик Роуз РС1 семена Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a397be38-bb05-11ec-9c42-00505689c8d9,00-00006440,яя_Балтик Роуз РС1 семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,129a4a8f-9276-11ed-9c4c-00505689ff45,00-00007561,"яя_Балтик Роуз РС2 бэби Сетка-домик 1,5кг.",,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,153ca635-634c-11ed-9c43-00505689cfb8,00-00007384,яя_Балтик Роуз РС2 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,9473207f-7f6c-11ed-9c4d-00505689c8d9,00-00007504,яя_Балтик Роуз РС2 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e319d7cf-9253-11ed-9c4c-00505689ff45,00-00007557,"яя_Балтик Роуз РС2 грязный сетка 2,5 кг",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f2dd9f9b-4d5e-11ed-9c43-cb6d75bb653b,00-00007289,яя_Балтик Роуз РС2 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,524a95d1-f3cb-11ed-9c4e-00505689ff45,00-00007973,яя_Балтик Роуз РС2 семена биг-бэг 1000кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784cf-02a3-11ec-9c3a-00505689ff45,АК-00004193,яя_Беллароза РС1 Биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784b2-02a3-11ec-9c3a-00505689ff45,АК-00004164,яя_Беллароза РС1 Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784c0-02a3-11ec-9c3a-00505689ff45,АК-00004178,яя_Беллароза РС1 Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d8b-02a2-11ec-9c3a-00505689ff45,АК-00004134,"яя_Беллароза РС1 Сетка-домик 2,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d99-02a2-11ec-9c3a-00505689ff45,АК-00004148,яя_Беллароза РС1 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d55b-02a5-11ec-9c3a-00505689ff45,АК-00004507,"яя_Беллароза РС1 бэби Сетка-домик 1,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89322-02a6-11ec-9c3a-00505689ff45,АК-00004523,яя_Беллароза РС1 бэби Сетка-домик 2кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0e8-02a5-11ec-9c3a-00505689ff45,АК-00004476,яя_Беллароза РС1 бэби очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2011-02a4-11ec-9c3a-00505689ff45,АК-00004255,яя_Беллароза РС1 грязный Сетка 10кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e06-02a4-11ec-9c3a-00505689ff45,АК-00004209,яя_Беллароза РС1 грязный Сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2021-02a4-11ec-9c3a-00505689ff45,АК-00004271,яя_Беллароза РС1 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e16-02a4-11ec-9c3a-00505689ff45,АК-00004225,яя_Беллароза РС1 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e25-02a4-11ec-9c3a-00505689ff45,АК-00004240,яя_Беллароза РС1 грязный Сетка 5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf202f-02a4-11ec-9c3a-00505689ff45,АК-00004285,яя_Беллароза РС1 грязный Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf203f-02a4-11ec-9c3a-00505689ff45,АК-00004301,яя_Беллароза РС1 грязный биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6844-02a5-11ec-9c3a-00505689ff45,АК-00004382,яя_Беллароза РС1 дольки в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a549-02a5-11ec-9c3a-00505689ff45,АК-00004398,яя_Беллароза РС1 дольки в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6804-02a5-11ec-9c3a-00505689ff45,АК-00004318,яя_Беллароза РС1 кубик в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6814-02a5-11ec-9c3a-00505689ff45,АК-00004334,яя_Беллароза РС1 кубик в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,747a9a87-58f2-11ec-9c40-00505689c8d9,АК-00005766,яя_Беллароза РС1 мытый сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0ca-02a5-11ec-9c3a-00505689ff45,АК-00004446,яя_Беллароза РС1 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0d9-02a5-11ec-9c3a-00505689ff45,АК-00004461,яя_Беллароза РС1 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d54c-02a5-11ec-9c3a-00505689ff45,АК-00004492,"яя_Беллароза РС1 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89332-02a6-11ec-9c3a-00505689ff45,АК-00004539,яя_Беллароза РС1 семена Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89341-02a6-11ec-9c3a-00505689ff45,АК-00004554,яя_Беллароза РС1 семена Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89350-02a6-11ec-9c3a-00505689ff45,АК-00004569,яя_Беллароза РС1 семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6824-02a5-11ec-9c3a-00505689ff45,АК-00004350,яя_Беллароза РС1 слайс в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6834-02a5-11ec-9c3a-00505689ff45,АК-00004366,яя_Беллароза РС1 слайс в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0aa-02a5-11ec-9c3a-00505689ff45,АК-00004414,яя_Беллароза РС1 соломка в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0ba-02a5-11ec-9c3a-00505689ff45,АК-00004430,яя_Беллароза РС1 соломка в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784d0-02a3-11ec-9c3a-00505689ff45,АК-00004194,яя_Беллароза РС2 Биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d8c-02a2-11ec-9c3a-00505689ff45,АК-00004135,"яя_Беллароза РС2 Сетка-домик 2,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d9a-02a2-11ec-9c3a-00505689ff45,АК-00004149,яя_Беллароза РС2 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d55c-02a5-11ec-9c3a-00505689ff45,АК-00004508,"яя_Беллароза РС2 бэби Сетка-домик 1,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89323-02a6-11ec-9c3a-00505689ff45,АК-00004524,яя_Беллароза РС2 бэби Сетка-домик 2кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0e9-02a5-11ec-9c3a-00505689ff45,АК-00004477,яя_Беллароза РС2 бэби очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2012-02a4-11ec-9c3a-00505689ff45,АК-00004256,яя_Беллароза РС2 грязный Сетка 10кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e07-02a4-11ec-9c3a-00505689ff45,АК-00004210,яя_Беллароза РС2 грязный Сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2022-02a4-11ec-9c3a-00505689ff45,АК-00004272,яя_Беллароза РС2 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e17-02a4-11ec-9c3a-00505689ff45,АК-00004226,яя_Беллароза РС2 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e26-02a4-11ec-9c3a-00505689ff45,АК-00004241,яя_Беллароза РС2 грязный Сетка 5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2030-02a4-11ec-9c3a-00505689ff45,АК-00004286,яя_Беллароза РС2 грязный Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2040-02a4-11ec-9c3a-00505689ff45,АК-00004302,яя_Беллароза РС2 грязный биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6845-02a5-11ec-9c3a-00505689ff45,АК-00004383,яя_Беллароза РС2 дольки в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a54a-02a5-11ec-9c3a-00505689ff45,АК-00004399,яя_Беллароза РС2 дольки в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6805-02a5-11ec-9c3a-00505689ff45,АК-00004319,яя_Беллароза РС2 кубик в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6815-02a5-11ec-9c3a-00505689ff45,АК-00004335,яя_Беллароза РС2 кубик в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,7c7b3547-58f2-11ec-9c40-00505689c8d9,АК-00005767,яя_Беллароза РС2 мытый сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0cb-02a5-11ec-9c3a-00505689ff45,АК-00004447,яя_Беллароза РС2 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0da-02a5-11ec-9c3a-00505689ff45,АК-00004462,яя_Беллароза РС2 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d54d-02a5-11ec-9c3a-00505689ff45,АК-00004493,"яя_Беллароза РС2 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89333-02a6-11ec-9c3a-00505689ff45,АК-00004540,яя_Беллароза РС2 семена Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89342-02a6-11ec-9c3a-00505689ff45,АК-00004555,яя_Беллароза РС2 семена Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89351-02a6-11ec-9c3a-00505689ff45,АК-00004570,яя_Беллароза РС2 семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6825-02a5-11ec-9c3a-00505689ff45,АК-00004351,яя_Беллароза РС2 слайс в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6835-02a5-11ec-9c3a-00505689ff45,АК-00004367,яя_Беллароза РС2 слайс в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0ab-02a5-11ec-9c3a-00505689ff45,АК-00004415,яя_Беллароза РС2 соломка в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0bb-02a5-11ec-9c3a-00505689ff45,АК-00004431,яя_Беллароза РС2 соломка в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784b3-02a3-11ec-9c3a-00505689ff45,АК-00004165,яя_Беллароза РС2Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784c1-02a3-11ec-9c3a-00505689ff45,АК-00004179,яя_Беллароза РС2Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f4a-02a7-11ec-9c3a-00505689ff45,АК-00004606,яя_Болдор Жёлтый сорт  РС1 кубик в ву 1кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f4c-02a7-11ec-9c3a-00505689ff45,АК-00004608,яя_Болдор Жёлтый сорт  РС1 кубик в ву 5кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f52-02a7-11ec-9c3a-00505689ff45,АК-00004614,яя_Болдор Жёлтый сорт  РС1 очищенная в ву 1кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f54-02a7-11ec-9c3a-00505689ff45,АК-00004616,яя_Болдор Жёлтый сорт  РС1 очищенная в ву 5кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f56-02a7-11ec-9c3a-00505689ff45,АК-00004618,яя_Болдор Жёлтый сорт  РС1 пастеризованная в ву 0.5кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f58-02a7-11ec-9c3a-00505689ff45,АК-00004620,яя_Болдор Жёлтый сорт  РС1 пастеризованная в ву 2.5кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f4e-02a7-11ec-9c3a-00505689ff45,АК-00004610,яя_Болдор Жёлтый сорт  РС1 соломка в ву 1кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f50-02a7-11ec-9c3a-00505689ff45,АК-00004612,яя_Болдор Жёлтый сорт  РС1 соломка в ву 5кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f44-02a7-11ec-9c3a-00505689ff45,АК-00004600,яя_Болдор Жёлтый сорт РС1 Пакет - клипса 1 кг.,,053ba6bf-30e0-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f46-02a7-11ec-9c3a-00505689ff45,АК-00004602,яя_Болдор Жёлтый сорт РС1 грязный Сетка 25 кг.,,053ba6bf-30e0-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f48-02a7-11ec-9c3a-00505689ff45,АК-00004604,яя_Болдор Жёлтый сорт РС1 грязный Сетка на завязке 25 кг.,,053ba6bf-30e0-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89336-02a6-11ec-9c3a-00505689ff45,АК-00004543,яя_Вега РС0  семена Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89345-02a6-11ec-9c3a-00505689ff45,АК-00004558,яя_Вега РС0  семена Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,09b3e5cf-02a6-11ec-9c3a-00505689ff45,АК-00004573,яя_Вега РС0  семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784d3-02a3-11ec-9c3a-00505689ff45,АК-00004197,яя_Вега РС0 Биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784b6-02a3-11ec-9c3a-00505689ff45,АК-00004168,яя_Вега РС0 Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784c4-02a3-11ec-9c3a-00505689ff45,АК-00004182,яя_Вега РС0 Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d8e-02a2-11ec-9c3a-00505689ff45,АК-00004137,"яя_Вега РС0 Сетка-домик 2,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d9c-02a2-11ec-9c3a-00505689ff45,АК-00004151,яя_Вега РС0 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d55f-02a5-11ec-9c3a-00505689ff45,АК-00004511,"яя_Вега РС0 бэби Сетка-домик 1,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89326-02a6-11ec-9c3a-00505689ff45,АК-00004527,яя_Вега РС0 бэби Сетка-домик 2кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0ec-02a5-11ec-9c3a-00505689ff45,АК-00004480,яя_Вега РС0 бэби очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2015-02a4-11ec-9c3a-00505689ff45,АК-00004259,яя_Вега РС0 грязный Сетка 10кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e0a-02a4-11ec-9c3a-00505689ff45,АК-00004213,яя_Вега РС0 грязный Сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2025-02a4-11ec-9c3a-00505689ff45,АК-00004275,яя_Вега РС0 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e1a-02a4-11ec-9c3a-00505689ff45,АК-00004229,яя_Вега РС0 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e29-02a4-11ec-9c3a-00505689ff45,АК-00004244,яя_Вега РС0 грязный Сетка 5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2033-02a4-11ec-9c3a-00505689ff45,АК-00004289,яя_Вега РС0 грязный Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c6d81080-02a4-11ec-9c3a-00505689ff45,АК-00004305,яя_Вега РС0 грязный биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a53d-02a5-11ec-9c3a-00505689ff45,АК-00004386,яя_Вега РС0 дольки в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a54d-02a5-11ec-9c3a-00505689ff45,АК-00004402,яя_Вега РС0 дольки в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6808-02a5-11ec-9c3a-00505689ff45,АК-00004322,яя_Вега РС0 кубик в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6818-02a5-11ec-9c3a-00505689ff45,АК-00004338,яя_Вега РС0 кубик в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c062692e-58f0-11ec-9c40-00505689c8d9,АК-00005759,яя_Вега РС0 мытый сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0ce-02a5-11ec-9c3a-00505689ff45,АК-00004450,яя_Вега РС0 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0dd-02a5-11ec-9c3a-00505689ff45,АК-00004465,яя_Вега РС0 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d550-02a5-11ec-9c3a-00505689ff45,АК-00004496,"яя_Вега РС0 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6828-02a5-11ec-9c3a-00505689ff45,АК-00004354,яя_Вега РС0 слайс в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6838-02a5-11ec-9c3a-00505689ff45,АК-00004370,яя_Вега РС0 слайс в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0ae-02a5-11ec-9c3a-00505689ff45,АК-00004418,яя_Вега РС0 соломка в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0be-02a5-11ec-9c3a-00505689ff45,АК-00004434,яя_Вега РС0 соломка в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89337-02a6-11ec-9c3a-00505689ff45,АК-00004544,яя_Вега РС1  семена Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89346-02a6-11ec-9c3a-00505689ff45,АК-00004559,яя_Вега РС1  семена Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,09b3e5d0-02a6-11ec-9c3a-00505689ff45,АК-00004574,яя_Вега РС1  семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784d4-02a3-11ec-9c3a-00505689ff45,АК-00004198,яя_Вега РС1 Биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784b7-02a3-11ec-9c3a-00505689ff45,АК-00004169,яя_Вега РС1 Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784c5-02a3-11ec-9c3a-00505689ff45,АК-00004183,яя_Вега РС1 Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d8f-02a2-11ec-9c3a-00505689ff45,АК-00004138,"яя_Вега РС1 Сетка-домик 2,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d9d-02a2-11ec-9c3a-00505689ff45,АК-00004152,яя_Вега РС1 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d560-02a5-11ec-9c3a-00505689ff45,АК-00004512,"яя_Вега РС1 бэби Сетка-домик 1,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89327-02a6-11ec-9c3a-00505689ff45,АК-00004528,яя_Вега РС1 бэби Сетка-домик 2кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0ed-02a5-11ec-9c3a-00505689ff45,АК-00004481,яя_Вега РС1 бэби очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2016-02a4-11ec-9c3a-00505689ff45,АК-00004260,яя_Вега РС1 грязный Сетка 10кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e0b-02a4-11ec-9c3a-00505689ff45,АК-00004214,яя_Вега РС1 грязный Сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2026-02a4-11ec-9c3a-00505689ff45,АК-00004276,яя_Вега РС1 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e1b-02a4-11ec-9c3a-00505689ff45,АК-00004230,яя_Вега РС1 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e2a-02a4-11ec-9c3a-00505689ff45,АК-00004245,яя_Вега РС1 грязный Сетка 5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2034-02a4-11ec-9c3a-00505689ff45,АК-00004290,яя_Вега РС1 грязный Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c6d81081-02a4-11ec-9c3a-00505689ff45,АК-00004306,яя_Вега РС1 грязный биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a53e-02a5-11ec-9c3a-00505689ff45,АК-00004387,яя_Вега РС1 дольки в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a54e-02a5-11ec-9c3a-00505689ff45,АК-00004403,яя_Вега РС1 дольки в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6809-02a5-11ec-9c3a-00505689ff45,АК-00004323,яя_Вега РС1 кубик в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6819-02a5-11ec-9c3a-00505689ff45,АК-00004339,яя_Вега РС1 кубик в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b49762d3-58f0-11ec-9c40-00505689c8d9,АК-00005758,яя_Вега РС1 мытый сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0cf-02a5-11ec-9c3a-00505689ff45,АК-00004451,яя_Вега РС1 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0de-02a5-11ec-9c3a-00505689ff45,АК-00004466,яя_Вега РС1 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d551-02a5-11ec-9c3a-00505689ff45,АК-00004497,"яя_Вега РС1 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6829-02a5-11ec-9c3a-00505689ff45,АК-00004355,яя_Вега РС1 слайс в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6839-02a5-11ec-9c3a-00505689ff45,АК-00004371,яя_Вега РС1 слайс в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0af-02a5-11ec-9c3a-00505689ff45,АК-00004419,яя_Вега РС1 соломка в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0bf-02a5-11ec-9c3a-00505689ff45,АК-00004435,яя_Вега РС1 соломка в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0ee-02a5-11ec-9c3a-00505689ff45,АК-00004482,яя_Вега РС2  бэби очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89338-02a6-11ec-9c3a-00505689ff45,АК-00004545,яя_Вега РС2  семена Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89347-02a6-11ec-9c3a-00505689ff45,АК-00004560,яя_Вега РС2  семена Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,true
+Номенклатура — current,raw.r1c_nomenclature_current,09b3e5d1-02a6-11ec-9c3a-00505689ff45,АК-00004575,яя_Вега РС2  семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784d5-02a3-11ec-9c3a-00505689ff45,АК-00004199,яя_Вега РС2 Биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784b8-02a3-11ec-9c3a-00505689ff45,АК-00004170,яя_Вега РС2 Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784c6-02a3-11ec-9c3a-00505689ff45,АК-00004184,яя_Вега РС2 Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d90-02a2-11ec-9c3a-00505689ff45,АК-00004139,"яя_Вега РС2 Сетка-домик 2,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d9e-02a2-11ec-9c3a-00505689ff45,АК-00004153,яя_Вега РС2 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d561-02a5-11ec-9c3a-00505689ff45,АК-00004513,"яя_Вега РС2 бэби Сетка-домик 1,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89328-02a6-11ec-9c3a-00505689ff45,АК-00004529,яя_Вега РС2 бэби Сетка-домик 2кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2017-02a4-11ec-9c3a-00505689ff45,АК-00004261,яя_Вега РС2 грязный Сетка 10кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e0c-02a4-11ec-9c3a-00505689ff45,АК-00004215,яя_Вега РС2 грязный Сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a6bd8d63-e8df-11ed-9c4e-00505689ff45,00-00007879,яя_Вега РС2 грязный Сетка 2.5кг. Эконом,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2027-02a4-11ec-9c3a-00505689ff45,АК-00004277,яя_Вега РС2 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e1c-02a4-11ec-9c3a-00505689ff45,АК-00004231,яя_Вега РС2 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ce4c8005-ddd5-11ed-9c4e-00505689ff45,00-00007791,яя_Вега РС2 грязный Сетка 3кг. Эконом,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e2b-02a4-11ec-9c3a-00505689ff45,АК-00004246,яя_Вега РС2 грязный Сетка 5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2035-02a4-11ec-9c3a-00505689ff45,АК-00004291,яя_Вега РС2 грязный Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c6d81082-02a4-11ec-9c3a-00505689ff45,АК-00004307,яя_Вега РС2 грязный биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a53f-02a5-11ec-9c3a-00505689ff45,АК-00004388,яя_Вега РС2 дольки в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a54f-02a5-11ec-9c3a-00505689ff45,АК-00004404,яя_Вега РС2 дольки в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e680a-02a5-11ec-9c3a-00505689ff45,АК-00004324,яя_Вега РС2 кубик в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e681a-02a5-11ec-9c3a-00505689ff45,АК-00004340,яя_Вега РС2 кубик в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,acc4f586-58f0-11ec-9c40-00505689c8d9,АК-00005757,яя_Вега РС2 мытый сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0d0-02a5-11ec-9c3a-00505689ff45,АК-00004452,яя_Вега РС2 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0df-02a5-11ec-9c3a-00505689ff45,АК-00004467,яя_Вега РС2 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d552-02a5-11ec-9c3a-00505689ff45,АК-00004498,"яя_Вега РС2 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,5c61a1f5-dec0-11ed-9c4e-00505689ff45,00-00007808,яя_Вега РС2 семена Сетка на завязке 25кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e682a-02a5-11ec-9c3a-00505689ff45,АК-00004356,яя_Вега РС2 слайс в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e683a-02a5-11ec-9c3a-00505689ff45,АК-00004372,яя_Вега РС2 слайс в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0b0-02a5-11ec-9c3a-00505689ff45,АК-00004420,яя_Вега РС2 соломка в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0c0-02a5-11ec-9c3a-00505689ff45,АК-00004436,яя_Вега РС2 соломка в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b7269b72-1aee-11ec-9c3a-00505689ff45,АК-00005093,яя_Венди РС3 Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,20de91ad-7d55-11ed-9c4d-00505689c8d9,00-00007503,яя_Венди РС3 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,86632f29-e98b-11ed-9c4e-00505689ff45,00-00007881,"яя_Венди РС3 бэби Сетка-домик 1,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,075a50df-b1c4-11ed-9c4d-00505689ff45,00-00007639,яя_Венди РС3 грязный Сетка 2.5кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ebfe6b1e-6356-11ed-9c43-00505689cfb8,00-00007388,яя_Венди РС3 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,4dd4ab6c-82a5-11ed-9c4c-00505689ff45,00-00007513,яя_Венди РС3 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,61e0fffd-e747-11ed-9c4e-00505689ff45,00-00007878,яя_Венди РС3 грязный Сетка 3кг. Эконом,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,cd6031ea-5dab-11ed-9c44-005056893f2c,00-00007364,яя_Венди РС3 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bd4f0a0e-e985-11ed-9c4e-00505689ff45,00-00007880,яя_Венди РС3 семена Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,8a947ff9-ddc5-11ed-9c4e-00505689ff45,00-00007780,яя_Венди РС3 семена Сетка на завязке 25кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,9c808551-e725-11ed-9c4e-00505689ff45,00-00007876,яя_Венди РС3 семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d8a-02a2-11ec-9c3a-00505689ff45,АК-00004133,"яя_Венди рс3 Сетка-домик 2,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784cc-02a3-11ec-9c3a-00505689ff45,АК-00004190,яя_Вэнди РС1 Биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784af-02a3-11ec-9c3a-00505689ff45,АК-00004161,яя_Вэнди РС1 Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784bd-02a3-11ec-9c3a-00505689ff45,АК-00004175,яя_Вэнди РС1 Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b3981c6c-02a2-11ec-9c3a-00505689ff45,АК-00004131,"яя_Вэнди РС1 Сетка-домик 2,5кг",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d96-02a2-11ec-9c3a-00505689ff45,АК-00004145,яя_Вэнди РС1 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d558-02a5-11ec-9c3a-00505689ff45,АК-00004504,"яя_Вэнди РС1 бэби Сетка-домик 1,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8931f-02a6-11ec-9c3a-00505689ff45,АК-00004520,яя_Вэнди РС1 бэби Сетка-домик 2кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0e5-02a5-11ec-9c3a-00505689ff45,АК-00004473,яя_Вэнди РС1 бэби очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf200e-02a4-11ec-9c3a-00505689ff45,АК-00004252,яя_Вэнди РС1 грязный Сетка 10кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e03-02a4-11ec-9c3a-00505689ff45,АК-00004206,яя_Вэнди РС1 грязный Сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf201e-02a4-11ec-9c3a-00505689ff45,АК-00004268,яя_Вэнди РС1 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e13-02a4-11ec-9c3a-00505689ff45,АК-00004222,яя_Вэнди РС1 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e22-02a4-11ec-9c3a-00505689ff45,АК-00004237,яя_Вэнди РС1 грязный Сетка 5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf202c-02a4-11ec-9c3a-00505689ff45,АК-00004282,яя_Вэнди РС1 грязный Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf203c-02a4-11ec-9c3a-00505689ff45,АК-00004298,яя_Вэнди РС1 грязный биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6841-02a5-11ec-9c3a-00505689ff45,АК-00004379,яя_Вэнди РС1 дольки в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a546-02a5-11ec-9c3a-00505689ff45,АК-00004395,яя_Вэнди РС1 дольки в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6801-02a5-11ec-9c3a-00505689ff45,АК-00004315,яя_Вэнди РС1 кубик в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6811-02a5-11ec-9c3a-00505689ff45,АК-00004331,яя_Вэнди РС1 кубик в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,1f79013d-58f0-11ec-9c40-00505689c8d9,АК-00005754,яя_Вэнди РС1 мытый сетка рулон 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0c7-02a5-11ec-9c3a-00505689ff45,АК-00004443,яя_Вэнди РС1 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0d6-02a5-11ec-9c3a-00505689ff45,АК-00004458,яя_Вэнди РС1 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d549-02a5-11ec-9c3a-00505689ff45,АК-00004489,"яя_Вэнди РС1 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8932f-02a6-11ec-9c3a-00505689ff45,АК-00004536,яя_Вэнди РС1 семена Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8933e-02a6-11ec-9c3a-00505689ff45,АК-00004551,яя_Вэнди РС1 семена Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8934d-02a6-11ec-9c3a-00505689ff45,АК-00004566,яя_Вэнди РС1 семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6821-02a5-11ec-9c3a-00505689ff45,АК-00004347,яя_Вэнди РС1 слайс в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6831-02a5-11ec-9c3a-00505689ff45,АК-00004363,яя_Вэнди РС1 слайс в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0a7-02a5-11ec-9c3a-00505689ff45,АК-00004411,яя_Вэнди РС1 соломка в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0b7-02a5-11ec-9c3a-00505689ff45,АК-00004427,яя_Вэнди РС1 соломка в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b5c0f429-1aef-11ec-9c3a-00505689ff45,АК-00005112,яя_Вэнди РС2 Биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,609a9100-1aee-11ec-9c3a-00505689ff45,АК-00005090,яя_Вэнди РС2 Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,534dfae0-1aee-11ec-9c3a-00505689ff45,АК-00005089,"яя_Вэнди РС2 Сетка-домик 2,5кг",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,48c31b45-1aee-11ec-9c3a-00505689ff45,АК-00005088,яя_Вэнди РС2 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,9f184654-1aef-11ec-9c3a-00505689ff45,АК-00005110,"яя_Вэнди РС2 бэби Сетка-домик 1,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,96120436-1aef-11ec-9c3a-00505689ff45,АК-00005109,яя_Вэнди РС2 бэби Сетка-домик 2кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,abb20dcd-1aef-11ec-9c3a-00505689ff45,АК-00005111,яя_Вэнди РС2 бэби очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d3e68543-1aee-11ec-9c3a-00505689ff45,АК-00005095,яя_Вэнди РС2 грязный Сетка 10кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c5096502-1aee-11ec-9c3a-00505689ff45,АК-00005094,яя_Вэнди РС2 грязный Сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,81357acf-1aef-11ec-9c3a-00505689ff45,АК-00005107,яя_Вэнди РС2 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,776962b5-1aee-11ec-9c3a-00505689ff45,АК-00005092,яя_Вэнди РС2 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,6dadef5c-1aee-11ec-9c3a-00505689ff45,АК-00005091,яя_Вэнди РС2 грязный Сетка 5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,7984286a-1aef-11ec-9c3a-00505689ff45,АК-00005106,яя_Вэнди РС2 грязный Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,8bf731ba-1aef-11ec-9c3a-00505689ff45,АК-00005108,яя_Вэнди РС2 грязный биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,5f5d692a-1aef-11ec-9c3a-00505689ff45,АК-00005105,яя_Вэнди РС2 дольки в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,56f945f5-1aef-11ec-9c3a-00505689ff45,АК-00005104,яя_Вэнди РС2 дольки в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,4e41b112-1aef-11ec-9c3a-00505689ff45,АК-00005103,яя_Вэнди РС2 кубик в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,44817727-1aef-11ec-9c3a-00505689ff45,АК-00005102,яя_Вэнди РС2 кубик в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,154e466d-58f0-11ec-9c40-00505689c8d9,АК-00005753,яя_Вэнди РС2 мытый сетка рулон 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,3b7b3411-1aef-11ec-9c3a-00505689ff45,АК-00005101,яя_Вэнди РС2 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,1cb5eb74-1aef-11ec-9c3a-00505689ff45,АК-00005100,яя_Вэнди РС2 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,166efe30-1aef-11ec-9c3a-00505689ff45,АК-00005099,"яя_Вэнди РС2 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,eff8661a-1aee-11ec-9c3a-00505689ff45,АК-00005096,яя_Вэнди РС2 семена Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,fe76279e-1aee-11ec-9c3a-00505689ff45,АК-00005097,яя_Вэнди РС2 семена Сетка рулон 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,0a7292cc-1aef-11ec-9c3a-00505689ff45,АК-00005098,яя_Вэнди РС2 семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,3483ef37-1aee-11ec-9c3a-00505689ff45,АК-00005087,яя_Вэнди РС2 слайс в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,27ea286a-1aee-11ec-9c3a-00505689ff45,АК-00005086,яя_Вэнди РС2 слайс в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,1c0f1d81-1aee-11ec-9c3a-00505689ff45,АК-00005085,яя_Вэнди РС2 соломка в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,100ded34-1aee-11ec-9c3a-00505689ff45,АК-00005084,яя_Вэнди РС2 соломка в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf202a-02a4-11ec-9c3a-00505689ff45,АК-00004280,яя_Гала  ЛЕНИНСКОЕ грязный Сетка на завязке 25кг. ,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784cb-02a3-11ec-9c3a-00505689ff45,АК-00004189,яя_Гала РС0 Биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784ae-02a3-11ec-9c3a-00505689ff45,АК-00004160,яя_Гала РС0 Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b3981c6b-02a2-11ec-9c3a-00505689ff45,АК-00004130,"яя_Гала РС0 Сетка-домик 2,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d95-02a2-11ec-9c3a-00505689ff45,АК-00004144,яя_Гала РС0 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784bc-02a3-11ec-9c3a-00505689ff45,АК-00004174,яя_Гала РС0 Сеткана завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6800-02a5-11ec-9c3a-00505689ff45,АК-00004314,яя_Гала РС0 Скубик в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d557-02a5-11ec-9c3a-00505689ff45,АК-00004503,"яя_Гала РС0 бэби Сетка-домик 1,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8931e-02a6-11ec-9c3a-00505689ff45,АК-00004519,яя_Гала РС0 бэби Сетка-домик 2кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0e4-02a5-11ec-9c3a-00505689ff45,АК-00004472,яя_Гала РС0 бэби очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf201d-02a4-11ec-9c3a-00505689ff45,АК-00004267,яя_Гала РС0 грязный  Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e30-02a4-11ec-9c3a-00505689ff45,АК-00004251,яя_Гала РС0 грязный Сетка 10кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e02-02a4-11ec-9c3a-00505689ff45,АК-00004205,яя_Гала РС0 грязный Сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e12-02a4-11ec-9c3a-00505689ff45,АК-00004221,яя_Гала РС0 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e21-02a4-11ec-9c3a-00505689ff45,АК-00004236,яя_Гала РС0 грязный Сетка 5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf202b-02a4-11ec-9c3a-00505689ff45,АК-00004281,яя_Гала РС0 грязный Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf203b-02a4-11ec-9c3a-00505689ff45,АК-00004297,яя_Гала РС0 грязный биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6840-02a5-11ec-9c3a-00505689ff45,АК-00004378,яя_Гала РС0 дольки в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a545-02a5-11ec-9c3a-00505689ff45,АК-00004394,яя_Гала РС0 дольки в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6810-02a5-11ec-9c3a-00505689ff45,АК-00004330,яя_Гала РС0 кубик в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ccde9eb2-58ef-11ec-9c40-00505689c8d9,АК-00005752,яя_Гала РС0 мытый сетка рулон 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0c6-02a5-11ec-9c3a-00505689ff45,АК-00004442,яя_Гала РС0 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0d5-02a5-11ec-9c3a-00505689ff45,АК-00004457,яя_Гала РС0 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d548-02a5-11ec-9c3a-00505689ff45,АК-00004488,"яя_Гала РС0 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8932e-02a6-11ec-9c3a-00505689ff45,АК-00004535,яя_Гала РС0 семена Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8933d-02a6-11ec-9c3a-00505689ff45,АК-00004550,яя_Гала РС0 семена Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8934c-02a6-11ec-9c3a-00505689ff45,АК-00004565,яя_Гала РС0 семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6820-02a5-11ec-9c3a-00505689ff45,АК-00004346,яя_Гала РС0 слайс в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6830-02a5-11ec-9c3a-00505689ff45,АК-00004362,яя_Гала РС0 слайс в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0a6-02a5-11ec-9c3a-00505689ff45,АК-00004410,яя_Гала РС0 соломка в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0b6-02a5-11ec-9c3a-00505689ff45,АК-00004426,яя_Гала РС0 соломка в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784c9-02a3-11ec-9c3a-00505689ff45,АК-00004187,яя_Гала РС1 Биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784ac-02a3-11ec-9c3a-00505689ff45,АК-00004158,яя_Гала РС1 Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e2778eec-02a3-11ec-9c3a-00505689ff45,АК-00004202,яя_Гала РС1 Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,74359236-72b5-11eb-9c2e-0050560417d5,00-00003018,"яя_Гала РС1 Сетка-домик 2,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d93-02a2-11ec-9c3a-00505689ff45,АК-00004142,яя_Гала РС1 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d555-02a5-11ec-9c3a-00505689ff45,АК-00004501,"яя_Гала РС1 бэби Сетка-домик 1,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0e2-02a5-11ec-9c3a-00505689ff45,АК-00004470,яя_Гала РС1 бэби очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e2e-02a4-11ec-9c3a-00505689ff45,АК-00004249,яя_Гала РС1 грязный Сетка 10кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e00-02a4-11ec-9c3a-00505689ff45,АК-00004203,яя_Гала РС1 грязный Сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf201b-02a4-11ec-9c3a-00505689ff45,АК-00004265,яя_Гала РС1 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e10-02a4-11ec-9c3a-00505689ff45,АК-00004219,яя_Гала РС1 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e1f-02a4-11ec-9c3a-00505689ff45,АК-00004234,яя_Гала РС1 грязный Сетка 5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,345b763c-02a5-11ec-9c3a-00505689ff45,АК-00004311,"яя_Гала РС1 грязный Сетка на завязке 25кг.(2 сорт, мелкий)",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2039-02a4-11ec-9c3a-00505689ff45,АК-00004295,яя_Гала РС1 грязный биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e683e-02a5-11ec-9c3a-00505689ff45,АК-00004376,яя_Гала РС1 дольки в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a543-02a5-11ec-9c3a-00505689ff45,АК-00004392,яя_Гала РС1 дольки в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e67fe-02a5-11ec-9c3a-00505689ff45,АК-00004312,яя_Гала РС1 кубик в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e680e-02a5-11ec-9c3a-00505689ff45,АК-00004328,яя_Гала РС1 кубик в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a848ab12-58ef-11ec-9c40-00505689c8d9,АК-00005751,яя_Гала РС1 мытый сетка рулон 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0c4-02a5-11ec-9c3a-00505689ff45,АК-00004440,яя_Гала РС1 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0d3-02a5-11ec-9c3a-00505689ff45,АК-00004455,яя_Гала РС1 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d546-02a5-11ec-9c3a-00505689ff45,АК-00004486,"яя_Гала РС1 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8932c-02a6-11ec-9c3a-00505689ff45,АК-00004533,яя_Гала РС1 семена Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8933b-02a6-11ec-9c3a-00505689ff45,АК-00004548,яя_Гала РС1 семена Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8934a-02a6-11ec-9c3a-00505689ff45,АК-00004563,яя_Гала РС1 семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e681e-02a5-11ec-9c3a-00505689ff45,АК-00004344,яя_Гала РС1 слайс в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e682e-02a5-11ec-9c3a-00505689ff45,АК-00004360,яя_Гала РС1 слайс в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0a4-02a5-11ec-9c3a-00505689ff45,АК-00004408,яя_Гала РС1 соломка в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0b4-02a5-11ec-9c3a-00505689ff45,АК-00004424,яя_Гала РС1 соломка в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf201c-02a4-11ec-9c3a-00505689ff45,АК-00004266,яя_Гала РС2  грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784ca-02a3-11ec-9c3a-00505689ff45,АК-00004188,яя_Гала РС2 Биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784bb-02a3-11ec-9c3a-00505689ff45,АК-00004173,яя_Гала РС2 Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b3981c6a-02a2-11ec-9c3a-00505689ff45,АК-00004129,"яя_Гала РС2 Сетка-домик 2,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d94-02a2-11ec-9c3a-00505689ff45,АК-00004143,яя_Гала РС2 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d556-02a5-11ec-9c3a-00505689ff45,АК-00004502,"яя_Гала РС2 бэби Сетка-домик 1,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8931d-02a6-11ec-9c3a-00505689ff45,АК-00004518,яя_Гала РС2 бэби Сетка-домик 2кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0e3-02a5-11ec-9c3a-00505689ff45,АК-00004471,яя_Гала РС2 бэби очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e2f-02a4-11ec-9c3a-00505689ff45,АК-00004250,яя_Гала РС2 грязный Сетка 10кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e11-02a4-11ec-9c3a-00505689ff45,АК-00004220,яя_Гала РС2 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e20-02a4-11ec-9c3a-00505689ff45,АК-00004235,яя_Гала РС2 грязный Сетка 5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,8489675f-6c82-11ec-9c40-00505689c8d9,АК-00005857,"яя_Гала РС2 грязный Сетка на завязке 25кг.(2 сорт, мелкий)",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf203a-02a4-11ec-9c3a-00505689ff45,АК-00004296,яя_Гала РС2 грязный биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e01-02a4-11ec-9c3a-00505689ff45,АК-00004204,яя_Гала РС2 грязный сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e683f-02a5-11ec-9c3a-00505689ff45,АК-00004377,яя_Гала РС2 дольки в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a544-02a5-11ec-9c3a-00505689ff45,АК-00004393,яя_Гала РС2 дольки в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e67ff-02a5-11ec-9c3a-00505689ff45,АК-00004313,яя_Гала РС2 кубик в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e680f-02a5-11ec-9c3a-00505689ff45,АК-00004329,яя_Гала РС2 кубик в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784ad-02a3-11ec-9c3a-00505689ff45,АК-00004159,яя_Гала РС2 мытый Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,839c5ac4-541a-11ec-9c40-00505689c8d9,АК-00005723,яя_Гала РС2 мытый сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0c5-02a5-11ec-9c3a-00505689ff45,АК-00004441,яя_Гала РС2 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0d4-02a5-11ec-9c3a-00505689ff45,АК-00004456,яя_Гала РС2 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,26dcc1e4-cb14-11ed-9c4e-00505689ff45,00-00007693,яя_Гала РС2 очищенный в ву 5кг. БК АГРОАЛЬЯНС,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,50e4d16e-d165-11ed-9c4e-00505689ff45,00-00007701,яя_Гала РС2 очищенный в ву 5кг. ЛЕНИНСКОЕ,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,6ff9aede-caea-11ed-9c4e-00505689ff45,00-00007692,яя_Гала РС2 очищенный в ву 5кг. РОН АГРО,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d547-02a5-11ec-9c3a-00505689ff45,АК-00004487,"яя_Гала РС2 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8932d-02a6-11ec-9c3a-00505689ff45,АК-00004534,яя_Гала РС2 семена Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8933c-02a6-11ec-9c3a-00505689ff45,АК-00004549,яя_Гала РС2 семена Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8934b-02a6-11ec-9c3a-00505689ff45,АК-00004564,яя_Гала РС2 семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e681f-02a5-11ec-9c3a-00505689ff45,АК-00004345,яя_Гала РС2 слайс в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e682f-02a5-11ec-9c3a-00505689ff45,АК-00004361,яя_Гала РС2 слайс в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0a5-02a5-11ec-9c3a-00505689ff45,АК-00004409,яя_Гала РС2 соломка в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0b5-02a5-11ec-9c3a-00505689ff45,АК-00004425,яя_Гала РС2 соломка в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ebfce43f-064b-11ec-9c3a-00505689ff45,АК-00004845,яя_Гладиатор РС1 Коробка 6кг.,,84e033fc-30e3-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,8c56eedd-0279-11ec-9c3a-00505689ff45,АК-00004122,яя_Гладиатор РС1 Сетка - чулок (1шт.),,84e033fc-30e3-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,3015622f-0279-11ec-9c3a-00505689ff45,АК-00004120,яя_Гладиатор РС1 Сетка - чулок (3шт.),,84e033fc-30e3-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ec11c4b5-0279-11ec-9c3a-00505689ff45,АК-00004124,яя_Гладиатор РС1 Сетка 25кг.,,84e033fc-30e3-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,382acb56-027a-11ec-9c3a-00505689ff45,АК-00004126,яя_Гладиатор РС1 Сетка на завязке 25кг.,,84e033fc-30e3-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,79ce624c-027a-11ec-9c3a-00505689ff45,АК-00004128,яя_Гладиатор РС1 очищенный в ву 1кг.,,ce412e9e-30e1-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d741af13-064b-11ec-9c3a-00505689ff45,АК-00004844,яя_ГригорийКомаров РС1 Коробка 6кг.,,84e033fc-30e3-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,4561f82b-0279-11ec-9c3a-00505689ff45,АК-00004121,яя_ГригорийКомаров РС1 Сетка - чулок (1шт.),,84e033fc-30e3-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f7164dfb-0278-11ec-9c3a-00505689ff45,АК-00004119,яя_ГригорийКомаров РС1 Сетка - чулок (3шт.),,84e033fc-30e3-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,49abc331-7910-11ec-9c40-00505689c8d9,АК-00006011,яя_ГригорийКомаров РС1 Сетка - чулок зубчики (100гр),,84e033fc-30e3-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b67b47b0-0279-11ec-9c3a-00505689ff45,АК-00004123,яя_ГригорийКомаров РС1 Сетка 25кг.,,84e033fc-30e3-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,08c5c411-027a-11ec-9c3a-00505689ff45,АК-00004125,яя_ГригорийКомаров РС1 Сетка на завязке 25кг.,,84e033fc-30e3-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,5aa29471-027a-11ec-9c3a-00505689ff45,АК-00004127,яя_ГригорийКомаров РС1 очищенный в ву 1кг.,,ce412e9e-30e1-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852dd-02a7-11ec-9c3a-00505689ff45,АК-00004624,"яя_Индиго РС0 Сетка - (домик)1,5 кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852e1-02a7-11ec-9c3a-00505689ff45,АК-00004628,яя_Индиго РС0 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852e5-02a7-11ec-9c3a-00505689ff45,АК-00004632,яя_Индиго РС0 грязный Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852f1-02a7-11ec-9c3a-00505689ff45,АК-00004644,яя_Индиго РС0 дольки 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852f5-02a7-11ec-9c3a-00505689ff45,АК-00004648,яя_Индиго РС0 дольки 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852e9-02a7-11ec-9c3a-00505689ff45,АК-00004636,яя_Индиго РС0 кубик 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852ed-02a7-11ec-9c3a-00505689ff45,АК-00004640,яя_Индиго РС0 кубик 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852f9-02a7-11ec-9c3a-00505689ff45,АК-00004652,яя_Индиго РС0 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852fd-02a7-11ec-9c3a-00505689ff45,АК-00004656,яя_Индиго РС0 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,95285301-02a7-11ec-9c3a-00505689ff45,АК-00004660,"яя_Индиго РС0 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b5f8cea1-7954-11ec-9c40-00505689c8d9,АК-00006014,яя_Индиго РС1 Сетка - (домик) 2 кг,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,0797a26f-46c9-11ec-9c45-00505689c17d,АК-00005592,"яя_Индиго РС1 Сетка - (домик)1,5 кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,51d5f519-ae91-11ed-9c4d-00505689ff45,00-00007638,яя_Индиго РС1 грязный Сетка 25кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,1b19e83b-9bc1-11ec-9c42-00505689c8d9,00-00006289,яя_Индиго РС1 мытый Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,8cf27b25-6c7f-11ec-9c40-00505689c8d9,АК-00005856,яя_Индиго РС1 мытый Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,0d90207c-da62-11ec-9c42-00505689c8d9,00-00006570,яя_Индиго РС1 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,3e440bad-c218-11ec-9c42-00505689c8d9,00-00006473,яя_Индиго РС1 семена биг бэг 1000 кг,,9f5c070c-6157-11eb-9c2d-0050560417d5,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,59ff25f4-a307-11ed-9c4c-00505689ff45,00-00007616,"яя_Индиго РС2 Сетка - (домик)1,5 кг.",,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,875eb605-a306-11ed-9c4c-00505689ff45,00-00007615,яя_Индиго РС2 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,540df51c-5db3-11ed-9c44-005056893f2c,00-00007367,яя_Индиго РС2 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a81539d2-02a3-11ec-9c3a-00505689ff45,АК-00004201,яя_Кармен РС0 Биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784ba-02a3-11ec-9c3a-00505689ff45,АК-00004172,яя_Кармен РС0 Сетка 25кг..,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784c8-02a3-11ec-9c3a-00505689ff45,АК-00004186,яя_Кармен РС0 Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d92-02a2-11ec-9c3a-00505689ff45,АК-00004141,"яя_Кармен РС0 Сетка-домик 2,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,da94be95-1faf-11ec-9c3a-00505689ff45,АК-00005265,яя_Кармен РС0 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d564-02a5-11ec-9c3a-00505689ff45,АК-00004516,"яя_Кармен РС0 бэби Сетка-домик 1,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8932b-02a6-11ec-9c3a-00505689ff45,АК-00004532,яя_Кармен РС0 бэби Сетка-домик 2кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d545-02a5-11ec-9c3a-00505689ff45,АК-00004485,яя_Кармен РС0 бэби очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a2a05d69-1558-11ec-9c3a-00505689ff45,АК-00005004,яя_Кармен РС0 бэби семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf201a-02a4-11ec-9c3a-00505689ff45,АК-00004264,яя_Кармен РС0 грязный Сетка 10кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e0f-02a4-11ec-9c3a-00505689ff45,АК-00004218,яя_Кармен РС0 грязный Сетка 2.5кг..,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2029-02a4-11ec-9c3a-00505689ff45,АК-00004279,яя_Кармен РС0 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e1e-02a4-11ec-9c3a-00505689ff45,АК-00004233,яя_Кармен РС0 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e2d-02a4-11ec-9c3a-00505689ff45,АК-00004248,яя_Кармен РС0 грязный Сетка 5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2038-02a4-11ec-9c3a-00505689ff45,АК-00004294,яя_Кармен РС0 грязный Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c6d81085-02a4-11ec-9c3a-00505689ff45,АК-00004310,яя_Кармен РС0 грязный биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a542-02a5-11ec-9c3a-00505689ff45,АК-00004391,яя_Кармен РС0 дольки в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a552-02a5-11ec-9c3a-00505689ff45,АК-00004407,яя_Кармен РС0 дольки в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e680d-02a5-11ec-9c3a-00505689ff45,АК-00004327,яя_Кармен РС0 кубик в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e681d-02a5-11ec-9c3a-00505689ff45,АК-00004343,яя_Кармен РС0 кубик в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,510c69c8-58f2-11ec-9c40-00505689c8d9,АК-00005765,яя_Кармен РС0 мытый сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0d2-02a5-11ec-9c3a-00505689ff45,АК-00004454,яя_Кармен РС0 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0e1-02a5-11ec-9c3a-00505689ff45,АК-00004469,яя_Кармен РС0 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d554-02a5-11ec-9c3a-00505689ff45,АК-00004500,"яя_Кармен РС0 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8933a-02a6-11ec-9c3a-00505689ff45,АК-00004547,яя_Кармен РС0 семена Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89349-02a6-11ec-9c3a-00505689ff45,АК-00004562,яя_Кармен РС0 семена Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e682d-02a5-11ec-9c3a-00505689ff45,АК-00004359,яя_Кармен РС0 слайс в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e683d-02a5-11ec-9c3a-00505689ff45,АК-00004375,яя_Кармен РС0 слайс в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0b3-02a5-11ec-9c3a-00505689ff45,АК-00004423,яя_Кармен РС0 соломка в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0c3-02a5-11ec-9c3a-00505689ff45,АК-00004439,яя_Кармен РС0 соломка в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f3f1f0e1-1af5-11ec-9c3a-00505689ff45,АК-00005139,яя_Кармен РС1 Биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bd0b6179-1af4-11ec-9c3a-00505689ff45,АК-00005120,яя_Кармен РС1 Сетка 25кг..,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,9bacea7b-1af4-11ec-9c3a-00505689ff45,АК-00005117,яя_Кармен РС1 Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,27ca94ee-1af6-11ec-9c3a-00505689ff45,АК-00005140,"яя_Кармен РС1 Сетка-домик 2,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576da0-02a2-11ec-9c3a-00505689ff45,АК-00004155,яя_Кармен РС1 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d43e3f47-1af5-11ec-9c3a-00505689ff45,АК-00005136,"яя_Кармен РС1 бэби Сетка-домик 1,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c9ba86a8-1af5-11ec-9c3a-00505689ff45,АК-00005135,яя_Кармен РС1 бэби Сетка-домик 2кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e8c02d25-1af5-11ec-9c3a-00505689ff45,АК-00005138,яя_Кармен РС1 бэби очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,df42b631-1af5-11ec-9c3a-00505689ff45,АК-00005137,яя_Кармен РС1 бэби семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d2fc79b0-1af4-11ec-9c3a-00505689ff45,АК-00005122,яя_Кармен РС1 грязный Сетка 10кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c841ebdd-1af4-11ec-9c3a-00505689ff45,АК-00005121,яя_Кармен РС1 грязный Сетка 2.5кг..,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,aea09bac-1af5-11ec-9c3a-00505689ff45,АК-00005133,яя_Кармен РС1 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b21a0013-1af4-11ec-9c3a-00505689ff45,АК-00005119,яя_Кармен РС1 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a6fdad67-1af4-11ec-9c3a-00505689ff45,АК-00005118,яя_Кармен РС1 грязный Сетка 5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a443084b-1af5-11ec-9c3a-00505689ff45,АК-00005132,яя_Кармен РС1 грязный Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,be35508a-1af5-11ec-9c3a-00505689ff45,АК-00005134,яя_Кармен РС1 грязный биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,985c1219-1af5-11ec-9c3a-00505689ff45,АК-00005131,яя_Кармен РС1 дольки в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,8e4d2c75-1af5-11ec-9c3a-00505689ff45,АК-00005130,яя_Кармен РС1 дольки в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,83dee93e-1af5-11ec-9c3a-00505689ff45,АК-00005129,яя_Кармен РС1 кубик в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,7a984836-1af5-11ec-9c3a-00505689ff45,АК-00005128,яя_Кармен РС1 кубик в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,4845bb82-58f2-11ec-9c40-00505689c8d9,АК-00005764,яя_Кармен РС1 мытый сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,27773b76-1af5-11ec-9c3a-00505689ff45,АК-00005127,яя_Кармен РС1 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,1b35ad58-1af5-11ec-9c3a-00505689ff45,АК-00005126,яя_Кармен РС1 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,10fbdba5-1af5-11ec-9c3a-00505689ff45,АК-00005125,"яя_Кармен РС1 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,036c83ec-1af5-11ec-9c3a-00505689ff45,АК-00005124,яя_Кармен РС1 семена Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f8ed90b1-1af4-11ec-9c3a-00505689ff45,АК-00005123,яя_Кармен РС1 семена Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,25842d1f-f3cd-11ed-9c4e-00505689ff45,00-00007974,яя_Кармен РС1 семена биг-бэг 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,882a16f3-1af4-11ec-9c3a-00505689ff45,АК-00005116,яя_Кармен РС1 слайс в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,7f4ebf98-1af4-11ec-9c3a-00505689ff45,АК-00005115,яя_Кармен РС1 слайс в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,739c3ca6-1af4-11ec-9c3a-00505689ff45,АК-00005114,яя_Кармен РС1 соломка в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,623dc4c0-1af4-11ec-9c3a-00505689ff45,АК-00005113,яя_Кармен РС1 соломка в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e8549379-926a-11ed-9c4c-00505689ff45,00-00007558,"яя_Кармен РС2 бэби Сетка-домик 1,5кг.",,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a4b91f9f-a318-11ed-9c4c-00505689ff45,00-00007619,яя_Кармен РС2 грязный Сетка 2.5кг..,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,64b4830d-867e-11ed-9c4c-00505689ff45,00-00007537,яя_Кармен РС2 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,555fdb43-a317-11ed-9c4c-00505689ff45,00-00007618,яя_Кармен РС2 грязный Сетка 5кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ad6d9555-e1cc-11ed-9c4e-00505689ff45,00-00007810,яя_Кармен РС2 грязный Сетка на завязке 25кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,08ba0a38-5db8-11ed-9c44-005056893f2c,00-00007370,яя_Кармен РС2 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,57422286-c8b5-11ed-9c4e-00505689ff45,00-00007688,яя_Кармен РС2 семена Сетка 25кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,223c2da8-e0db-11ed-9c4e-00505689ff45,00-00007809,яя_Кармен РС2 семена Сетка на завязке 25кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,16788799-02a7-11ec-9c3a-00505689ff45,АК-00004577,яя_Кестрел РС1 Пакет - клипса 1 кг.,,053ba6bf-30e0-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ef270e94-1609-11ec-9c3a-00505689ff45,АК-00005019,яя_Кестрел РС1 грязный Сетка 10 кг.,,053ba6bf-30e0-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,5ae75e0c-02a7-11ec-9c3a-00505689ff45,АК-00004579,яя_Кестрел РС1 грязный Сетка 25 кг.,,053ba6bf-30e0-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,5ae75e0e-02a7-11ec-9c3a-00505689ff45,АК-00004581,яя_Кестрел РС1 грязный Сетка на завязке 25 кг.,,053ba6bf-30e0-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f33-02a7-11ec-9c3a-00505689ff45,АК-00004583,яя_Кестрел РС1 кубик в ву 1кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f35-02a7-11ec-9c3a-00505689ff45,АК-00004585,яя_Кестрел РС1 кубик в ву 5кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f3b-02a7-11ec-9c3a-00505689ff45,АК-00004591,яя_Кестрел РС1 очищенная в ву 1кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f3d-02a7-11ec-9c3a-00505689ff45,АК-00004593,яя_Кестрел РС1 очищенная в ву 5кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f3f-02a7-11ec-9c3a-00505689ff45,АК-00004595,яя_Кестрел РС1 пастеризованная в ву 0.5кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f41-02a7-11ec-9c3a-00505689ff45,АК-00004597,яя_Кестрел РС1 пастеризованная в ву 2.5кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f37-02a7-11ec-9c3a-00505689ff45,АК-00004587,яя_Кестрел РС1 соломка в ву 1кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f39-02a7-11ec-9c3a-00505689ff45,АК-00004589,яя_Кестрел РС1 соломка в ву 5кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d97-02a2-11ec-9c3a-00505689ff45,АК-00004146,яя_Коломба РС1 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e14-02a4-11ec-9c3a-00505689ff45,АК-00004223,яя_Коломба РС1 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,2292c879-de99-11ed-9c4e-00505689ff45,00-00007807,яя_Коломба РС1 грязный Сетка 3кг. Эконом,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,1ceb6a65-85c7-11ed-9c4c-00505689ff45,00-00007530,яя_Коломба РС1 мытый Сетка на завязке 25кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,80a0bd78-58f0-11ec-9c40-00505689c8d9,АК-00005756,яя_Коломба РС1 мытый сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,1ec56de1-f15c-11ed-9c4e-00505689ff45,00-00007937,яя_Коломба РС1 семена биг-бэг 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e05-02a4-11ec-9c3a-00505689ff45,АК-00004208,яя_Коломба РС2 грязный Сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784cd-02a3-11ec-9c3a-00505689ff45,АК-00004191,яя_Коломбо РС1 Биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784b0-02a3-11ec-9c3a-00505689ff45,АК-00004162,яя_Коломбо РС1 Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784be-02a3-11ec-9c3a-00505689ff45,АК-00004176,яя_Коломбо РС1 Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d89-02a2-11ec-9c3a-00505689ff45,АК-00004132,"яя_Коломбо РС1 Сетка-домик 2,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d559-02a5-11ec-9c3a-00505689ff45,АК-00004505,"яя_Коломбо РС1 бэби Сетка-домик 1,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89320-02a6-11ec-9c3a-00505689ff45,АК-00004521,яя_Коломбо РС1 бэби Сетка-домик 2кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0e6-02a5-11ec-9c3a-00505689ff45,АК-00004474,яя_Коломбо РС1 бэби очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf200f-02a4-11ec-9c3a-00505689ff45,АК-00004253,яя_Коломбо РС1 грязный Сетка 10кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e04-02a4-11ec-9c3a-00505689ff45,АК-00004207,яя_Коломбо РС1 грязный Сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf201f-02a4-11ec-9c3a-00505689ff45,АК-00004269,яя_Коломбо РС1 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e23-02a4-11ec-9c3a-00505689ff45,АК-00004238,яя_Коломбо РС1 грязный Сетка 5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf202d-02a4-11ec-9c3a-00505689ff45,АК-00004283,яя_Коломбо РС1 грязный Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf203d-02a4-11ec-9c3a-00505689ff45,АК-00004299,яя_Коломбо РС1 грязный биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6842-02a5-11ec-9c3a-00505689ff45,АК-00004380,яя_Коломбо РС1 дольки в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a547-02a5-11ec-9c3a-00505689ff45,АК-00004396,яя_Коломбо РС1 дольки в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6802-02a5-11ec-9c3a-00505689ff45,АК-00004316,яя_Коломбо РС1 кубик в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6812-02a5-11ec-9c3a-00505689ff45,АК-00004332,яя_Коломбо РС1 кубик в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0c8-02a5-11ec-9c3a-00505689ff45,АК-00004444,яя_Коломбо РС1 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0d7-02a5-11ec-9c3a-00505689ff45,АК-00004459,яя_Коломбо РС1 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d54a-02a5-11ec-9c3a-00505689ff45,АК-00004490,"яя_Коломбо РС1 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89330-02a6-11ec-9c3a-00505689ff45,АК-00004537,яя_Коломбо РС1 семена Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8933f-02a6-11ec-9c3a-00505689ff45,АК-00004552,яя_Коломбо РС1 семена Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8934e-02a6-11ec-9c3a-00505689ff45,АК-00004567,яя_Коломбо РС1 семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6822-02a5-11ec-9c3a-00505689ff45,АК-00004348,яя_Коломбо РС1 слайс в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6832-02a5-11ec-9c3a-00505689ff45,АК-00004364,яя_Коломбо РС1 слайс в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0a8-02a5-11ec-9c3a-00505689ff45,АК-00004412,яя_Коломбо РС1 соломка в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0b8-02a5-11ec-9c3a-00505689ff45,АК-00004428,яя_Коломбо РС1 соломка в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784ce-02a3-11ec-9c3a-00505689ff45,АК-00004192,яя_Коломбо РС2 Биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d98-02a2-11ec-9c3a-00505689ff45,АК-00004147,яя_Коломбо РС2 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d55a-02a5-11ec-9c3a-00505689ff45,АК-00004506,"яя_Коломбо РС2 бэби Сетка-домик 1,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89321-02a6-11ec-9c3a-00505689ff45,АК-00004522,яя_Коломбо РС2 бэби Сетка-домик 2кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0e7-02a5-11ec-9c3a-00505689ff45,АК-00004475,яя_Коломбо РС2 бэби очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2010-02a4-11ec-9c3a-00505689ff45,АК-00004254,яя_Коломбо РС2 грязный Сетка 10кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2020-02a4-11ec-9c3a-00505689ff45,АК-00004270,яя_Коломбо РС2 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e15-02a4-11ec-9c3a-00505689ff45,АК-00004224,яя_Коломбо РС2 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e24-02a4-11ec-9c3a-00505689ff45,АК-00004239,яя_Коломбо РС2 грязный Сетка 5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf202e-02a4-11ec-9c3a-00505689ff45,АК-00004284,"яя_Коломбо РС2 грязный Сетка на завязке 25кг. (2 сорт, мелкий)",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf203e-02a4-11ec-9c3a-00505689ff45,АК-00004300,яя_Коломбо РС2 грязный биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6843-02a5-11ec-9c3a-00505689ff45,АК-00004381,яя_Коломбо РС2 дольки в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a548-02a5-11ec-9c3a-00505689ff45,АК-00004397,яя_Коломбо РС2 дольки в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6803-02a5-11ec-9c3a-00505689ff45,АК-00004317,яя_Коломбо РС2 кубик в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6813-02a5-11ec-9c3a-00505689ff45,АК-00004333,яя_Коломбо РС2 кубик в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,5476a2bf-58f0-11ec-9c40-00505689c8d9,АК-00005755,яя_Коломбо РС2 мытый сетка рулон 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0c9-02a5-11ec-9c3a-00505689ff45,АК-00004445,яя_Коломбо РС2 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0d8-02a5-11ec-9c3a-00505689ff45,АК-00004460,яя_Коломбо РС2 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d54b-02a5-11ec-9c3a-00505689ff45,АК-00004491,"яя_Коломбо РС2 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89331-02a6-11ec-9c3a-00505689ff45,АК-00004538,яя_Коломбо РС2 семена Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89340-02a6-11ec-9c3a-00505689ff45,АК-00004553,яя_Коломбо РС2 семена Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8934f-02a6-11ec-9c3a-00505689ff45,АК-00004568,яя_Коломбо РС2 семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6823-02a5-11ec-9c3a-00505689ff45,АК-00004349,яя_Коломбо РС2 слайс в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6833-02a5-11ec-9c3a-00505689ff45,АК-00004365,яя_Коломбо РС2 слайс в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0a9-02a5-11ec-9c3a-00505689ff45,АК-00004413,яя_Коломбо РС2 соломка в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0b9-02a5-11ec-9c3a-00505689ff45,АК-00004429,яя_Коломбо РС2 соломка в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784b1-02a3-11ec-9c3a-00505689ff45,АК-00004163,яя_Коломбо РС2Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784bf-02a3-11ec-9c3a-00505689ff45,АК-00004177,яя_Коломбо РС2Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bf038129-3118-11ee-9c4e-00505689ff45,00-00008393,яя_Любаша РС1 Коробка 3 кг,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,fd2edc86-3118-11ee-9c4e-00505689ff45,00-00008394,яя_Любаша РС1 Коробка 5 кг,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,5d332a1a-3119-11ee-9c4e-00505689ff45,00-00008395,яя_Любаша РС1 Коробка 6 кг,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,3464e2c3-3118-11ee-9c4e-00505689ff45,00-00008392,яя_Любаша РС1 Сетка - чулок (3шт.),,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d38d6080-3119-11ee-9c4e-00505689ff45,00-00008396,яя_Любаша РС1 Сетка на завязке 25кг,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b6e07a7a-f63e-11ed-9c4e-00505689ff45,00-00008041,яя_Мадейра РС1 грязный Сетка 25кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c32602fe-f556-11ed-9c4e-00505689ff45,00-00008032,яя_Мадейра РС1 очищенный в ву 5кг. ,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,2cb6460c-f58b-11ed-9c4e-00505689ff45,00-00008038,яя_Мадейра РС1 семена биг-бэг 1000кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e263b55f-ed95-11ed-9c4e-00505689ff45,00-00007923,яя_Мадейра РС2 Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,1779c7f0-5073-11ed-9c43-cb6d75bb653b,00-00007337,яя_Мадейра РС2 Сетка-домик 3кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f9dd3aeb-5465-11ed-9c43-cb6d75bb653b,00-00007353,яя_Мадейра РС2 бэби Сетка-домик 2кг,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,af92cbd6-a319-11ed-9c4c-00505689ff45,00-00007620,яя_Мадейра РС2 грязный Сетка 2.5кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f71dbf70-a2ff-11ed-9c4c-00505689ff45,00-00007613,яя_Мадейра РС2 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,be8356dc-e1ed-11ed-9c4e-00505689ff45,00-00007811,яя_Мадейра РС2 грязный Сетка 3кг Эконом,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,109c617a-a543-11ed-9c4c-00505689ff45,00-00007621,яя_Мадейра РС2 грязный Сетка 3кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,dce7abcb-bcad-11ed-9c4d-00505689ff45,00-00007666,яя_Мадейра РС2 грязный Сетка 5кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,2b606488-ed86-11ed-9c4e-00505689ff45,00-00007922,яя_Мадейра РС2 грязный Сетка на завязке 25кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bd82bb57-b838-11ed-9c4d-00505689ff45,00-00007648,яя_Мадейра РС2 мытый Сетка 25кг бэби,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,5499b8ee-4df2-11ed-9c43-cb6d75bb653b,00-00007290,яя_Мадейра РС2 очищенный в ву 5кг. ,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,7184651e-ddad-11ed-9c4e-00505689ff45,00-00007758,яя_Мадейра РС2 семена Сетка на завязке 25кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,2baef17d-f3e2-11ed-9c4e-00505689ff45,00-00007977,яя_Мадейра РС2 семена биг-бэг 1000кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784d1-02a3-11ec-9c3a-00505689ff45,АК-00004195,яя_Ред Скарлетт РС1 Биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d8d-02a2-11ec-9c3a-00505689ff45,АК-00004136,"яя_Ред Скарлетт РС1 Сетка-домик 2,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f6576d9b-02a2-11ec-9c3a-00505689ff45,АК-00004150,яя_Ред Скарлетт РС1 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d55d-02a5-11ec-9c3a-00505689ff45,АК-00004509,"яя_Ред Скарлетт РС1 бэби Сетка-домик 1,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89324-02a6-11ec-9c3a-00505689ff45,АК-00004525,яя_Ред Скарлетт РС1 бэби Сетка-домик 2кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0ea-02a5-11ec-9c3a-00505689ff45,АК-00004478,яя_Ред Скарлетт РС1 бэби очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e08-02a4-11ec-9c3a-00505689ff45,АК-00004211,яя_Ред Скарлетт РС1 грязный Сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2023-02a4-11ec-9c3a-00505689ff45,АК-00004273,яя_Ред Скарлетт РС1 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e27-02a4-11ec-9c3a-00505689ff45,АК-00004242,яя_Ред Скарлетт РС1 грязный Сетка 5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2031-02a4-11ec-9c3a-00505689ff45,АК-00004287,яя_Ред Скарлетт РС1 грязный Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c6d8107e-02a4-11ec-9c3a-00505689ff45,АК-00004303,яя_Ред Скарлетт РС1 грязный биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a53b-02a5-11ec-9c3a-00505689ff45,АК-00004384,яя_Ред Скарлетт РС1 дольки в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a54b-02a5-11ec-9c3a-00505689ff45,АК-00004400,яя_Ред Скарлетт РС1 дольки в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6806-02a5-11ec-9c3a-00505689ff45,АК-00004320,яя_Ред Скарлетт РС1 кубик в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6816-02a5-11ec-9c3a-00505689ff45,АК-00004336,яя_Ред Скарлетт РС1 кубик в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,aafd7b53-58f2-11ec-9c40-00505689c8d9,АК-00005769,яя_Ред Скарлетт РС1 мытый сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0cc-02a5-11ec-9c3a-00505689ff45,АК-00004448,яя_Ред Скарлетт РС1 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0db-02a5-11ec-9c3a-00505689ff45,АК-00004463,яя_Ред Скарлетт РС1 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d54e-02a5-11ec-9c3a-00505689ff45,АК-00004494,"яя_Ред Скарлетт РС1 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89334-02a6-11ec-9c3a-00505689ff45,АК-00004541,яя_Ред Скарлетт РС1 семена Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89343-02a6-11ec-9c3a-00505689ff45,АК-00004556,яя_Ред Скарлетт РС1 семена Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89352-02a6-11ec-9c3a-00505689ff45,АК-00004571,яя_Ред Скарлетт РС1 семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6826-02a5-11ec-9c3a-00505689ff45,АК-00004352,яя_Ред Скарлетт РС1 слайс в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6836-02a5-11ec-9c3a-00505689ff45,АК-00004368,яя_Ред Скарлетт РС1 слайс в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0ac-02a5-11ec-9c3a-00505689ff45,АК-00004416,яя_Ред Скарлетт РС1 соломка в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0bc-02a5-11ec-9c3a-00505689ff45,АК-00004432,яя_Ред Скарлетт РС1 соломка в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784b4-02a3-11ec-9c3a-00505689ff45,АК-00004166,яя_Ред Скарлетт РС1Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784c2-02a3-11ec-9c3a-00505689ff45,АК-00004180,яя_Ред Скарлетт РС1Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e18-02a4-11ec-9c3a-00505689ff45,АК-00004227,яя_Ред Скарлетт РС1грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784d2-02a3-11ec-9c3a-00505689ff45,АК-00004196,яя_Ред Скарлетт РС2 Биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784b5-02a3-11ec-9c3a-00505689ff45,АК-00004167,яя_Ред Скарлетт РС2 Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a20784c3-02a3-11ec-9c3a-00505689ff45,АК-00004181,яя_Ред Скарлетт РС2 Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,575da9d8-02a3-11ec-9c3a-00505689ff45,АК-00004156,"яя_Ред Скарлетт РС2 Сетка-домик 2,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,575da9d9-02a3-11ec-9c3a-00505689ff45,АК-00004157,яя_Ред Скарлетт РС2 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d55e-02a5-11ec-9c3a-00505689ff45,АК-00004510,"яя_Ред Скарлетт РС2 бэби Сетка-домик 1,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89325-02a6-11ec-9c3a-00505689ff45,АК-00004526,яя_Ред Скарлетт РС2 бэби Сетка-домик 2кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0eb-02a5-11ec-9c3a-00505689ff45,АК-00004479,яя_Ред Скарлетт РС2 бэби очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2014-02a4-11ec-9c3a-00505689ff45,АК-00004258,яя_Ред Скарлетт РС2 грязный Сетка 10кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e09-02a4-11ec-9c3a-00505689ff45,АК-00004212,яя_Ред Скарлетт РС2 грязный Сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2024-02a4-11ec-9c3a-00505689ff45,АК-00004274,яя_Ред Скарлетт РС2 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e19-02a4-11ec-9c3a-00505689ff45,АК-00004228,яя_Ред Скарлетт РС2 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e28-02a4-11ec-9c3a-00505689ff45,АК-00004243,яя_Ред Скарлетт РС2 грязный Сетка 5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2032-02a4-11ec-9c3a-00505689ff45,АК-00004288,яя_Ред Скарлетт РС2 грязный Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c6d8107f-02a4-11ec-9c3a-00505689ff45,АК-00004304,яя_Ред Скарлетт РС2 грязный биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a53c-02a5-11ec-9c3a-00505689ff45,АК-00004385,яя_Ред Скарлетт РС2 дольки в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a54c-02a5-11ec-9c3a-00505689ff45,АК-00004401,яя_Ред Скарлетт РС2 дольки в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6807-02a5-11ec-9c3a-00505689ff45,АК-00004321,яя_Ред Скарлетт РС2 кубик в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6817-02a5-11ec-9c3a-00505689ff45,АК-00004337,яя_Ред Скарлетт РС2 кубик в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a398876a-58f2-11ec-9c40-00505689c8d9,АК-00005768,яя_Ред Скарлетт РС2 мытый сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0cd-02a5-11ec-9c3a-00505689ff45,АК-00004449,яя_Ред Скарлетт РС2 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0dc-02a5-11ec-9c3a-00505689ff45,АК-00004464,яя_Ред Скарлетт РС2 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d54f-02a5-11ec-9c3a-00505689ff45,АК-00004495,"яя_Ред Скарлетт РС2 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89335-02a6-11ec-9c3a-00505689ff45,АК-00004542,яя_Ред Скарлетт РС2 семена Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89344-02a6-11ec-9c3a-00505689ff45,АК-00004557,яя_Ред Скарлетт РС2 семена Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a89353-02a6-11ec-9c3a-00505689ff45,АК-00004572,яя_Ред Скарлетт РС2 семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6827-02a5-11ec-9c3a-00505689ff45,АК-00004353,яя_Ред Скарлетт РС2 слайс в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e6837-02a5-11ec-9c3a-00505689ff45,АК-00004369,яя_Ред Скарлетт РС2 слайс в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0ad-02a5-11ec-9c3a-00505689ff45,АК-00004417,яя_Ред Скарлетт РС2 соломка в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0bd-02a5-11ec-9c3a-00505689ff45,АК-00004433,яя_Ред Скарлетт РС2 соломка в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2013-02a4-11ec-9c3a-00505689ff45,АК-00004257,яя_Ред Скарлетт грязный РС1Сетка 10кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c26b871f-f54b-11ed-9c4e-00505689ff45,00-00008030,яя_Ред Скарлетт очищенный в ву 5кг. РАЗДОЛЬЕ,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,929ba736-32a6-11ed-9c43-cb6d75bb653b,00-00007158,яя_Ред Соня РС2 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e79930fb-9d8e-11ed-9c4c-00505689ff45,00-00007581,"яя_Ред Соня РС2 бэби Сетка-домик 1,5кг.",,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8931c-02a6-11ec-9c3a-00505689ff45,АК-00004517,яя_Ред Соня РС2 бэби Сетка-домик 2кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,72783b64-633c-11ed-9c43-00505689cfb8,00-00007383,яя_Ред Соня РС2 грязный Сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,3ca6e71c-5123-11ed-9c43-cb6d75bb653b,00-00007344,яя_Ред Соня РС2 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,60029326-7f8b-11ed-9c4d-00505689c8d9,00-00007505,яя_Ред Соня РС2 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,6b25977d-32a6-11ed-9c43-cb6d75bb653b,00-00007157,яя_Ред Соня РС2 грязный Сетка 5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,2a7eab8b-32a6-11ed-9c43-cb6d75bb653b,00-00007156,яя_Ред Соня РС2 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,33d2e36f-bbe1-11ed-9c4d-00505689ff45,00-00007649,яя_Ред Соня РС2 семена Сетка 25кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,2fffb63a-e730-11ed-9c4e-00505689ff45,00-00007877,яя_Ред Соня РС2 семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c05a1382-1827-11eb-1099-fa163e0d31f7,БП-00003172,яя_Свекла столовая,,c692e2ca-3004-11eb-cb85-fa163e0d31f7,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852da-02a7-11ec-9c3a-00505689ff45,АК-00004621,"яя_Северное сияние РС1 Сетка - (домик)1,5 кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e12222b6-7954-11ec-9c40-00505689c8d9,АК-00006015,яя_Северное сияние РС1 Сетка - (домик)2 кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852de-02a7-11ec-9c3a-00505689ff45,АК-00004625,яя_Северное сияние РС1 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852e2-02a7-11ec-9c3a-00505689ff45,АК-00004629,яя_Северное сияние РС1 грязный Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852ee-02a7-11ec-9c3a-00505689ff45,АК-00004641,яя_Северное сияние РС1 дольки 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852f2-02a7-11ec-9c3a-00505689ff45,АК-00004645,яя_Северное сияние РС1 дольки 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852e6-02a7-11ec-9c3a-00505689ff45,АК-00004633,яя_Северное сияние РС1 кубик 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852ea-02a7-11ec-9c3a-00505689ff45,АК-00004637,яя_Северное сияние РС1 кубик 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852f6-02a7-11ec-9c3a-00505689ff45,АК-00004649,яя_Северное сияние РС1 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852fa-02a7-11ec-9c3a-00505689ff45,АК-00004653,яя_Северное сияние РС1 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,952852fe-02a7-11ec-9c3a-00505689ff45,АК-00004657,"яя_Северное сияние РС1 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d1148eae-04f9-11ee-9c4e-00505689ff45,00-00008112,яя_Северное сияние РС2 семена биг-бэг 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,1678879a-02a7-11ec-9c3a-00505689ff45,АК-00004578,яя_Фалькон РС1 Пакет - клипса 1 кг.,,053ba6bf-30e0-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ca0eecb0-1609-11ec-9c3a-00505689ff45,АК-00005018,яя_Фалькон РС1 грязный Сетка 10 кг.,,053ba6bf-30e0-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,5ae75e0d-02a7-11ec-9c3a-00505689ff45,АК-00004580,яя_Фалькон РС1 грязный Сетка 25 кг.,,053ba6bf-30e0-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,5ae75e0f-02a7-11ec-9c3a-00505689ff45,АК-00004582,яя_Фалькон РС1 грязный Сетка на завязке 25 кг.,,053ba6bf-30e0-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f34-02a7-11ec-9c3a-00505689ff45,АК-00004584,яя_Фалькон РС1 кубик в ву 1кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f36-02a7-11ec-9c3a-00505689ff45,АК-00004586,яя_Фалькон РС1 кубик в ву 5кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f3c-02a7-11ec-9c3a-00505689ff45,АК-00004592,яя_Фалькон РС1 очищенная в ву 1кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f3e-02a7-11ec-9c3a-00505689ff45,АК-00004594,яя_Фалькон РС1 очищенная в ву 5кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f40-02a7-11ec-9c3a-00505689ff45,АК-00004596,яя_Фалькон РС1 пастеризованная в ву 0.5кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f42-02a7-11ec-9c3a-00505689ff45,АК-00004598,яя_Фалькон РС1 пастеризованная в ву 2.5кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f38-02a7-11ec-9c3a-00505689ff45,АК-00004588,яя_Фалькон РС1 соломка в ву 1кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,75533f3a-02a7-11ec-9c3a-00505689ff45,АК-00004590,яя_Фалькон РС1 соломка в ву 5кг,,cdbf41d0-30df-11ec-b9aa-00505689914b,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,00d6a110-1559-11ec-9c3a-00505689ff45,АК-00005005,яя_Фламинго РС0 Биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,7b470a90-155e-11ec-9c3a-00505689ff45,АК-00005010,яя_Фламинго РС0 Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,dae07f6d-155e-11ec-9c3a-00505689ff45,АК-00005012,яя_Фламинго РС0 Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f062fcae-156e-11ec-9c3a-00505689ff45,АК-00005016,"яя_Фламинго РС0 Сетка-домик 2,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b395b44d-155e-11ec-9c3a-00505689ff45,АК-00005011,яя_Фламинго РС0 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e9a0d563-02a5-11ec-9c3a-00505689ff45,АК-00004515,"яя_Фламинго РС0 бэби Сетка-домик 1,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,03a8932a-02a6-11ec-9c3a-00505689ff45,АК-00004531,яя_Фламинго РС0 бэби Сетка-домик 2кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0f0-02a5-11ec-9c3a-00505689ff45,АК-00004484,яя_Фламинго РС0 бэби очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2019-02a4-11ec-9c3a-00505689ff45,АК-00004263,яя_Фламинго РС0 грязный Сетка 10кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,bac16e0e-02a4-11ec-9c3a-00505689ff45,АК-00004217,яя_Фламинго РС0 грязный Сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,3a4cf300-eb18-11e9-af7d-30f7727a492e,00-00002103,яя_Фламинго РС0 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,00285e46-155e-11ec-9c3a-00505689ff45,АК-00005008,яя_Фламинго РС0 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,3c33162d-155e-11ec-9c3a-00505689ff45,АК-00005009,яя_Фламинго РС0 грязный Сетка 5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c0cf2037-02a4-11ec-9c3a-00505689ff45,АК-00004293,яя_Фламинго РС0 грязный Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c6d81084-02a4-11ec-9c3a-00505689ff45,АК-00004309,яя_Фламинго РС0 грязный биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a541-02a5-11ec-9c3a-00505689ff45,АК-00004390,яя_Фламинго РС0 дольки в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b456a551-02a5-11ec-9c3a-00505689ff45,АК-00004406,яя_Фламинго РС0 дольки в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e680c-02a5-11ec-9c3a-00505689ff45,АК-00004326,яя_Фламинго РС0 кубик в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e681c-02a5-11ec-9c3a-00505689ff45,АК-00004342,яя_Фламинго РС0 кубик в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,162218f0-58f2-11ec-9c40-00505689c8d9,АК-00005762,яя_Фламинго РС0 мытый сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,1b3dc392-1558-11ec-9c3a-00505689ff45,АК-00005003,яя_Фламинго РС0 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,4c99d5a6-1559-11ec-9c3a-00505689ff45,АК-00005006,яя_Фламинго РС0 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,8eb4a5a6-1559-11ec-9c3a-00505689ff45,АК-00005007,"яя_Фламинго РС0 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c390db04-155f-11ec-9c3a-00505689ff45,АК-00005014,яя_Фламинго РС0 семена Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,0510a584-1560-11ec-9c3a-00505689ff45,АК-00005015,яя_Фламинго РС0 семена Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,06e67345-155f-11ec-9c3a-00505689ff45,АК-00005013,яя_Фламинго РС0 семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e682c-02a5-11ec-9c3a-00505689ff45,АК-00004358,яя_Фламинго РС0 слайс в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ae5e683c-02a5-11ec-9c3a-00505689ff45,АК-00004374,яя_Фламинго РС0 слайс в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0b2-02a5-11ec-9c3a-00505689ff45,АК-00004422,яя_Фламинго РС0 соломка в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e3a3d0c2-02a5-11ec-9c3a-00505689ff45,АК-00004438,яя_Фламинго РС0 соломка в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,6ead1f81-1afd-11ec-9c3a-00505689ff45,АК-00005179,яя_Фламинго РС1 Биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,1dd28a81-1afc-11ec-9c3a-00505689ff45,АК-00005160,яя_Фламинго РС1 Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,004c50ab-1afc-11ec-9c3a-00505689ff45,АК-00005157,яя_Фламинго РС1 Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f5fa81c9-1afb-11ec-9c3a-00505689ff45,АК-00005156,"яя_Фламинго РС1 Сетка-домик 2,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ec1fdf84-1afb-11ec-9c3a-00505689ff45,АК-00005155,яя_Фламинго РС1 Сетка-домик 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,5a3bda83-1afd-11ec-9c3a-00505689ff45,АК-00005177,"яя_Фламинго РС1 бэби Сетка-домик 1,5кг.",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,4d04b409-1afd-11ec-9c3a-00505689ff45,АК-00005176,яя_Фламинго РС1 бэби Сетка-домик 2кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,63f751ed-1afd-11ec-9c3a-00505689ff45,АК-00005178,яя_Фламинго РС1 бэби очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,37ad4d3c-1afc-11ec-9c3a-00505689ff45,АК-00005162,яя_Фламинго РС1 грязный Сетка 10кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,2c19a465-1afc-11ec-9c3a-00505689ff45,АК-00005161,яя_Фламинго РС1 грязный Сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,36d332d2-1afd-11ec-9c3a-00505689ff45,АК-00005174,яя_Фламинго РС1 грязный Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,13c5e3fb-1afc-11ec-9c3a-00505689ff45,АК-00005159,яя_Фламинго РС1 грязный Сетка 3кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,0a1638b8-1afc-11ec-9c3a-00505689ff45,АК-00005158,яя_Фламинго РС1 грязный Сетка 5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c2725796-1afc-11ec-9c3a-00505689ff45,АК-00005173,яя_Фламинго РС1 грязный Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,42704663-1afd-11ec-9c3a-00505689ff45,АК-00005175,яя_Фламинго РС1 грязный биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b7c1444c-1afc-11ec-9c3a-00505689ff45,АК-00005172,яя_Фламинго РС1 дольки в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,9b2e805a-1afc-11ec-9c3a-00505689ff45,АК-00005171,яя_Фламинго РС1 дольки в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,8dfe72a0-1afc-11ec-9c3a-00505689ff45,АК-00005170,яя_Фламинго РС1 кубик в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,8261519a-1afc-11ec-9c3a-00505689ff45,АК-00005169,яя_Фламинго РС1 кубик в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,1dd2779c-58f2-11ec-9c40-00505689c8d9,АК-00005763,яя_Фламинго РС1 мытый сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,76ea55bc-1afc-11ec-9c3a-00505689ff45,АК-00005168,яя_Фламинго РС1 очищенный в ву 1кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,6a1c02f8-1afc-11ec-9c3a-00505689ff45,АК-00005167,яя_Фламинго РС1 очищенный в ву 5кг.,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,609754a7-1afc-11ec-9c3a-00505689ff45,АК-00005166,"яя_Фламинго РС1 пастеризованный 0,5кг.",,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,4b94743b-1afc-11ec-9c3a-00505689ff45,АК-00005164,яя_Фламинго РС1 семена Сетка 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,41beadd2-1afc-11ec-9c3a-00505689ff45,АК-00005163,яя_Фламинго РС1 семена Сетка на завязке 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,551463e4-1afc-11ec-9c3a-00505689ff45,АК-00005165,яя_Фламинго РС1 семена биг-бег 1000кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,e31e37ee-1afb-11ec-9c3a-00505689ff45,АК-00005154,яя_Фламинго РС1 слайс в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d9629381-1afb-11ec-9c3a-00505689ff45,АК-00005153,яя_Фламинго РС1 слайс в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,cf7e64a7-1afb-11ec-9c3a-00505689ff45,АК-00005152,яя_Фламинго РС1 соломка в ву 1кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c388d866-1afb-11ec-9c3a-00505689ff45,АК-00005151,яя_Фламинго РС1 соломка в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ba04b0c6-5141-11ed-9c43-cb6d75bb653b,00-00007345,яя_Фламинго РС2 очищенный в ву 5кг,,d8e31aa9-0bd1-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,325e996e-cf02-11ed-9c4e-00505689ff45,00-00007699,яя_Фламинго РС2 семена Сетка 25кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,be3789a6-ddc4-11ed-9c4e-00505689ff45,00-00007778,яя_Фламинго РС2 семена Сетка на завязке 25кг.,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f2e4930b-0743-11ec-9c3a-00505689ff45,АК-00004848,яя_Чеснок ГригорийКомаров 1 репродукции сетка-чулок 3шт без коробки,,9b060c2b-71d9-11e7-85a2-d43d7eec442d,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,0940e5d5-2c3f-11ec-b9a9-00505689914b,АК-00005517,яяя_1 сорт Аметист РС0 стандарт нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,4602e44c-2c40-11ec-b9a9-00505689914b,АК-00005518,яяя_1 сорт Аметист РС7 стандарт нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c6fc1133-2c3b-11ec-b9a9-00505689914b,АК-00005514,яяя_1 сорт Балтик Роуз РС1 стандарт нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,7fa797ec-2c2d-11ec-b9a9-00505689914b,АК-00005493,яяя_1 сорт БеллаРоза РС2 стандарт нельзя мыть,,3f205a72-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,7e92aafa-2c3d-11ec-b9a9-00505689914b,АК-00005516,яяя_1 сорт Вега РС1 стандарт нельзя мыть,,5072ea7f-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,58a85474-2c3c-11ec-b9a9-00505689914b,АК-00005515,яяя_1 сорт Вэнди РС2 стандарт нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,8bd26231-2c42-11ec-b9a9-00505689914b,АК-00005521,яяя_1 сорт Гала РС1 стандарт нельзя мыть,,894987c2-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,6fe36f4a-2c2e-11ec-b9a9-00505689914b,АК-00005494,яяя_1 сорт Гала РС2 стандарт нельзя мыть,,894987c2-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,86fc4348-2c53-11ec-b9a9-00505689914b,АК-00005523,яяя_1 сорт Индиго РС0 стандарт нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a7d1cf9a-4630-11ec-9c45-00505689c17d,АК-00005588,яяя_1 сорт Индиго РС1 стандарт нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,330c4f2a-2c43-11ec-b9a9-00505689914b,АК-00005522,яяя_1 сорт Кармен РС1 стандарт нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,d5e89175-3723-11ec-b9aa-00505689914b,АК-00005535,яяя_1 сорт Коломба РС1 стандарт не мытый,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,f0d8fb3c-2bfe-11ec-b9a9-00505689914b,АК-00005491,яяя_1 сорт Коломба РС2 стандарт нельзя мыть,,967be760-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,9961ca18-2bfd-11ec-b9a9-00505689914b,АК-00005490,яяя_1 сорт РедСкарлетт РС1 стандарт нельзя мыть,,9c768bcc-9c53-11eb-9c33-00505689ff45,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,a062dfc4-2c41-11ec-b9a9-00505689914b,АК-00005520,яяя_1 сорт Северное сияние РС1 стандарт нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,ffee473c-2c40-11ec-b9a9-00505689914b,АК-00005519,яяя_1 сорт Фламинго РС1 стандарт нельзя мыть,,53b7cffe-097b-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,c007cf61-9bc0-11ec-9c42-00505689c8d9,00-00006288,яяя_Вэнди РС2 семена Сетка рулон 25кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,9052f539-7946-11ec-9c40-00505689c8d9,АК-00006012,"яяя_Гала РС1 грязный Сетка на завязке 25кг.(2 сорт, мелкий)",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,961fbba0-6c82-11ec-9c40-00505689c8d9,АК-00005858,"яяя_Гала РС2 грязный Сетка на завязке 25кг.(2 сорт, мелкий)",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b53be996-5677-11ec-9c40-00505689c8d9,АК-00005740,яяя_Гала РС2 мытый сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,33ccc7bc-8280-11ec-9c41-00505689c8d9,00-00006057,яяя_Индиго РС1 Сетка - (домик) 2 кг,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,521a9e8e-5a9f-11ed-9c43-cb6d75bb653b,00-00007362,яяя_Коломба РС1 мытый сетка 2.5кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,b6deeb9e-7947-11ec-9c40-00505689c8d9,АК-00006013,"яяя_Коломбо РС2 грязный Сетка на завязке 25кг. (2 сорт, мелкий)",,ba90098d-0a34-11f0-b80e-005056bde474,false,false
+Номенклатура — current,raw.r1c_nomenclature_current,4e3bf788-8280-11ec-9c41-00505689c8d9,00-00006058,яяя_Северное сияние РС1 Сетка - (домик)2 кг.,,ba90098d-0a34-11f0-b80e-005056bde474,false,false
